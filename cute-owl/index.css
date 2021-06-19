@@ -1,0 +1,170 @@
+body {
+  background-color: rgb(186, 216, 216);
+  display: flex;
+  justify-content: center; 
+  margin: 0 auto;
+  width: 50vw;
+}
+
+.my-owl {
+  top: 20vh;
+  position: relative;
+}
+
+:root {
+  --eye-color: #ECBFA8;
+  --body-inner-color: #EDBFA8;
+  --nose-color: #F37920;
+  --paw-color: #F37920;
+  --head-color: #AF7859;
+  --body-color: #8D5637;
+  --wing-color: #8D5637;
+  --white: #fff;
+  --black: #000;
+}
+
+.head {
+  position: relative;
+  width: 170px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: var(--head-color);
+}
+
+.ear {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 3px;
+  border-bottom: 50px solid var(--head-color);
+}
+
+.ear-right {
+  border-left: 40px solid transparent;
+	left: 125px;
+}
+
+.ear-left {
+  border-right: 40px solid transparent;
+	left: 5px;
+}
+
+.eye {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--white);
+  top: 40px;
+  border: 15px solid var(--eye-color);
+}
+
+.eye-inner {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin: 7.5px;
+  background-color: var(--black);
+}
+
+.eye-inner-two {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--white);
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  left: 80px
+}
+
+.nose {
+  width: 0;
+	height: 0;
+  position: absolute;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 40px solid var(--nose-color);
+  border-radius: 40%;
+  top: 100px;
+  left: 60px;
+}
+
+.body {
+  width: 55px;
+  position: relative;
+  border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+  border-top: 120px solid var(--body-color);
+  top: -50px;
+  left: 6px;
+  z-index: -1;
+  border-radius: 0 0 50% 50%;
+}
+
+.body-inner {
+  width: 40px;
+  position: absolute;
+  border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+  border-top: 90px solid var(--body-inner-color);
+  top: -90px;
+  left: -22px;
+  z-index: -1;
+  border-radius: 0 0 50% 50%;
+}
+
+.wing-both {
+  display: flex;
+  position: absolute;
+  width: 165px;
+  justify-content: space-between;
+  top: 125px;
+}
+
+.wing {
+  width: 35px;
+  height: 90px;
+  background-color: var(--wing-color);
+  z-index: -2;
+}
+
+.wing-left {
+  border-radius: 90% 0 0 90%;
+  transform: rotate(-23deg)
+}
+
+.wing-right {
+  /* left: 265px; */
+  border-radius: 0 90% 90% 0;
+  transform: rotate(23deg)
+}
+
+.paw {
+  position: relative;
+  display: flex;
+  top: -3px;
+}
+
+.paw-left {
+  left: 10px;
+  width: 20px;
+  height: 15px;
+  margin: 0 5px 0 2px;
+  background-color: var(--nose-color);
+  border-radius: 0 0 30px 30px;
+  transform: rotate(12deg);
+}
+
+.paw-right {
+  width: 20px;
+  height: 15px;
+  margin: 0 2px 0 5px;
+  background-color: var(--nose-color);
+  border-radius: 0 0 30px 30px;
+  transform: rotate(-12deg);
+}
