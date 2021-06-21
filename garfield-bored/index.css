@@ -7,6 +7,7 @@ body {
 :root {
     --head-color: #EE972A;
     --nose-color: #EFA7A8;
+    --snout-color: #FEFF7D;
     --white-color: #fff;
     --black-color: #000;
 }
@@ -70,7 +71,7 @@ body {
     position: absolute;
     display: flex;
     top: 40px;
-    z-index: 1;
+    z-index: 2;
     left: 65px;
 }
 
@@ -176,6 +177,30 @@ body {
     top: 250px;
     left: 182px;
     border-radius: 50%;
+    z-index: 2;
+}
+
+.snout-left-one {
+    position: absolute;
+    width: 80px;
+    height: 130px;
+    border-radius: 55% 0% 35% 65%/50% 50% 25% 50%;
+    background-color: var(--snout-color);
+    top: 245px; 
+    left: 102px;
     z-index: 1;
+    transform: rotate(50deg);
+}
+
+.snout-right-one {
+    position: absolute;
+    width: 80px;
+    height: 130px;
+    border-radius: 0% 55% 65% 35%/50% 50% 50% 25%;
+    background-color: var(--snout-color);
+    top: 245px; 
+    left: 249px;
+    z-index: 1;
+    transform: rotate(-50deg);
 }
 
