@@ -55,7 +55,6 @@ body {
     height: 180px;
     border-radius: 50%;
     background-color: var(--head-color);
-    /* border: 2px solid var(--black-color); */
 }
 
 .ear-left {
