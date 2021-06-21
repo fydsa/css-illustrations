@@ -5,7 +5,8 @@ body {
 }
 
 :root {
-    --head-color: rgb(255, 123, 0);
+    --head-color: #EE972A;
+    --nose-color: #EFA7A8;
     --white-color: #fff;
     --black-color: #000;
 }
@@ -163,6 +164,18 @@ body {
     border-radius: 0% 0% 50% 45%/0 0 100% 90%;
     left: 156px;
     top: 180px;
+    z-index: 1;
+}
+
+.nose {
+    position: absolute;
+    width: 70px;
+    height: 40px;
+    background-color: var(--nose-color);
+    border: 3px solid #000;
+    top: 250px;
+    left: 182px;
+    border-radius: 50%;
     z-index: 1;
 }
 
