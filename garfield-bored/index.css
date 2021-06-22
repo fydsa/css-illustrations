@@ -232,3 +232,25 @@ body {
     transform: rotate(-47deg);
 }
 
+.snout-left-line {
+    position: absolute;
+    top: 286px;
+    left: 196px;
+    height: 59px;
+    border: 2px solid var(--black-color);
+    z-index: 3;
+    transform: rotate(45deg);
+    border-radius: 40%/50%;
+}
+
+.snout-right-line {
+    position: absolute;
+    top: 286px;
+    left: 239px;
+    height: 59px;
+    border: 2px solid var(--black-color);
+    z-index: 3;
+    transform: rotate(-45deg);
+    border-radius: 55%/50%;
+}
+
