@@ -18,31 +18,33 @@ body {
 }
 
 .head-one {
-    width: 440px;
-    height: 300px;
+    width: 452px;
+    height: 272px;
     border-radius: 50%;
     background-color: var(--head-color);
+    left: -7px;
+    position: absolute;
 }
 
 .head-two {
-    width: 420px;
-    border-left: 45px solid transparent;
-	border-right: 40px solid transparent;
-	border-bottom: 150px solid var(--head-color);
+    width: 439px;
+    border-left: 32px solid transparent;
+    border-right: 34px solid transparent;
+    border-bottom: 90px solid var(--head-color);
     position: absolute;
     top: 105px;
-    left: -35px;
+    left: -33px;
     z-index: 1;
 }
 
 .head-three {
-    width: 550px;
-    height: 355px;
+    width: 535px;
+    height: 383px;
     border-radius: 50%;
     background-color: var(--head-color);
     position: absolute;
-    top: 145px;
-    left: -57px;
+    top: 65px;
+    left: -48px;
 }
 
 .ears {
@@ -180,7 +182,7 @@ body {
     z-index: 3;
 }
 
-.whisker-left-one {
+.snout-left-one {
     position: absolute;
     width: 70px;
     height: 150px;
@@ -193,7 +195,7 @@ body {
     border: 3px solid var(--black-color);
 }
 
-.whisker-right-one {
+.snout-right-one {
     position: absolute;
     width: 70px;
     height: 150px;
@@ -206,7 +208,7 @@ body {
     border: 3px solid var(--black-color);
 }
 
-.whisker-left-two {
+.snout-left-two {
     position: absolute;
     top: 259px;
     left: 171px;
@@ -219,7 +221,7 @@ body {
     transform: rotate(47deg);
 }
 
-.whisker-right-two {
+.snout-right-two {
     position: absolute;
     top: 259px;
     left: 243px;
@@ -232,7 +234,7 @@ body {
     transform: rotate(-47deg);
 }
 
-.whisker-left-line {
+.snout-left-line {
     position: absolute;
     top: 286px;
     left: 196px;
@@ -243,7 +245,7 @@ body {
     border-radius: 40%/50%;
 }
 
-.whisker-right-line {
+.snout-right-line {
     position: absolute;
     top: 286px;
     left: 239px;
