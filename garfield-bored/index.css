@@ -24,6 +24,8 @@ body {
     background-color: var(--head-color);
     left: -7px;
     position: absolute;
+    border: 3px solid var(--black-color);
+    z-index: -1;
 }
 
 .head-two {
@@ -45,6 +47,8 @@ body {
     position: absolute;
     top: 65px;
     left: -48px;
+    border: 3px solid var(--black-color);
+    z-index: -1;
 }
 
 .ears {
@@ -293,4 +297,287 @@ body {
     top: 317px;
     left: 338px;
 }
+
+.stripe-top {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 10px;
+    height: 40px;
+    background-color: var(--black-color);
+    border-radius: 50% 50% 0 0/100% 100% 0 0;
+}
+
+.stripe-bottom {
+    position: absolute;
+    width: 10px;
+    height: 7px;
+    top: 88px;
+    left: 50px;
+    background: var(--black-color);
+    border-radius: 0% 0% 50% 45%/0 0 100% 90%;
+}
+
+.stripes-left-one-a {
+    position: relative;
+    top: -59px;
+    left: 48px;
+    z-index: 1;
+    transform: rotate(43deg) scale(1.4);
+}
+
+.stripes-right-one-a {
+    position: relative;
+    top: 50px;
+    left: 265px;
+    z-index: 1;
+    transform: rotate(-50deg) scale(1.4);
+}
+
+.stripes-left-one-b {
+    position: relative;
+    top: -32px;
+    left: 49px;
+    z-index: 1;
+    transform: rotate(38deg) scale(1.2);
+}
+
+.stripes-right-one-b {
+    position: relative;
+    top: 51px;
+    left: 271px;
+    z-index: 1;
+    transform: rotate(-45deg) scale(1.2);
+}
+
+.stripes-left-one-c {
+    position: relative;
+    top: 0px;
+    left: 55px;
+    z-index: 1;
+    transform: rotate(34deg) scale(0.9);
+}
+
+.stripes-right-one-c {
+    position: relative;
+    top: 57px;
+    left: 289px;
+    z-index: 1;
+    transform: rotate(-40deg) scale(0.9);
+}
+
+.stripes-left-two-a {
+    position: relative;
+    top: 32px;
+    left: -56px;
+    z-index: 1;
+    transform: rotate(17deg) scale(1.4);
+}
+
+.stripes-left-two-b {
+    position: relative;
+    top: 56px;
+    left: -41px;
+    z-index: 1;
+    transform: rotate(13deg) scale(1.2);
+}
+
+.stripes-left-two-c {
+    position: relative;
+    top: 88px;
+    left: -22px;
+    z-index: 1;
+    transform: rotate(8deg) scale(0.9);
+}
+
+.stripes-left-two-d {
+    position: relative;
+    top: 109px;
+    left: -7px;
+    z-index: 1;
+    transform: rotate(2deg) scale(0.7);
+}
+
+.stripes-left-three-a {
+    position: relative;
+    top: 143px;
+    left: -110px;
+    z-index: 1;
+    transform: rotate(3deg) scale(1.4);
+}
+
+.stripes-left-three-b {
+    position: relative;
+    top: 161px;
+    left: -90px;
+    z-index: 1;
+    transform: rotate(-1deg) scale(1.2);
+}
+
+.stripes-left-three-c {
+    position: relative;
+    top: 184px;
+    left: -61px;
+    z-index: 1;
+    transform: rotate(-3deg) scale(0.9);
+}
+
+.stripes-left-three-d {
+    position: relative;
+    top: 200px;
+    left: -41px;
+    z-index: 1;
+    transform: rotate(-7deg) scale(0.7);
+}
+
+.stripes-left-four-a {
+    position: relative;
+    top: 322px;
+    left: -130px;
+    z-index: 1;
+    transform: rotate(-40deg) scale(1.4);
+}
+
+.stripes-left-four-b {
+    position: relative;
+    top: 324px;
+    left: -103px;
+    z-index: 1;
+    transform: rotate(-45deg) scale(1.2);
+}
+
+.stripes-left-four-c {
+    position: relative;
+    top: 325px;
+    left: -67px;
+    z-index: 1;
+    transform: rotate(-50deg) scale(0.9);
+}
+
+.stripes-left-four-d {
+    position: relative;
+    top: 322px;
+    left: -41px;
+    z-index: 1;
+    transform: rotate(-54deg) scale(0.7);
+}
+
+.stripes-right-two-a {
+    position: relative;
+    top: 70px;
+    left: 352px;
+    z-index: 1;
+    transform: rotate(-15deg) scale(1.4);
+}
+
+.stripes-right-two-b {
+    position: relative;
+    top: 80px;
+    left: 357px;
+    z-index: 1;
+    transform: rotate(-10deg) scale(1.2);
+}
+
+.stripes-right-two-c {
+    position: relative;
+    top: 100px;
+    left: 365px;
+    z-index: 1;
+    transform: rotate(-7deg) scale(0.9);
+}
+
+.stripes-right-two-d {
+    position: relative;
+    top: 113px;
+    left: 367px;
+    z-index: 1;
+    transform: rotate(-4deg) scale(0.7);
+}
+
+.stripes-right-three-a {
+    position: relative;
+    top: 145px;
+    left: 395px;
+    z-index: 1;
+    transform: rotate(-6deg) scale(1.4);
+}
+
+.stripes-right-three-b {
+    position: relative;
+    top: 155px;
+    left: 397px;
+    z-index: 1;
+    transform: rotate(-2deg) scale(1.2);
+}
+
+.stripes-right-three-c {
+    position: relative;
+    top: 175px;
+    left: 403px;
+    z-index: 1;
+    transform: rotate(1deg) scale(0.9);
+}
+
+.stripes-right-three-d {
+    position: relative;
+    top: 186px;
+    left: 405px;
+    z-index: 1;
+    transform: rotate(5deg) scale(0.7);
+}
+
+.stripes-right-four-a {
+    position: relative;
+    top: 214px;
+    left: 457px;
+    z-index: 1;
+    transform: rotate(37deg) scale(1.4);
+}
+
+.stripes-right-four-b {
+    position: relative;
+    top: 219px;
+    left: 456px;
+    z-index: 1;
+    transform: rotate(42deg) scale(1.2);
+}
+
+.stripes-right-four-c {
+    position: relative;
+    top: 239px;
+    left: 448px;
+    z-index: 1;
+    transform: rotate(47deg) scale(0.9);
+}
+
+.stripes-right-four-d {
+    position: relative;
+    top: 250px;
+    left: 437px;
+    z-index: 1;
+    transform: rotate(50deg) scale(0.7);
+}
+
+.hide-lines {
+    position: absolute;
+    width: 340px;
+    height: 100px;
+    background-color: var(--head-color);
+    top: 55px;
+    left: 50px;
+}
+
+.add-side-lines {
+    position: absolute;
+    top: 99px;
+    left: -17px;
+    height: 101px;
+    border: 2px solid var(--black-color);
+    z-index: 1;
+    transform: rotate(20deg);
+    border-radius: 40%/25%;
+}
+
+
+
 
