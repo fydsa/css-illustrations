@@ -183,24 +183,26 @@ body {
 .snout-left-one {
     position: absolute;
     width: 80px;
-    height: 130px;
+    height: 150px;
     border-radius: 55% 0% 35% 65%/50% 50% 25% 50%;
     background-color: var(--snout-color);
-    top: 245px; 
-    left: 102px;
+    top: 220px; 
+    left: 100px;
     z-index: 1;
-    transform: rotate(50deg);
+    transform: rotate(55deg);
+    border: 3px solid var(--black-color);
 }
 
 .snout-right-one {
     position: absolute;
     width: 80px;
-    height: 130px;
+    height: 150px;
     border-radius: 0% 55% 65% 35%/50% 50% 50% 25%;
     background-color: var(--snout-color);
-    top: 245px; 
-    left: 249px;
+    top: 220px; 
+    left: 255px;
     z-index: 1;
-    transform: rotate(-50deg);
+    transform: rotate(-55deg);
+    border: 3px solid var(--black-color);
 }
 
