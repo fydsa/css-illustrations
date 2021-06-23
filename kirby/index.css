@@ -7,20 +7,50 @@ body {
 }
 
 :root {
-    --head-color: #FCC5DA;
-    --head-shadow-color: #F98B99;
+    --body-color: #FCC5DA;
+    --body-shadow-color: #F98B99;
+    --right-hand-color: #FA9BB4;
+    --white-color: #fff;
+    --black-color: #000;
 }
 
 .my-kirby {
     position: relative;
-    top: 10vh;
+    top: 20vh;
 }
 
 .head {
     width: 400px;
     height: 370px;
     top: 100px;
-    background-color: var(--head-color);
+    background-color: var(--body-color);
     border-radius: 100%;
-    box-shadow: inset -20px -35px 60px 0 var(--head-shadow-color), 40px 20px 64px 0 rgba(0,0,0,0.2);
+    box-shadow: inset 10px -35px 60px 0 var(--body-shadow-color), 40px 20px 64px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.hand-left {
+    position: absolute;
+    width: 150px;
+    height: 250px;
+    background-color: var(--body-color);
+    border-radius: 100% 100% 0 40%/100% 100% 0 100%;
+    box-shadow: inset 0px -35px 60px 0 var(--body-shadow-color), 40px 20px 64px 0 rgba(0,0,0,0.2);
+    z-index: -1;
+    transform: rotate(16deg);
+    top: -90px;
+    left: 50px;
+}
+
+.hand-right {
+    position: absolute;
+    width: 150px;
+    height: 250px;
+    background-color: var(--right-hand-color);
+    top: 61px;
+    left: 254px;
+    z-index: -1;
+    transform: rotate(90deg);
+    border-radius: 100% 100% 0 40%/100% 100% 0 100%;
+    box-shadow: inset 0px -45px 25px -5px var(--white-color), 40px 20px 64px 0 rgb(0 0 0 / 20%);
 }
