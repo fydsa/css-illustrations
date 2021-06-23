@@ -2,6 +2,7 @@ body {
     margin: 0 auto;
     background-color: rgb(229, 250, 182);
     width: 40vw;
+    
 }
 
 :root {
@@ -482,14 +483,6 @@ body {
     transform: rotate(43deg) scale(1.4);
 }
 
-.stripes-right-one-a {
-    position: relative;
-    top: 50px;
-    left: 265px;
-    z-index: 1;
-    transform: rotate(-50deg) scale(1.4);
-}
-
 .stripes-left-one-b {
     position: relative;
     top: -32px;
@@ -498,13 +491,6 @@ body {
     transform: rotate(38deg) scale(1.2);
 }
 
-.stripes-right-one-b {
-    position: relative;
-    top: 51px;
-    left: 271px;
-    z-index: 1;
-    transform: rotate(-45deg) scale(1.2);
-}
 
 .stripes-left-one-c {
     position: relative;
@@ -512,14 +498,6 @@ body {
     left: 55px;
     z-index: 1;
     transform: rotate(34deg) scale(0.9);
-}
-
-.stripes-right-one-c {
-    position: relative;
-    top: 57px;
-    left: 289px;
-    z-index: 1;
-    transform: rotate(-40deg) scale(0.9);
 }
 
 .stripes-left-two-a {
@@ -616,6 +594,30 @@ body {
     left: -41px;
     z-index: 1;
     transform: rotate(-54deg) scale(0.7);
+}
+
+.stripes-right-one-a {
+    position: relative;
+    top: 49px;
+    left: 283px;
+    z-index: 1;
+    transform: rotate(-43deg) scale(1.4);
+}
+
+.stripes-right-one-b {
+    position: relative;
+    top: 49px;
+    left: 290px;
+    z-index: 1;
+    transform: rotate(-37deg) scale(1.2);
+}
+
+.stripes-right-one-c {
+    position: relative;
+    top: 62px;
+    left: 310px;
+    z-index: 1;
+    transform: rotate(-32deg) scale(0.9);
 }
 
 .stripes-right-two-a {
