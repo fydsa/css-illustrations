@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(251, 255, 235);
+    display: flex;
+    justify-content: center; 
+    margin: 0 auto;
+    width: 50vw;
+}
+
+:root {
+    --head-color: #FCC5DA;
+    --head-shadow-color: #F98B99;
+}
+
+.my-kirby {
+    position: relative;
+    top: 10vh;
+}
+
+.head {
+    width: 400px;
+    height: 370px;
+    top: 100px;
+    background-color: var(--head-color);
+    border-radius: 100%;
+    box-shadow: inset -20px -35px 60px 0 var(--head-shadow-color), 40px 20px 64px 0 rgba(0,0,0,0.2);
+}
