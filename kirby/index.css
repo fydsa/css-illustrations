@@ -9,10 +9,13 @@ body {
 :root {
     --body-color: #FCC5DA;
     --body-shadow-color: #F98B99;
-    --right-hand-color: #FA9BB4;
+    --right-hand-color: #ffb1c6;
     --cheek-color: #F988BE;
     --mouth-one-color: #7B2123;
     --mouth-two-color: #F6605C;
+    --foot-color: #E7547D;
+    --foot-front-dark-color: #DE505F;
+    --foot-front-light-color: #EE6F7A;
     --blue-color: #326BF7;
     --white-color: #fff;
     --black-color: #000;
@@ -156,4 +159,30 @@ body {
     box-shadow: inset 1px 2px 11px 1px var(--mouth-one-color);
     top: 12px;
     left: 5px;
+}
+
+.foot-left {
+    position: absolute;
+    width: 150px;
+    height: 232px;
+    background-color: var(--foot-color);
+    top: 239px;
+    left: 32px;
+    z-index: -1;
+    transform: rotate(-7deg);
+    border-radius: 50% 50% 60% 60%/40% 40% 80% 80%;
+    box-shadow: inset -15px -2px 50px 4px var(--mouth-one-color);
+}
+
+.foot-right {
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    background-color: var(--foot-color);
+    top: 219px;
+    left: 239px;
+    z-index: 1;
+    transform: rotate(53deg);
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    box-shadow: inset 4px -20px 20px 1px rgb(255 255 255 / 10%), inset -4px -5px 32px 3px rgb(255 255 255 / 10%), 25px 6px 20px -10px rgb(0 0 0 / 40%);
 }
