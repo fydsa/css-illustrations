@@ -132,6 +132,17 @@ body {
     border-radius: 65% 35% 0% 55%/50% 15% 50% 50%;
 }
 
+.hide-eye-line {
+    width: 11px;
+    height: 20px;
+    background-color: var(--head-color);
+    position: absolute;
+    left: 142px;
+    top: 26px;
+    z-index: 1;
+    border-radius: 100%;
+}
+
 .eye-right {
     border-radius: 35% 65% 55% 0%/15% 50% 50% 50%;
     margin-left: -2px;
