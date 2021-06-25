@@ -13,6 +13,7 @@ body {
     --stroke-color: #375061;
     --mouth-color: #EC555B;
     --inner-mouth-color: #F79599;
+    --inner-nose-color: #6C8596;
     --inner-ear-color: #FFA699;
     --body-light-color: #E1FFFC;
     --body-dark-color: #77A7A7;
@@ -21,4 +22,12 @@ body {
 .my-koala {
     position: relative;
     top: 20vh;
+}
+
+.head {
+    width: 300px;
+    height: 250px;
+    background-color: var(--body-color);
+    border-radius: 80% 80% 55% 55%/100% 100% 50% 50%;
+    border: 5px solid var(--stroke-color);
 }
