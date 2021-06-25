@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(127, 255, 127);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+}
+
+:root {
+    --body-color: #B3DDDC;
+    --ear-color: #FFA699;
+    --nose-color: #364F60;
+    --stroke-color: #375061;
+    --mouth-color: #EC555B;
+    --inner-mouth-color: #F79599;
+    --inner-ear-color: #FFA699;
+    --body-light-color: #E1FFFC;
+    --body-dark-color: #77A7A7;
+}
+
+.my-koala {
+    position: relative;
+    top: 20vh;
+}
