@@ -9,7 +9,7 @@ body {
 :root {
     --body-color: #B3DDDC;
     --ear-color: #FFA699;
-    --nose-color: #364F60;
+    --nose-eye-color: #364F60;
     --stroke-color: #375061;
     --mouth-color: #EC555B;
     --inner-mouth-color: #F79599;
@@ -38,7 +38,7 @@ body {
     width: 85px;
     height: 95px;
     position: absolute;
-    background-color: var(--nose-color);
+    background-color: var(--nose-eye-color);
     border-radius: 62%/75%;
     top: 92px;
     left: 113px;
@@ -53,4 +53,34 @@ body {
     transform: rotate(-30deg);
     top: 103px;
     left: 157px;
+}
+
+.eye-left {
+    width: 35px;
+    height: 35px;
+    background-color: var(--nose-eye-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+    left: 63px;
+}
+
+.eye-right {
+    /* width: 35px;
+    height: 40px;
+    border: 6px solid;
+    position: absolute;
+    top: 110px;
+    left: 210px;
+    border-color: var(--nose-eye-color) transparent transparent transparent; */
+    /* border-radius: 50%/100px 100px 0 0; */
+    stroke-linecap: round;
+    stroke-width: 20px;
+    transform: rotate(180deg);
+    position: absolute;
+}
+
+path {
+    stroke: orange;
+    stroke-width: 20;
 }
