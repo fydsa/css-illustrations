@@ -17,6 +17,8 @@ body {
     --inner-ear-color: #FFA699;
     --body-light-color: #E1FFFC;
     --body-dark-color: #77A7A7;
+    --white-color: #fff;
+    --black-color: #000;
 }
 
 .my-koala {
@@ -30,4 +32,25 @@ body {
     background-color: var(--body-color);
     border-radius: 80% 80% 55% 55%/100% 100% 50% 50%;
     border: 5px solid var(--stroke-color);
+}
+
+.nose {
+    width: 85px;
+    height: 95px;
+    position: absolute;
+    background-color: var(--nose-color);
+    border-radius: 62%/75%;
+    top: 92px;
+    left: 113px;
+}
+
+.nose-inner {
+    width: 25px;
+    height: 35px;
+    background-color: var(--inner-nose-color);
+    position: absolute;
+    border-radius: 50%;
+    transform: rotate(-30deg);
+    top: 103px;
+    left: 157px;
 }
