@@ -77,21 +77,32 @@ body {
 }
 
 .eye-right {
-    /* width: 35px;
-    height: 40px;
-    border: 6px solid;
     position: absolute;
+    width: 48px;
+    height: 45px;
+    border: solid 10px var(--nose-eye-color);
+    border-color: var(--nose-eye-color)  transparent transparent transparent;
+    border-radius: 50%/50px 50px 0 0;
     top: 110px;
-    left: 210px;
-    border-color: var(--nose-eye-color) transparent transparent transparent; */
-    /* border-radius: 50%/100px 100px 0 0; */
-    stroke-linecap: round;
-    stroke-width: 20px;
-    transform: rotate(180deg);
-    position: absolute;
+    left: 205px;
 }
 
-path {
-    stroke: orange;
-    stroke-width: 20;
+.eye-right-part {
+    position: relative;
+    width: 9.6px;
+    height: 20px;
+    background-color: var(--nose-eye-color);
+    border-radius: 50%/40%;
+}
+
+.one {
+    top: -6px;
+    left: 2px;
+    transform: rotate(39deg);
+}
+
+.two {
+    top: -25.6px;
+    left: 37px;
+    transform: rotate(-39deg);
 }
