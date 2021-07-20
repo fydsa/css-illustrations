@@ -56,13 +56,24 @@ body {
 }
 
 .eye-left {
-    width: 35px;
-    height: 35px;
+    width: 38px;
+    height: 38px;
     background-color: var(--nose-eye-color);
     border-radius: 50%;
     position: absolute;
     top: 100px;
-    left: 63px;
+    left: 57px;
+}
+
+
+.inner-eye {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    left: 18px;
+    top: 8px;
 }
 
 .eye-right {
