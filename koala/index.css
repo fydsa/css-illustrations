@@ -116,12 +116,12 @@ body {
 }
 
 .whisker-left {
-    top: 158px;
+    top: 156px;
     left: 106px;
 }
 
 .whisker-right {
-    top: 158px;
+    top: 156px;
     left: 143px;
 }
 
@@ -134,18 +134,22 @@ body {
 }
 
 .whisker-left-one {
-    top: 187px;
+    top: 185px;
     left: 111px;
     transform: rotate(-52deg);
 }
 
 .whisker-right-one {
-    top: 187px;
+    top: 185px;
     left: 188px;
     transform: rotate(54deg);
 }
 
 .whisker-top {
-    top: 181px;
+    top: 176px;
     left: 150px;
+}
+
+.mouth {
+
 }
