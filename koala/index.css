@@ -151,5 +151,11 @@ body {
 }
 
 .mouth {
-
+    position: absolute;
+    width: 50px;
+    height: 35px;
+    top: 200px;
+    left: 128px;
+    background-color: var(--nose-eye-color);
+    border-radius: 0 0 50% 50%/0 0 80% 80%;
 }
