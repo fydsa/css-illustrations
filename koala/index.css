@@ -11,8 +11,8 @@ body {
     --ear-color: #FFA699;
     --nose-eye-color: #364F60;
     --stroke-color: #375061;
-    --mouth-color: #EC555B;
-    --inner-mouth-color: #F79599;
+    --tongue-color: #EC555B;
+    --tongue-inner-color: #F79599;
     --inner-nose-color: #6C8596;
     --inner-ear-color: #FFA699;
     --body-light-color: #E1FFFC;
@@ -158,4 +158,44 @@ body {
     left: 128px;
     background-color: var(--nose-eye-color);
     border-radius: 0 0 50% 50%/0 0 80% 80%;
+}
+
+.tongue-part-one {
+    position: absolute;
+    width: 30px;
+    height: 15px;
+    top: 13px;
+    left: 10px;
+    background-color: var(--tongue-color);
+    border-radius: 0 0 50% 50%/0 0 80% 80%;
+}
+
+.tongue-part-two {
+    position: absolute;
+    width: 30px;
+    height: 7px;
+    top: 8px;
+    left: 10px;
+    background-color: var(--tongue-color);
+    border-radius: 50% 50% 0 0/80% 80% 0 0;
+}
+
+.tongue-inner-part-one {
+    position: absolute;
+    width: 22.5px;
+    height: 5px;
+    top: 9.5px;
+    left: 4px;
+    background-color: var(--tongue-inner-color);
+    border-radius: 0 0 50% 50%/0 0 100% 100%;
+}
+
+.tongue-inner-part-two {
+    position: absolute;
+    width: 22.5px;
+    height: 6px;
+    top: 4.8px;
+    left: 4px;
+    background-color: var(--tongue-inner-color);
+    border-radius: 50% 50% 0 0 /100% 100% 0 0;
 }
