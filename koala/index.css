@@ -252,3 +252,15 @@ body {
     width: 29px;
 }
 
+.body {
+    width: 240px;
+    height: 263px;
+    border-radius: 80% 50% 50% 50%/80% 70% 47% 55%;
+    position: absolute;
+    background-color: var(--body-color);
+    border: 6px solid var(--stroke-color);
+    z-index: -1;
+    top: 200px;
+    left: 22p
+}
+
