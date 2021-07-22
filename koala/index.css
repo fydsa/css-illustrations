@@ -232,3 +232,23 @@ body {
     left: 27px;
 }
 
+.hide-ear {
+    width: 32px;
+    height: 12px;
+    background-color: var(--body-color);
+    position: absolute;
+}
+
+.ear-left-part {
+    top: 29px;
+    left: 47.5px;
+    transform: rotate(-37deg);
+}
+
+.ear-right-part {
+    top: 31px;
+    left: 235.5px;
+    transform: rotate(37deg);
+    width: 29px;
+}
+
