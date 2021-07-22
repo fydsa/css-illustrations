@@ -206,7 +206,7 @@ body {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background-color: var(--body-color);
+    background-color: var(--ear-color);
     border: 6px solid var(--stroke-color);
     z-index: -1;
 }
