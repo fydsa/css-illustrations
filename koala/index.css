@@ -201,7 +201,7 @@ body {
     border-radius: 50% 50% 0 0 /100% 100% 0 0;
 }
 
-.ear {
+.ear-inner {
     position: absolute;
     width: 150px;
     height: 150px;
@@ -211,12 +211,12 @@ body {
     z-index: -1;
 }
 
-.ear-left {
+.ear-inner-left {
     top: -5px;
     left: -76px;
 }
 
-.ear-right {
+.ear-inner-right {
     top: -5px;
     left: 217px;
 }
