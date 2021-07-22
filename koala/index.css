@@ -201,22 +201,34 @@ body {
     border-radius: 50% 50% 0 0 /100% 100% 0 0;
 }
 
+.ear {
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    background-color: var(--body-color);
+    border: 6px solid var(--stroke-color);
+    z-index: -1; 
+}
+
+.ear-left {
+    top: -20px;
+    left: -102px;
+}
+
+.ear-right {
+    top: -20px;
+    left: 217px;
+}
+
 .ear-inner {
     position: absolute;
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     background-color: var(--ear-color);
     border: 6px solid var(--stroke-color);
-    z-index: -1;
+    top: 31px;
+    left: 27px;
 }
 
-.ear-inner-left {
-    top: -5px;
-    left: -76px;
-}
-
-.ear-inner-right {
-    top: -5px;
-    left: 217px;
-}
