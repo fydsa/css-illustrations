@@ -402,3 +402,16 @@ body {
     left: 175px;
 }
 
+.tail {
+    position: absolute;
+    width: 60px;
+    height: 50px;
+    border-radius: 100% 0 100% 0/90% 0 59% 0;
+    border: 6px solid var(--stroke-color);
+    top: 370px;
+    left: 1px;
+    transform: scaleY(-1);
+    z-index: -2;
+    background-color: var(--body-color);
+}
+
