@@ -296,3 +296,59 @@ body {
     transform: rotate(64deg);
 }
 
+.hand-right {
+    position: absolute;
+    width: 62px;
+    height: 128px;
+    top: 195px;
+    left: 244px;
+    background-color: var(--body-color);
+    border: 6px solid var(--stroke-color);
+    border-radius: 50% 50% 60% 36%/30% 30% 60% 60%;
+    transform: rotate(36deg);
+    z-index: -2;
+}
+
+.hand-right-part-one {
+    position: absolute;
+    width: 62px;
+    height: 86px;
+    top: 195px;
+    left: 254px;
+    background-color: var(--body-color);
+    border: 6px solid var(--stroke-color);
+    border-radius: 40% 50% 60% 36%/40% 30% 60% 60%;
+    transform: rotate(36deg);
+}
+
+.hide-hand-right {
+    position: absolute;
+    width: 61px;
+    height: 105px;
+    top: 205px;
+    left: 258px;
+    background-color: var(--body-color);
+    border-radius: 50% 50% 60% 36%/30% 30% 60% 60%;
+    transform: rotate(31deg);
+}
+
+.hide-hand-right-part-two {
+    position: absolute;
+    width: 26px;
+    height: 27px;
+    top: 250.5px;
+    left: 248px;
+    background-color: var(--body-color);
+    transform: rotate(29deg);
+}
+
+.hide-hand-right-part-three {
+    position: absolute;
+    width: 26px;
+    height: 27px;
+    top: 255.5px;
+    left: 237px;
+    background-color: var(--body-color);
+    transform: rotate(-18deg);
+}
+
