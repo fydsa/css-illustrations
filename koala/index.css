@@ -352,3 +352,22 @@ body {
     transform: rotate(-18deg);
 }
 
+.foot {
+    position: absolute;
+    width: 65px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: var(--body-color);
+    border: 6px solid var(--stroke-color);
+}
+
+.foot-left {
+    top: 353px;
+    left: 97px;
+}
+
+.foot-right {
+    top: 353px;
+    left: 234px; 
+}
+
