@@ -97,3 +97,25 @@ body {
   top: 5px;
   left: 2px;
 }
+
+.mouth {
+  position: absolute;
+  width: 420px;
+  height: 500px;
+  border-radius: 50% 50% 80% 80%/50% 50% 100% 100%;
+  border: 3px solid;
+  border-color: transparent transparent var(--black) transparent;
+  z-index: 3;
+  top: -180px;
+  left: 4px;
+}
+
+.mouth:before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 153px;
+  border-left: 3px solid var(--black);
+  top: 347px;
+  left: 208px;
+}
