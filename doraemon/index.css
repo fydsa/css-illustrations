@@ -73,3 +73,15 @@ body {
   top: 38px;
   left: 28px;
 }
+
+.nose {
+  position: absolute;
+  width: 55px;
+  height: 45px;
+  background-color: var(--nose);
+  border-radius: 50%;
+  border: 3px solid var(--black);
+  top: 120px;
+  left: 187px;
+  z-index: 2;
+}
