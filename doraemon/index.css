@@ -7,7 +7,8 @@ body {
 
 :root {
   --body: #49aad4;
-  --collar: #b50c1a;
+  --nose: #e71b23;
+  --collar: #e61b23;
   --bell: #eec651;
   --white: #ffffff;
   --black: #000000;
@@ -39,4 +40,36 @@ body {
   border: 3px solid var(--black);
   top: 68px;
   left: 43px;
+}
+
+.eye {
+  position: absolute;
+  width: 100px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: var(--white);
+  border: 3px solid var(--black);
+  top: 14px;
+  z-index: 2;
+}
+
+.eye-left {
+  left: 113px;
+}
+
+.eye-right {
+  left: 216px;
+}
+
+.eye:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 35px;
+  height: 25px;
+  border: 3px solid;
+  border-color: var(--black) var(--black) transparent var(--black);
+  border-radius: 50%/100% 100% 0 0;
+  top: 38px;
+  left: 28px;
 }
