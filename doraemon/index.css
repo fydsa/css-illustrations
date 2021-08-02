@@ -85,3 +85,15 @@ body {
   left: 187px;
   z-index: 2;
 }
+
+.nose:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background-color: var(--white);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  top: 5px;
+  left: 2px;
+}
