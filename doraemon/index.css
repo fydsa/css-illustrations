@@ -1,0 +1,42 @@
+body {
+  background-color: rgb(236, 255, 172);
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+:root {
+  --body: #49aad4;
+  --collar: #b50c1a;
+  --bell: #eec651;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+.doraemon {
+  position: relative;
+  top: 5vh;
+  width: 40vw;
+}
+
+.head {
+  position: absolute;
+  width: 430px;
+  height: 420px;
+  border-radius: 215px;
+  background-color: var(--body);
+  border: 3px solid var(--black);
+}
+
+.head::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 335px;
+  height: 350px;
+  border-radius: 50%;
+  background-color: var(--white);
+  border: 3px solid var(--black);
+  top: 68px;
+  left: 43px;
+}
