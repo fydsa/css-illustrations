@@ -100,22 +100,58 @@ body {
 
 .mouth {
   position: absolute;
-  width: 420px;
-  height: 500px;
+  width: 460px;
+  height: 580px;
   border-radius: 50% 50% 80% 80%/50% 50% 100% 100%;
   border: 3px solid;
   border-color: transparent transparent var(--black) transparent;
   z-index: 3;
-  top: -180px;
-  left: 4px;
+  top: -270px;
+  left: -20px;
 }
 
 .mouth:before {
   content: "";
   position: absolute;
   display: inline-block;
-  height: 153px;
+  height: 148px;
   border-left: 3px solid var(--black);
-  top: 347px;
-  left: 208px;
+  top: 435px;
+  left: 233px;
+}
+
+.whisker {
+  position: absolute;
+  width: 140px;
+  height: 40px;
+  border: 2px solid;
+  border-color: var(--black) transparent transparent transparent;
+  border-radius: 100% 70% 80% 100%/100% 50% 0% 0%;
+}
+
+.whisker-one {
+  top: 165px;
+  transform: rotate(17deg);
+}
+
+.whisker-two {
+  top: 205px;
+}
+
+.whisker-three {
+  top: 245px;
+  transform: rotate(-12deg);
+}
+
+.whiskers-left {
+  position: absolute;
+  left: 52px;
+  z-index: 2;
+}
+
+.whiskers-right {
+  position: absolute;
+  transform: scaleX(-1);
+  left: 382px;
+  z-index: 2;
 }
