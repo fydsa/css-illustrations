@@ -22,7 +22,7 @@ body {
 
 .head {
   position: absolute;
-  width: 430px;
+  width: 445px;
   height: 420px;
   border-radius: 215px;
   background-color: var(--body);
@@ -33,7 +33,7 @@ body {
   content: "";
   display: inline-block;
   position: absolute;
-  width: 335px;
+  width: 350px;
   height: 350px;
   border-radius: 50%;
   background-color: var(--white);
