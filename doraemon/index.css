@@ -274,12 +274,12 @@ body {
 .body {
   position: absolute;
   width: 292px;
-  height: 258px;
+  height: 265px;
   background-color: var(--body);
   border: 3px solid var(--black);
   top: 400px;
   left: 80px;
-  border-radius: 20% 32% 19% 15%/40% 45% 66% 15%;
+  border-radius: 20% 32% 19% 10%/40% 45% 66% 15%;
   z-index: -1;
 }
 
@@ -368,4 +368,27 @@ body {
   border-top: 3px solid var(--black);
   top: 18px;
   left: 37px;
+}
+
+.foot {
+  position: absolute;
+  width: 200px;
+  height: 80px;
+  background-color: var(--white);
+  border: 3px solid var(--black);
+  border-radius: 100% 4% 50% 40%/70% 65% 54% 50%;
+  z-index: -2;
+}
+
+.foot-left {
+  top: 652px;
+  left: 9px;
+  transform: rotate(-2deg);
+}
+
+.foot-right {
+  top: 643px;
+  left: 191px;
+  transform: scaleX(-1) rotate(-2deg);
+  z-index: -3;
 }
