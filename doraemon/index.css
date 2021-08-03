@@ -274,7 +274,7 @@ body {
 .body {
   position: absolute;
   width: 292px;
-  height: 248px;
+  height: 258px;
   background-color: var(--body);
   border: 3px solid var(--black);
   top: 400px;
@@ -348,4 +348,24 @@ body {
   top: 431px;
   left: 348px;
   transform: rotate(-27deg);
+}
+
+.tail {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: var(--nose);
+  border: 3px solid var(--black);
+  top: 588px;
+  left: 10px;
+}
+
+.tail:after {
+  content: "";
+  position: absolute;
+  width: 33px;
+  border-top: 3px solid var(--black);
+  top: 18px;
+  left: 37px;
 }
