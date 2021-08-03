@@ -1,0 +1,12 @@
+body {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(100, 194, 237);
+}
+
+.angry-bird-red {
+  position: relative;
+  width: 60vw;
+  top: 10vh;
+}
