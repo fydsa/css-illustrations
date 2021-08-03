@@ -10,6 +10,7 @@ body {
   --nose: #e71b23;
   --collar: #e61b23;
   --bell: #f2f101;
+  --bell-inner: #363636;
   --white: #ffffff;
   --black: #000000;
 }
@@ -247,4 +248,25 @@ body {
   z-index: 2;
   top: 17px;
   left: -5px;
+}
+
+.collar-bell-inner {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  background-color: var(--bell-inner);
+  border-radius: 50%;
+  border: 2px solid var(--black);
+  top: 39px;
+  left: 25px;
+}
+
+.collar-bell-inner:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 17px;
+  border-left: 3px solid var(--black);
+  top: 13px;
+  left: 5px;
 }
