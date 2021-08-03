@@ -392,3 +392,15 @@ body {
   transform: scaleX(-1) rotate(-2deg);
   z-index: -3;
 }
+
+.feet-line {
+  position: absolute;
+  height: 185px;
+  width: 49px;
+  border: 3px solid;
+  border-color: var(--black) transparent transparent transparent;
+  border-radius: 0% 100% 0% 0%/0% 95% 56% 0%;
+  top: 547px;
+  left: 277px;
+  transform: rotate(-95deg);
+}
