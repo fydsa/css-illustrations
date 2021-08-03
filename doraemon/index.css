@@ -307,3 +307,25 @@ body {
   top: 129px;
   left: 57px;
 }
+
+.hand {
+  position: absolute;
+  width: 92px;
+  height: 168px;
+  background-color: var(--body);
+  border: 3px solid var(--black);
+  border-radius: 25% 50% 50% 50%/50% 50% 5% 35%;
+  z-index: -2;
+}
+
+.hand-left {
+  top: 393px;
+  left: 51px;
+  transform: rotate(30deg);
+}
+
+.hand-right {
+  top: 393px;
+  left: 292px;
+  transform: scaleX(-1) rotate(35deg);
+}
