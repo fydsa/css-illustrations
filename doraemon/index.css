@@ -155,3 +155,71 @@ body {
   left: 382px;
   z-index: 2;
 }
+
+.collar-top {
+  position: absolute;
+  width: 300px;
+  height: 48px;
+  border: 3px solid;
+  border-color: transparent transparent var(--black) transparent;
+  border-radius: 30% 30% 65% 65%/38% 30% 100% 100%;
+  z-index: 2;
+  top: 357px;
+  left: 71px;
+}
+
+.collar-bottom {
+  position: absolute;
+  width: 276px;
+  height: 59px;
+  border: 3px solid;
+  border-color: transparent var(--black) var(--black) var(--black);
+  border-radius: 6% 4% 70% 72%/77% 77% 80% 81%;
+  top: 386px;
+  left: 82.5px;
+}
+
+.collar-color-part-one {
+  position: absolute;
+  width: 277px;
+  height: 40px;
+  background-color: var(--collar);
+  border-radius: 30% 30% 65% 65%/0% 0% 100% 100%;
+  top: 409px;
+  left: 85px;
+  z-index: 1;
+}
+
+.collar-color-part-two {
+  position: absolute;
+  width: 91px;
+  height: 36px;
+  background-color: var(--collar);
+  border-radius: 15% 30% 65% 65%/0% 0% 100% 72%;
+  top: 402px;
+  left: 84px;
+  z-index: 1;
+  transform: rotate(8deg);
+}
+
+.collar-color-part-three {
+  position: absolute;
+  width: 70px;
+  height: 36px;
+  background-color: var(--collar);
+  border-radius: 30% 30% 65% 65%/0% 0% 86% 100%;
+  top: 400px;
+  left: 82px;
+  z-index: 1;
+  transform: rotate(18deg);
+}
+
+.part-two-right {
+  left: 272px;
+  transform: rotate(-8deg) scaleX(-1);
+}
+
+.part-three-right {
+  left: 296px;
+  transform: rotate(-18deg) scaleX(-1);
+}
