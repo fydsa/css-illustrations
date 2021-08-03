@@ -324,8 +324,28 @@ body {
   transform: rotate(30deg);
 }
 
+.hand-left-hide {
+  position: absolute;
+  width: 20px;
+  height: 36px;
+  background-color: var(--body);
+  top: 432px;
+  left: 80px;
+  transform: rotate(26deg);
+}
+
 .hand-right {
   top: 393px;
-  left: 292px;
-  transform: scaleX(-1) rotate(35deg);
+  left: 294px;
+  transform: scaleX(-1) rotate(28deg);
+}
+
+.hand-right-hide {
+  position: absolute;
+  width: 20px;
+  height: 31px;
+  background-color: var(--body);
+  top: 431px;
+  left: 348px;
+  transform: rotate(-27deg);
 }
