@@ -5,8 +5,28 @@ body {
   background-color: rgb(100, 194, 237);
 }
 
+:root {
+  --body: #d7202d;
+  --mark: #a81725;
+  --beak: #fcba1e;
+  --chest: #e9caae;
+  --white: #ffffff;
+  --black: #000000;
+}
+
 .angry-bird-red {
   position: relative;
   width: 60vw;
-  top: 10vh;
+  top: 20vh;
+  display: flex;
+  justify-content: center;
+}
+
+.head {
+  position: absolute;
+  width: 460px;
+  height: 400px;
+  border-radius: 100% 100% 100% 100%/100% 110% 80% 100%;
+  background-color: var(--body);
+  border: 8px solid var(--black);
 }
