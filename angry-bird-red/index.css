@@ -33,7 +33,7 @@ body {
 
 .eyebrow {
   position: absolute;
-  width: 34px;
+  width: 27px;
   border-top: 130px solid var(--black);
   border-bottom: 1px solid transparent;
   border-left: 14px solid transparent;
@@ -48,7 +48,7 @@ body {
 
 .eyebrow-right {
   top: 87px;
-  left: 321px;
+  left: 324px;
   transform: rotate(80deg);
 }
 
@@ -62,12 +62,12 @@ body {
 }
 
 .eye-left {
-  top: 170px;
+  top: 167px;
   left: 178px;
 }
 
 .eye-right {
-  top: 165px;
+  top: 162px;
   left: 285px;
   transform: rotate(-5deg) scaleX(-1);
 }
