@@ -25,7 +25,7 @@ body {
 .head {
   position: absolute;
   width: 420px;
-  height: 390px;
+  height: 405px;
   border-radius: 100% 100% 100% 100%/100% 110% 80% 100%;
   background-color: var(--body);
   border: 8px solid var(--black);
@@ -83,26 +83,19 @@ body {
   top: 17px;
 }
 
-.beak-top {
-  display: inline-block;
-  width: 150px;
-  color: orange;
-  filter: url("#goo");
-}
-
-.beak-top-left {
+.beak-left {
   position: absolute;
-  height: 132px;
+  height: 117px;
   width: 125px;
   border: 6px solid;
   border-color: transparent transparent transparent var(--black);
   top: 230px;
-  left: 212px;
+  left: 226px;
   border-radius: 35% 45% 13% 20%/75% 100% 100% 75%;
-  transform: rotate(55deg);
+  transform: rotate(44deg);
 }
 
-.beak-top-right {
+.beak-right {
   position: absolute;
   height: 135px;
   width: 125px;
@@ -114,13 +107,37 @@ body {
   transform: rotate(-50deg);
 }
 
-.beak-top-bottom {
+.beak-bottom {
   position: absolute;
   height: 135px;
-  width: 205px;
+  width: 187px;
   border: 6px solid;
   border-color: transparent transparent var(--black) transparent;
   top: 155px;
-  left: 180px;
-  border-radius: 0% 0% 20% 20%/0% 0% 20% 23%;
+  left: 198px;
+  border-radius: 20%;
+}
+
+.beak-left:after {
+  content: "";
+  position: absolute;
+  height: 90px;
+  border: 6px solid;
+  border-color: transparent transparent transparent var(--black);
+  top: 60px;
+  left: 43px;
+  transform: rotate(-93deg);
+  border-radius: 40%;
+}
+
+.beak-right:after {
+  content: "";
+  position: absolute;
+  height: 89px;
+  border: 6px solid;
+  border-color: transparent var(--black) transparent transparent;
+  top: 53px;
+  left: 47px;
+  transform: rotate(105deg);
+  border-radius: 40%;
 }
