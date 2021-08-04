@@ -82,3 +82,45 @@ body {
   left: 50px;
   top: 17px;
 }
+
+.beak-top {
+  display: inline-block;
+  width: 150px;
+  color: orange;
+  filter: url("#goo");
+}
+
+.beak-top-left {
+  position: absolute;
+  height: 132px;
+  width: 125px;
+  border: 6px solid;
+  border-color: transparent transparent transparent var(--black);
+  top: 230px;
+  left: 212px;
+  border-radius: 35% 45% 13% 20%/75% 100% 100% 75%;
+  transform: rotate(55deg);
+}
+
+.beak-top-right {
+  position: absolute;
+  height: 135px;
+  width: 125px;
+  border: 6px solid;
+  border-color: transparent var(--black) transparent transparent;
+  top: 223px;
+  left: 227px;
+  border-radius: 35% 45% 13% 20%/75% 100% 100% 75%;
+  transform: rotate(-50deg);
+}
+
+.beak-top-bottom {
+  position: absolute;
+  height: 135px;
+  width: 205px;
+  border: 6px solid;
+  border-color: transparent transparent var(--black) transparent;
+  top: 155px;
+  left: 180px;
+  border-radius: 0% 0% 20% 20%/0% 0% 20% 23%;
+}
