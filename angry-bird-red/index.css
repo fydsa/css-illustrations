@@ -24,9 +24,29 @@ body {
 
 .head {
   position: absolute;
-  width: 460px;
-  height: 400px;
+  width: 420px;
+  height: 390px;
   border-radius: 100% 100% 100% 100%/100% 110% 80% 100%;
   background-color: var(--body);
   border: 8px solid var(--black);
+}
+
+.eyebrow {
+  position: absolute;
+  width: 34px;
+  border-top: 130px solid var(--black);
+  border-bottom: 1px solid transparent;
+  border-left: 14px solid transparent;
+}
+
+.eyebrow-left {
+  top: 87px;
+  left: 201px;
+  transform: scaleX(-1) rotate(80deg);
+}
+
+.eyebrow-right {
+  top: 87px;
+  left: 321px;
+  transform: rotate(80deg);
 }
