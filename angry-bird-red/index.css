@@ -274,3 +274,39 @@ body {
   left: 57px;
   border-radius: 50%;
 }
+
+.tail-one {
+  position: relative;
+  width: 17px;
+  border-bottom: 69px solid var(--black);
+  border-top: 1px solid transparent;
+  border-left: 23px solid transparent;
+  top: 96px;
+  left: -37px;
+  transform: rotate(139deg);
+  z-index: -1;
+}
+
+.tail-two {
+  position: absolute;
+  width: 14px;
+  border-bottom: 110px solid var(--black);
+  border-top: 1px solid transparent;
+  border-left: 32px solid transparent;
+  top: 95px;
+  left: -68px;
+  transform: rotate(101deg);
+  z-index: -1;
+}
+
+.tail-three {
+  position: absolute;
+  width: 6px;
+  border-bottom: 57px solid var(--black);
+  border-top: 1px solid transparent;
+  border-left: 21px solid transparent;
+  top: 161px;
+  left: -44px;
+  transform: rotate(48deg);
+  z-index: -1;
+}
