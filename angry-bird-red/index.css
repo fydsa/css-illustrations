@@ -37,7 +37,7 @@ body {
   border-top: 130px solid var(--black);
   border-bottom: 1px solid transparent;
   border-left: 14px solid transparent;
-  z-index: 1;
+  z-index: 2;
 }
 
 .eyebrow-left {
@@ -59,6 +59,7 @@ body {
   border-radius: 65% 0 40% 100%/100% 100% 64% 100%;
   background-color: var(--white);
   border: 6px solid var(--black);
+  z-index: 1;
 }
 
 .eye-left {
@@ -229,4 +230,47 @@ body {
   z-index: 2;
   transform: rotate(-95deg);
   border-radius: 0% 21% 0% 99%/31%;
+}
+
+.mark-one {
+  position: absolute;
+  width: 72px;
+  height: 87px;
+  background-color: var(--mark);
+  top: 189px;
+  left: 150px;
+  border-radius: 50%;
+  transform: rotate(10deg);
+}
+
+.mark-one:after {
+  content: "";
+  position: absolute;
+  width: 72px;
+  height: 87px;
+  background-color: var(--mark);
+  top: -39px;
+  left: 182px;
+  border-radius: 50%;
+  transform: rotate(-10deg);
+}
+
+.mark-two {
+  position: absolute;
+  width: 38px;
+  height: 70px;
+  background-color: var(--mark);
+  top: 215px;
+  left: 104px;
+  border-radius: 50%;
+}
+
+.mark-three {
+  position: absolute;
+  width: 30px;
+  height: 40px;
+  background-color: var(--mark);
+  top: 256px;
+  left: 57px;
+  border-radius: 50%;
 }
