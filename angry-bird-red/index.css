@@ -28,7 +28,7 @@ body {
   height: 405px;
   border-radius: 100% 100% 100% 100%/100% 110% 80% 100%;
   background-color: var(--body);
-  border: 8px solid var(--black);
+  border: 10px solid var(--black);
 }
 
 .eyebrow {
