@@ -136,22 +136,22 @@ body {
 .beak-right:after {
   content: "";
   position: absolute;
-  height: 90px;
+  height: 91px;
   border: 6px solid;
   border-color: transparent var(--black) transparent transparent;
   top: 54px;
-  left: 49px;
+  left: 51px;
   transform: rotate(105deg);
-  border-radius: 40%;
+  border-radius: 30%;
 }
 
 .head:before {
   content: "";
   position: absolute;
   width: 281px;
-  height: 88px;
+  height: 84px;
   background-color: var(--chest);
-  top: 270.5px;
+  top: 274.5px;
   left: 74px;
   z-index: 1;
   border-radius: 50% 50% 0% 0%/100% 100% 0% 0%;
