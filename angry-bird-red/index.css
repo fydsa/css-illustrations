@@ -310,3 +310,66 @@ body {
   transform: rotate(48deg);
   z-index: -1;
 }
+
+.crest {
+  position: absolute;
+  width: 130px;
+  height: 50px;
+  border-radius: 9% 60% 10% 20%/50% 194% 17% 100%;
+  background-color: var(--body);
+  left: 140px;
+  top: -37px;
+  border-right: 10px solid var(--black);
+  border-top: 10px solid var(--black);
+  transform: rotate(-10deg);
+}
+
+.crest:after {
+  content: "";
+  position: absolute;
+  width: 135px;
+  height: 56px;
+  border-radius: 50% 50% 50% 50%/50% 50% 50% 38%;
+  background-color: var(--body);
+  left: -25px;
+  top: -73px;
+  border: 10px solid var(--black);
+  transform: rotate(-138deg);
+}
+
+.crest:before {
+  content: "";
+  position: absolute;
+  width: 158px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: var(--body);
+  left: -84px;
+  top: -34px;
+  border: 10px solid;
+  border-color: var(--black) var(--black) var(--black) transparent;
+  transform: rotate(-167deg);
+}
+
+.hide-crest-lines {
+  position: absolute;
+  width: 87px;
+  height: 45px;
+  top: -11px;
+  left: 134px;
+  background-color: var(--body);
+  z-index: 2;
+  transform: rotate(8deg);
+}
+
+.hide-crest-lines:after {
+  content: "";
+  position: absolute;
+  width: 67px;
+  height: 32px;
+  top: -44px;
+  left: 54px;
+  background-color: var(--body);
+  z-index: 2;
+  transform: rotate(39deg);
+}
