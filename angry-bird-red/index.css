@@ -93,7 +93,7 @@ body {
   left: 226px;
   border-radius: 35% 45% 13% 20%/75% 100% 100% 75%;
   transform: rotate(44deg);
-  z-index: 2;
+  z-index: 3;
 }
 
 .beak-right {
@@ -106,7 +106,7 @@ body {
   left: 227px;
   border-radius: 35% 45% 13% 20%/75% 100% 100% 75%;
   transform: rotate(-50deg);
-  z-index: 2;
+  z-index: 3;
 }
 
 .beak-bottom {
@@ -118,18 +118,18 @@ body {
   top: 155px;
   left: 198px;
   border-radius: 20%;
-  z-index: 2;
+  z-index: 3;
 }
 
 .beak-left:after {
   content: "";
   position: absolute;
-  height: 90px;
+  height: 82px;
   border: 6px solid;
   border-color: transparent transparent transparent var(--black);
-  top: 60px;
-  left: 43px;
-  transform: rotate(-93deg);
+  top: 61px;
+  left: 47px;
+  transform: rotate(-91deg);
   border-radius: 40%;
 }
 
@@ -193,4 +193,40 @@ body {
   left: 108px;
   z-index: 2;
   transform: scaleX(-1) rotate(56deg);
+}
+
+.beak-background-one {
+  position: absolute;
+  width: 96px;
+  height: 98px;
+  background-color: var(--beak);
+  top: 238px;
+  left: 234px;
+  z-index: 2;
+  transform: rotate(44deg);
+}
+
+.beak-background-one:before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 19px;
+  background-color: var(--beak);
+  top: -20px;
+  left: 104px;
+  z-index: 2;
+  transform: rotate(9deg);
+}
+
+.beak-background-one:after {
+  content: "";
+  position: absolute;
+  width: 106px;
+  height: 118px;
+  background-color: var(--beak);
+  top: -22px;
+  left: 4px;
+  z-index: 2;
+  transform: rotate(-95deg);
+  border-radius: 0% 21% 0% 99%/31%;
 }
