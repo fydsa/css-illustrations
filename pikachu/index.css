@@ -60,3 +60,13 @@ body {
 .cheek-right {
   left: 240px;
 }
+
+.nose {
+  position: absolute;
+  border-right: 30px solid transparent;
+  border-left: 30px solid var(--black);
+  border-bottom: 30px solid transparent;
+  top: 115px;
+  left: 9px;
+  transform: rotate(-135deg);
+}
