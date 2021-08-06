@@ -43,3 +43,20 @@ body {
 .eye-right {
   left: 150px;
 }
+
+.cheek {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--cheek);
+  top: 89px;
+}
+
+.cheek-left {
+  left: -220px;
+}
+
+.cheek-right {
+  left: 240px;
+}
