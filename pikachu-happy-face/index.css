@@ -68,3 +68,21 @@ body {
   top: 100px;
   left: 27px;
 }
+
+.cheek {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: var(--cheek);
+  border: 2px solid var(--black);
+  top: 135px;
+}
+
+.cheek-left {
+  left: -240px;
+}
+
+.cheek-right {
+  left: 220px;
+}
