@@ -111,6 +111,7 @@ body {
   left: -21px;
   transform: rotate(-6deg);
   background-color: var(--body);
+  z-index: 1;
 }
 
 .mouth::after {
@@ -125,6 +126,7 @@ body {
   left: 55px;
   transform: rotate(6deg);
   background-color: var(--body);
+  z-index: 1;
 }
 
 .tongue {
@@ -169,4 +171,14 @@ body {
   border-radius: 50% 50% 0 0/100% 100% 0 0;
   top: 174px;
   left: -7.5px;
+}
+
+.mouth-hide-part {
+  position: absolute;
+  width: 22px;
+  height: 19px;
+  background-color: var(--mouth);
+  top: 137px;
+  left: 35px;
+  transform: rotate(51deg);
 }
