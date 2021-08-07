@@ -58,3 +58,13 @@ body {
 .eye-right {
   left: 180px;
 }
+
+.nose {
+  position: absolute;
+  width: 35px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--black);
+  top: 100px;
+  left: 27px;
+}
