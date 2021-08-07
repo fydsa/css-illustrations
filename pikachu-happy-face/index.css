@@ -86,3 +86,40 @@ body {
 .cheek-right {
   left: 220px;
 }
+
+.mouth {
+  position: absolute;
+  width: 120px;
+  height: 140px;
+  border: 3px solid;
+  border-color: transparent transparent var(--black) transparent;
+  border-radius: 0 0 50% 50%/0 0 100% 100%;
+  top: 146px;
+  left: -16px;
+}
+
+.mouth::before {
+  content: "";
+  position: absolute;
+  width: 77px;
+  height: 15px;
+  border: 3px solid;
+  border-color: transparent transparent var(--black) transparent;
+  border-radius: 0 0 50% 50%/0 0 100% 100%;
+  top: -17px;
+  left: -21px;
+  transform: rotate(-6deg);
+}
+
+.mouth::after {
+  content: "";
+  position: absolute;
+  width: 77px;
+  height: 15px;
+  border: 3px solid;
+  border-color: transparent transparent var(--black) transparent;
+  border-radius: 0 0 50% 50%/0 0 100% 100%;
+  top: -17px;
+  left: 55px;
+  transform: rotate(6deg);
+}
