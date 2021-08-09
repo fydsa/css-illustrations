@@ -60,3 +60,25 @@ body {
   transform: scaleX(-1) rotate(-90deg);
   z-index: -1;
 }
+
+.eye {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid;
+  border-color: var(--black) var(--black) transparent var(--black);
+  background-color: var(--skin);
+}
+
+.eye-left {
+  transform: rotate(-24deg);
+  top: 84px;
+  left: 49px;
+}
+
+.eye-right {
+  transform: rotate(-10deg);
+  top: 53px;
+  left: 190px;
+}
