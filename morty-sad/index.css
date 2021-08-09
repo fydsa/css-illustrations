@@ -21,20 +21,22 @@ body {
 
 .head {
   position: absolute;
-  width: 300px;
+  width: 315px;
   height: 300px;
   border-radius: 50%;
   border: 1px solid var(--black);
   background-color: var(--skin);
+  transform: rotate(-15deg);
 }
 
 .hair {
   position: absolute;
-  width: 338px;
-  height: 324px;
+  width: 351px;
+  height: 329px;
   border-radius: 50%;
   background-color: var(--hair);
   border: 1px solid var(--black);
-  top: -56px;
-  left: -42px;
+  top: -62px;
+  left: -43px;
+  transform: rotate(-10deg);
 }
