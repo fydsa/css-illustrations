@@ -40,3 +40,16 @@ body {
   left: -43px;
   transform: rotate(-10deg);
 }
+
+.ear {
+  position: absolute;
+  width: 75px;
+  height: 49px;
+  border-radius: 58% 50% 0 0/100% 69% 0 0;
+  background-color: var(--skin);
+  border: 1px solid;
+  border-color: var(--black) var(--black) transparent var(--black);
+  top: 193px;
+  left: -35px;
+  transform: rotate(-110deg);
+}
