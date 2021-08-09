@@ -16,7 +16,7 @@ body {
 .morty {
   position: relative;
   width: 50vw;
-  top: 10vh;
+  top: 20vh;
 }
 
 .head {
@@ -25,5 +25,16 @@ body {
   height: 300px;
   border-radius: 50%;
   border: 1px solid var(--black);
-  top: 20vh;
+  background-color: var(--skin);
+}
+
+.hair {
+  position: absolute;
+  width: 338px;
+  height: 324px;
+  border-radius: 50%;
+  background-color: var(--hair);
+  border: 1px solid var(--black);
+  top: -56px;
+  left: -42px;
 }
