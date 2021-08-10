@@ -110,3 +110,15 @@ body {
   left: 6px;
   transform: scaleX(-1) rotate(3deg);
 }
+
+.nose {
+  position: absolute;
+  width: 34px;
+  height: 25px;
+  border-radius: 0% 100% 100% 0%/0 100% 100% 0;
+  border: 1px solid;
+  border-color: var(--black) var(--black) var(--black) transparent;
+  top: 157px;
+  left: 168px;
+  transform: rotate(27deg);
+}
