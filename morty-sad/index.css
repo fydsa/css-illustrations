@@ -122,3 +122,41 @@ body {
   left: 168px;
   transform: rotate(27deg);
 }
+
+.mouth {
+  position: absolute;
+  width: 59px;
+  height: 72px;
+  border-radius: 30% 60% 0 24%/30% 35% 0 60%;
+  border: 1px solid;
+  border-color: var(--black) transparent transparent var(--black);
+  top: 206px;
+  left: 167px;
+  transform: rotate(29deg);
+}
+
+.mouth::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 29% 100% 0 100%/32% 85% 0 100%;
+  border: 1px solid;
+  border-color: var(--black) transparent transparent var(--black);
+  top: 50px;
+  left: -6px;
+  transform: rotate(-146deg);
+}
+
+.mouth::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 29% 100% 0 100%/32% 85% 0 100%;
+  border: 1px solid;
+  border-color: var(--black) transparent transparent var(--black);
+  top: -6px;
+  left: 34px;
+  transform: rotate(-196deg);
+}
