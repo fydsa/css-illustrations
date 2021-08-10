@@ -80,5 +80,33 @@ body {
 .eye-right {
   transform: rotate(-10deg);
   top: 53px;
-  left: 190px;
+  left: 184px;
+}
+
+.eye-left::after {
+  content: "";
+  position: absolute;
+  width: 84px;
+  height: 21px;
+  background-color: var(--skin);
+  border: 1px solid;
+  border-color: transparent var(--black) var(--black) transparent;
+  top: -9px;
+  border-radius: 0 28% 30% 0%/0% 100% 100% 0%;
+  left: 10px;
+  transform: rotate(10deg);
+}
+
+.eye-right::after {
+  content: "";
+  position: absolute;
+  width: 87px;
+  height: 19px;
+  background-color: var(--skin);
+  border: 1px solid;
+  border-color: transparent var(--black) var(--black) transparent;
+  top: -4px;
+  border-radius: 0 28% 30% 0%/0% 100% 100% 0%;
+  left: 6px;
+  transform: scaleX(-1) rotate(3deg);
 }
