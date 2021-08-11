@@ -160,3 +160,40 @@ body {
   left: 34px;
   transform: rotate(-196deg);
 }
+
+.chin-lines {
+  position: absolute;
+  height: 46px;
+  width: 61px;
+  border: 1px solid;
+  border-color: transparent transparent transparent var(--black);
+  top: 219px;
+  left: 197px;
+  border-radius: 9% 0 0 10%/31% 0 0 82%;
+}
+
+.chin-lines::before {
+  content: "";
+  position: absolute;
+  height: 27px;
+  width: 52px;
+  border: 1px solid;
+  border-color: transparent transparent transparent var(--black);
+  top: 28px;
+  left: -12px;
+  border-radius: 3% 0 0 10%/31% 0 0 82%;
+  transform: rotate(7deg);
+}
+
+.chin-lines::after {
+  content: "";
+  position: absolute;
+  height: 24px;
+  width: 52px;
+  border: 1px solid;
+  border-color: transparent transparent transparent var(--black);
+  top: 7px;
+  left: 7px;
+  border-radius: 27% 0 0 10%/87% 0 0 82%;
+  transform: rotate(-24deg);
+}
