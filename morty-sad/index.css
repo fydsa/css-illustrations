@@ -71,6 +71,24 @@ body {
   background-color: var(--skin);
 }
 
+.eye-inner {
+  position: absolute;
+  width: 99px;
+  height: 71px;
+  border-radius: 75% 70% 64% 46%/100% 100% 26% 26%;
+  background-color: var(--white);
+}
+
+.eye-inner-left {
+  transform: rotate(7deg);
+  left: 2px;
+}
+
+.eye-inner-right {
+  transform: rotate(-7deg);
+  left: -1.5px;
+}
+
 .eye-left {
   transform: rotate(-24deg);
   top: 84px;
@@ -95,6 +113,7 @@ body {
   border-radius: 0 28% 30% 0%/0% 100% 100% 0%;
   left: 10px;
   transform: rotate(10deg);
+  z-index: 1;
 }
 
 .eye-right::after {
@@ -109,6 +128,7 @@ body {
   border-radius: 0 28% 30% 0%/0% 100% 100% 0%;
   left: 6px;
   transform: scaleX(-1) rotate(3deg);
+  z-index: 1;
 }
 
 .nose {
