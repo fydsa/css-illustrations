@@ -348,3 +348,37 @@ body {
   border-radius: 27% 0 0 10%/87% 0 0 82%;
   transform: rotate(-24deg);
 }
+
+.body {
+  position: absolute;
+  width: 272px;
+  height: 230px;
+  border-radius: 25% 33% 0 0;
+  top: 247px;
+  left: 21px;
+  z-index: -1;
+  background-color: var(--cloths);
+  border: 1px solid var(--black);
+}
+
+.body::before {
+  content: "";
+  position: absolute;
+  height: 131px;
+  width: 100px;
+  border-left: 1px solid var(--black);
+  border-radius: 7% 0 0 0/28%;
+  top: 100px;
+  left: 55px;
+}
+
+.body::after {
+  content: "";
+  position: absolute;
+  height: 142px;
+  width: 100px;
+  border-right: 1px solid var(--black);
+  border-radius: 0 3% 0 0/26%;
+  top: 89px;
+  left: 130px;
+}
