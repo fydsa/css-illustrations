@@ -147,4 +147,52 @@ body {
   top: 68px;
   left: 44px;
   transform: rotate(27deg);
+  background-color: var(--skin);
+}
+
+.chin {
+  position: absolute;
+  width: 40px;
+  height: 31px;
+  border-radius: 13% 10% 65% 65%/28% 28% 100% 100%;
+  border: 1px solid var(--black);
+  border-top: transparent;
+  background-color: var(--skin);
+}
+
+.chin-left {
+  top: 142px;
+  left: 17px;
+  transform: rotate(8deg);
+}
+
+.chin-right {
+  top: 139px;
+  left: 58px;
+  transform: rotate(-10deg);
+}
+
+.chin-line {
+  position: absolute;
+  width: 26px;
+  height: 41px;
+  border-left: 1px solid var(--black);
+  border-radius: 28% 20% 50% 50%/39% 1% 100% 100%;
+  top: 88px;
+  left: 80px;
+  transform: rotate(22deg);
+  background-color: var(--skin);
+}
+
+.chin-line::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 19px;
+  border-radius: 0% 28% 10% 10%/0% 51% 50% 50%;
+  border-right: 1px solid var(--black);
+  top: 39px;
+  transform: rotate(-63deg);
+  left: 5px;
+  background-color: var(--skin);
 }
