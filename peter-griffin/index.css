@@ -72,3 +72,16 @@ body {
   left: 34.5px;
   transform: rotate(-5deg);
 }
+
+.nose {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--skin);
+  border: 1px solid;
+  border-color: var(--black) var(--black) var(--black) transparent;
+  top: 22px;
+  left: 42px;
+  transform: rotate(-4deg);
+}
