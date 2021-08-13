@@ -85,3 +85,66 @@ body {
   left: 42px;
   transform: rotate(-4deg);
 }
+
+.mouth-part-one {
+  position: absolute;
+  width: 66px;
+  height: 21px;
+  border-radius: 0% 0% 45% 49%/14% 0% 16% 100%;
+  border-bottom: 1px solid var(--black);
+  background-color: var(--skin);
+  top: 37px;
+  z-index: -1;
+  left: 11px;
+  transform: rotate(-4deg);
+}
+
+.mouth-part-one::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 8px;
+  border-right: 1px solid var(--black);
+  border-radius: 0% 5% 3% 0%/0% 48% 6% 0%;
+  left: 55px;
+  top: 14px;
+  left: 48px;
+  transform: rotate(-22deg);
+}
+
+.mouth-part-one::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 19px;
+  border-left: 1px solid var(--black);
+  border-radius: 35% 0 0 10%/100% 0 0 30%;
+  top: 3px;
+  left: -16px;
+  transform: rotate(62deg);
+}
+
+.mouth-part-two {
+  position: absolute;
+  height: 66px;
+  width: 56px;
+  border-radius: 41% 0 0 100%/91% 0 0 100%;
+  border-left: 1px solid var(--black);
+  top: 35px;
+  left: -3.5px;
+  transform: rotate(-28deg);
+  background-color: var(--black);
+  z-index: -2;
+}
+
+.mouth-part-two::after {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 12px;
+  border-radius: 56% 49% 0 0/51% 45% 38% 9%;
+  border-top: 1px solid var(--black);
+  top: 68px;
+  left: 44px;
+  transform: rotate(27deg);
+}
