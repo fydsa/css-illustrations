@@ -33,11 +33,11 @@ body {
 .eye::before {
   content: "";
   position: absolute;
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
   background-color: var(--black);
-  top: 13px;
+  top: 14px;
   left: 9px;
   z-index: -2;
 }
@@ -60,4 +60,15 @@ body {
   position: absolute;
   left: 47px;
   top: -4px;
+}
+
+.glasses-bridge {
+  position: absolute;
+  width: 14px;
+  height: 17px;
+  border-radius: 100% 100% 0% 0%/42% 42% 0% 0%;
+  border-top: 1px solid var(--black);
+  top: 12px;
+  left: 34.5px;
+  transform: rotate(-5deg);
 }
