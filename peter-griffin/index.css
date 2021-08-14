@@ -30,7 +30,16 @@ body {
   border: 1px solid var(--black);
 }
 
-.eye::before {
+.eye-background {
+  position: absolute;
+  width: 34px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--white);
+  z-index: -1;
+}
+
+.eye-background::after {
   content: "";
   position: absolute;
   width: 5px;
@@ -224,13 +233,15 @@ body {
 
 .hair-part-one {
   position: absolute;
-  width: 114px;
-  height: 39px;
-  border-radius: 50%;
+  width: 128px;
+  height: 61px;
+  border-radius: 50% 50% 0 0%/ 100% 100% 0 0%;
   border-top: 1px solid var(--black);
   background-color: var(--hair);
-  top: -41px;
-  left: -35px;
+  top: -46px;
+  left: -45px;
+  z-index: -2;
+  transform: rotateX(61deg) rotate(2deg);
 }
 
 .hair-part-two {
@@ -279,4 +290,146 @@ body {
   left: -2px;
   top: 5px;
   transform: rotate(-2deg);
+}
+
+.head-part-three {
+  position: absolute;
+  width: 71px;
+  height: 204px;
+  border-radius: 54% 40% 20% 50%/50% 5% 50% 50%;
+  border-left: 1px solid var(--black);
+  background-color: var(--skin);
+  left: -81px;
+  z-index: -2;
+  top: -10px;
+  transform: rotate(8deg);
+}
+
+.hair-part-four {
+  position: absolute;
+  width: 93px;
+  height: 19px;
+  border-radius: 0 0 50% 50%/0 0 100% 100%;
+  background-color: var(--hair);
+  border-bottom: 1px solid var(--black);
+  z-index: -1;
+  left: -28px;
+  top: -20px;
+}
+
+.hair-part-four::before {
+  content: "";
+  position: absolute;
+  width: 78px;
+  height: 9px;
+  background-color: var(--hair);
+  border-radius: 50% 50% 0 0/100% 100% 0 0;
+  left: 8px;
+  top: -9px;
+}
+
+.hair-part-four::after {
+  content: "";
+  position: absolute;
+  width: 48px;
+  height: 10px;
+  border-top: 1px solid var(--black);
+  background-color: var(--skin);
+  border-radius: 50% 50% 0 0/100% 100% 0 0;
+  left: 63px;
+  top: 10px;
+}
+
+.hair-hide-part-one {
+  position: absolute;
+  width: 9px;
+  height: 20px;
+  background-color: var(--hair);
+  left: -30px;
+  top: -23px;
+  transform: rotate(68deg);
+}
+
+.hair-hide-part-one::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 3.5px;
+  background-color: var(--hair);
+  left: -1.5px;
+  top: 19px;
+  transform: rotate(37deg);
+}
+
+.hair-hide-part-two {
+  position: absolute;
+  width: 18px;
+  height: 8px;
+  background-color: var(--hair);
+  top: -17.8px;
+  left: 52px;
+  transform: rotate(4deg);
+}
+
+.face-hide-part-one {
+  position: absolute;
+  width: 18px;
+  height: 8px;
+  background-color: var(--skin);
+  top: -3.5px;
+  left: -13px;
+  transform: rotate(11deg);
+}
+
+.face-hide-part-one::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 8px;
+  background-color: var(--skin);
+  top: -2.9px;
+  left: 17.7px;
+  transform: rotate(86deg);
+}
+
+.face-hide-part-one::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 11px;
+  background-color: var(--skin);
+  top: 0.5px;
+  left: 13.7px;
+  transform: rotate(27deg);
+}
+
+.face-hide-part-two {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  background-color: var(--skin);
+  z-index: -3;
+  left: -17px;
+  top: -1px;
+}
+
+.face-hide-part-two::after {
+  content: "";
+  position: absolute;
+  width: 108px;
+  height: 133px;
+  background-color: var(--skin);
+  z-index: -1;
+  left: -21px;
+  top: 68px;
+}
+
+.face-hide-part-three {
+  position: absolute;
+  width: 13px;
+  height: 17px;
+  background-color: var(--skin);
+  top: 26px;
+  left: 29px;
+  transform: rotate(38deg);
 }
