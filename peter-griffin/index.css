@@ -196,3 +196,52 @@ body {
   left: 5px;
   background-color: var(--skin);
 }
+
+.head-part-one {
+  position: absolute;
+  width: 76px;
+  height: 185px;
+  background-color: var(--skin);
+  border-radius: 29% 67% 17% 11%/42% 26% 84% 2%;
+  z-index: -3;
+  border: 1px solid;
+  border-color: var(--black) var(--black) transparent transparent;
+  top: 15px;
+  left: 49px;
+}
+
+.head-part-two {
+  position: absolute;
+  width: 100px;
+  height: 27px;
+  border-radius: 50% 50% 0 0/100% 100% 0 0;
+  border-top: 1px solid var(--black);
+  background-color: var(--skin);
+  top: -30px;
+  left: -31px;
+  z-index: -2;
+}
+
+.hair-part-one {
+  position: absolute;
+  width: 114px;
+  height: 39px;
+  border-radius: 50%;
+  border-top: 1px solid var(--black);
+  background-color: var(--hair);
+  top: -41px;
+  left: -35px;
+}
+
+.hair-part-two {
+  position: absolute;
+  width: 46px;
+  height: 22px;
+  border-radius: 50% 66% 66% 50%/50% 76% 65% 50%;
+  background-color: var(--hair);
+  border: 1px solid;
+  border-color: var(--black) var(--black) var(--black) transparent;
+  top: -10px;
+  left: -50px;
+  transform: rotate(70deg);
+}
