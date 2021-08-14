@@ -235,13 +235,23 @@ body {
 
 .hair-part-two {
   position: absolute;
-  width: 46px;
-  height: 22px;
-  border-radius: 50% 66% 66% 50%/50% 76% 65% 50%;
+  width: 36px;
+  height: 20px;
+  border-radius: 59% 77% 64% 50%/94% 82% 65% 50%;
   background-color: var(--hair);
   border: 1px solid;
   border-color: var(--black) var(--black) var(--black) transparent;
-  top: -10px;
-  left: -50px;
-  transform: rotate(70deg);
+  top: -12px;
+  left: -43px;
+  transform: rotate(71deg);
+}
+
+.hair-part-two::before {
+  content: "";
+  position: absolute;
+  height: 46px;
+  border-left: 1px solid var(--black);
+  transform: rotate(30deg);
+  top: -14px;
+  left: 28px;
 }
