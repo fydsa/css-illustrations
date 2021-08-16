@@ -489,25 +489,26 @@ body {
 .collar-left {
   position: absolute;
   width: 161px;
-  height: 55px;
+  height: 44px;
   border-radius: 0% 0% 45% 52%/0% 0% 51% 40%;
   border-bottom: 1px solid var(--black);
-  top: 126px;
-  left: -94px;
-  transform: rotate(37deg);
+  top: 141px;
+  left: -96px;
+  transform: rotate(38deg);
   z-index: 3;
+  background-color: var(--skin);
 }
 
 .collar-left::after {
   content: "";
   position: absolute;
-  width: 60px;
+  width: 51px;
   height: 34px;
   border-radius: 19% 61% 0% 0%/1% 54% 0% 0%;
   border-top: 1px solid var(--black);
-  left: 129px;
-  top: 41px;
-  transform: rotate(-17deg);
+  left: 136px;
+  top: 30px;
+  transform: rotate(-18deg);
 }
 
 .collar-right {
@@ -531,4 +532,31 @@ body {
   top: 11px;
   left: -27px;
   transform: rotate(-15deg);
+}
+
+.collar-left-part-two {
+  position: absolute;
+  width: 49px;
+  height: 161px;
+  border-radius: 44% 0% 0% 45%/23% 0% 0% 79%;
+  border: 1px solid;
+  border-color: var(--black) transparent transparent var(--black);
+  top: 95px;
+  left: -50px;
+  transform: rotate(-42deg);
+  background: white;
+  z-index: 2;
+}
+
+.collar-left-part-two::after {
+  content: "";
+  position: absolute;
+  width: 39px;
+  height: 47px;
+  border-radius: 50%;
+  left: 7px;
+  top: 139px;
+  border: 1px solid;
+  border-color: var(--black) transparent transparent transparent;
+  transform: rotate(-9deg);
 }
