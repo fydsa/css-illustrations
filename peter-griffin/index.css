@@ -488,24 +488,47 @@ body {
 
 .collar-left {
   position: absolute;
-  width: 164px;
+  width: 161px;
   height: 55px;
-  border-radius: 0% 0% 65% 52%/0% 0% 33% 40%;
+  border-radius: 0% 0% 45% 52%/0% 0% 51% 40%;
   border-bottom: 1px solid var(--black);
-  top: 128px;
-  left: -96px;
-  transform: rotate(41deg);
+  top: 126px;
+  left: -94px;
+  transform: rotate(37deg);
   z-index: 3;
 }
 
 .collar-left::after {
   content: "";
   position: absolute;
-  width: 63px;
+  width: 60px;
   height: 34px;
-  border-radius: 45% 50% 0% 0%/8% 50% 0% 0%;
+  border-radius: 19% 61% 0% 0%/1% 54% 0% 0%;
   border-top: 1px solid var(--black);
-  left: 137px;
-  top: 43px;
-  transform: rotate(-11deg);
+  left: 129px;
+  top: 41px;
+  transform: rotate(-17deg);
+}
+
+.collar-right {
+  position: absolute;
+  width: 79px;
+  height: 12px;
+  border-radius: 0 0 50% 16%/0 0 100% 22%;
+  border-bottom: 1px solid var(--black);
+  top: 171px;
+  left: 57px;
+  transform: rotate(-44deg);
+}
+
+.collar-right::after {
+  content: "";
+  position: absolute;
+  width: 38px;
+  height: 18px;
+  border-top: 1px solid var(--black);
+  border-radius: 49% 45% 0 0/20% 26% 0 0;
+  top: 11px;
+  left: -27px;
+  transform: rotate(-15deg);
 }
