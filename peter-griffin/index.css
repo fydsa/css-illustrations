@@ -681,3 +681,12 @@ body {
   transform: rotate(-180deg);
   position: absolute;
 }
+
+.face-hide-part-eight {
+  position: absolute;
+  width: 10px;
+  height: 18px;
+  background-color: #ffffff;
+  top: -2.5px;
+  left: 82px;
+}
