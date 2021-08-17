@@ -656,3 +656,28 @@ body {
   transform: rotate(-45deg);
   border-radius: 50% 0% 100% 10%/63% 0 57% 0%;
 }
+
+.tongue {
+  position: absolute;
+  width: 29px;
+  height: 10px;
+  background-color: var(--tongue);
+  border-radius: 50% 50% 0 0/100% 100% 0 0;
+  top: 81.5px;
+  left: 1px;
+  z-index: -1;
+  transform: rotate(35deg);
+}
+
+.tongue::after {
+  content: "";
+  width: 29.1px;
+  height: 4px;
+  background-color: var(--tongue);
+  border-radius: 50% 50% 0 0/100% 100% 0 0;
+  top: 9px;
+  left: 0px;
+  z-index: -1;
+  transform: rotate(-180deg);
+  position: absolute;
+}
