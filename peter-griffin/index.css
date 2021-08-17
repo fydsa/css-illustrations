@@ -634,3 +634,25 @@ body {
   left: 36.5px;
   transform: rotate(-11deg);
 }
+
+.face-hide-part-six {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  top: 158px;
+  left: -96px;
+  background-color: var(--white);
+  transform: rotate(45deg);
+}
+
+.face-hide-part-seven {
+  position: absolute;
+  width: 6px;
+  height: 12.5px;
+  background-color: var(--skin);
+  top: 221px;
+  left: 51px;
+  z-index: 2;
+  transform: rotate(-45deg);
+  border-radius: 50% 0% 100% 10%/63% 0 57% 0%;
+}
