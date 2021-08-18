@@ -17,9 +17,68 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 .stewie {
   position: relative;
+  height: 100vh;
+}
+
+.head {
+  position: absolute;
+  width: 410px;
+  height: 271px;
+  border-radius: 100%/100%;
+  background-color: var(--skin);
+  border: 1px solid var(--black);
+}
+
+.head-top-part {
+  position: absolute;
+  width: 183px;
+  height: 259px;
+  border: 1px solid;
+  border-color: transparent transparent transparent var(--black);
+  top: 2px;
+  left: -13px;
+  border-radius: 50% 20% 50% 50%/100% 50% 40% 65%;
+  transform: rotate(50deg);
+}
+
+.head-top-part::after {
+  content: "";
+  position: absolute;
+  width: 183px;
+  height: 259px;
+  border: 1px solid;
+  border-color: transparent transparent transparent var(--black);
+  top: -197px;
+  left: 160px;
+  border-radius: 50% 20% 50% 50%/100% 50% 40% 65%;
+  transform: scaleX(-1) rotate(102deg);
+}
+
+.head-bottom-part {
+  position: absolute;
+  width: 183px;
+  height: 259px;
+  border: 1px solid;
+  border-color: transparent var(--black) transparent transparent;
+  top: 18px;
+  left: -12px;
+  border-radius: 20% 50% 50% 50%/50% 100% 65% 40%;
+  transform: rotate(124deg);
+}
+
+.head-bottom-part::after {
+  content: "";
+  position: absolute;
+  width: 183px;
+  height: 259px;
+  border: 1px solid;
+  border-color: transparent var(--black) transparent transparent;
+  top: -209px;
+  left: -145px;
+  border-radius: 20% 50% 50% 50%/50% 100% 65% 40%;
+  transform: scaleX(-1) rotate(249deg);
 }
