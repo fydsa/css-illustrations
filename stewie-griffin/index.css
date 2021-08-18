@@ -1,0 +1,25 @@
+:root {
+  --skin: #fad7bb;
+  --clothing-one: #fbd858;
+  --clothing-two: #c40f3c;
+  --shoes: #acc9e9;
+  --button: #ece636;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.stewie {
+  position: relative;
+}
