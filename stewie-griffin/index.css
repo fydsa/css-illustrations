@@ -100,12 +100,12 @@ body {
 .eye::before {
   content: "";
   position: absolute;
-  width: 13px;
-  height: 13px;
+  width: 11px;
+  height: 11px;
   border-radius: 50%;
   background-color: var(--black);
-  left: 20px;
-  top: 6px;
+  left: 31px;
+  top: 1px;
 }
 
 .eye::after {
@@ -130,4 +130,24 @@ body {
 .eye-right {
   top: 175px;
   left: 630px;
+}
+
+.eyebrow-left {
+  position: absolute;
+  width: 84px;
+  border: 1px solid;
+  border-color: var(--black) transparent transparent transparent;
+  top: 128px;
+  left: 367px;
+  transform: rotate(27deg);
+}
+
+.eyebrow-right {
+  position: absolute;
+  width: 84px;
+  border: 1px solid;
+  border-color: var(--black) transparent transparent transparent;
+  top: 153px;
+  left: 644px;
+  transform: rotate(-16deg);
 }
