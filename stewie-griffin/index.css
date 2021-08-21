@@ -28,14 +28,23 @@ body {
   align-items: center;
 }
 
-/* .head {
+.head {
+  position: absolute;
+  width: 527px;
+  height: 368px;
+  background-color: var(--skin);
+  border-radius: 50%;
+  z-index: -2;
+  left: 260px;
+  top: 11px;
+  transform: rotate(9deg);
+  border: 2px solid var(--black);
+}
+
+/* /* .head {
   position: absolute;
   width: 420px;
   height: 300px;
-  border-radius: 100%/100%;
-  background-color: var(--skin);
-  border: 2px solid var(--black);
-}
 
 .head-top-part {
   position: absolute;
@@ -87,7 +96,8 @@ body {
   left: -145px;
   border-radius: 20% 50% 50% 50%/50% 100% 65% 40%;
   transform: scaleX(-1) rotate(249deg);
-} */
+}
+*/
 
 .eye {
   position: absolute;
