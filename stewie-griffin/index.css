@@ -105,7 +105,7 @@ body {
   border-radius: 50%;
   background-color: var(--black);
   left: 32px;
-  top: 2px;
+  top: 0px;
 }
 
 .eye::after {
