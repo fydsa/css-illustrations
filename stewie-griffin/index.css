@@ -34,11 +34,39 @@ body {
   height: 368px;
   background-color: var(--skin);
   border-radius: 50%;
-  z-index: -2;
+  z-index: -4;
   left: 260px;
   top: 11px;
   transform: rotate(9deg);
   border: 2px solid var(--black);
+}
+
+.head-top-part {
+  position: absolute;
+  width: 181px;
+  height: 234px;
+  border: 2px solid;
+  border-color: transparent transparent transparent var(--black);
+  top: 27px;
+  left: 257px;
+  border-radius: 50% 20% 50% 50%/100% 50% 40% 65%;
+  transform: rotate(49deg);
+  background-color: var(--skin);
+  z-index: -3;
+}
+
+.head-bottom-part {
+  position: absolute;
+  width: 183px;
+  height: 269px;
+  border: 2px solid;
+  border-color: transparent var(--black) transparent transparent;
+  top: 76px;
+  left: 265px;
+  border-radius: 20% 50% 50% 50%/50% 100% 65% 40%;
+  transform: rotate(140deg);
+  background-color: var(--skin);
+  z-index: -4;
 }
 
 /* /* .head {
