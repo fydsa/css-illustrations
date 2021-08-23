@@ -134,7 +134,7 @@ body {
 
 .eye-left {
   top: 150px;
-  left: 350px;
+  left: 367px;
 }
 
 .eye-right {
@@ -148,7 +148,7 @@ body {
   border: 2px solid;
   border-color: var(--black) transparent transparent transparent;
   top: 128px;
-  left: 367px;
+  left: 380px;
   transform: rotate(27deg);
 }
 
