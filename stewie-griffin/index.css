@@ -219,3 +219,13 @@ body {
   left: 20px;
   transform: rotate(41deg);
 }
+
+.eye-ball {
+  position: absolute;
+  background-color: var(--white);
+  border-radius: 50%;
+  width: 97px;
+  height: 93px;
+  z-index: -3;
+  left: 0px;
+}
