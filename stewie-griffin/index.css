@@ -58,13 +58,13 @@ body {
 .head-bottom-part {
   position: absolute;
   width: 183px;
-  height: 269px;
+  height: 266px;
   border: 2px solid;
   border-color: transparent var(--black) transparent transparent;
-  top: 76px;
-  left: 265px;
+  top: 77px;
+  left: 260px;
   border-radius: 20% 50% 50% 50%/50% 100% 65% 40%;
-  transform: rotate(140deg);
+  transform: rotate(139deg);
   background-color: var(--skin);
   z-index: -4;
 }
