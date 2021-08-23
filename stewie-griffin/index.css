@@ -31,7 +31,7 @@ body {
 .head {
   position: absolute;
   width: 527px;
-  height: 368px;
+  height: 375px;
   background-color: var(--skin);
   border-radius: 50%;
   z-index: -4;
@@ -55,16 +55,46 @@ body {
   z-index: -3;
 }
 
+.head-top-part::after {
+  content: "";
+  position: absolute;
+  width: 181px;
+  height: 234px;
+  border: 2px solid;
+  border-color: transparent transparent transparent var(--black);
+  top: -232px;
+  left: 258px;
+  border-radius: 50% 20% 50% 50%/100% 50% 40% 65%;
+  transform: scaleX(-1) rotate(79deg);
+  background-color: var(--skin);
+  z-index: -3;
+}
+
 .head-bottom-part {
   position: absolute;
   width: 183px;
-  height: 266px;
+  height: 259px;
   border: 2px solid;
   border-color: transparent var(--black) transparent transparent;
   top: 77px;
-  left: 260px;
+  left: 258px;
   border-radius: 20% 50% 50% 50%/50% 100% 65% 40%;
-  transform: rotate(139deg);
+  transform: rotate(144deg);
+  background-color: var(--skin);
+  z-index: -4;
+}
+
+.head-bottom-part::after {
+  content: "";
+  position: absolute;
+  width: 183px;
+  height: 229px;
+  border: 2px solid;
+  border-color: transparent var(--black) transparent transparent;
+  top: -225px;
+  left: -246px;
+  border-radius: 20% 50% 50% 50%/50% 100% 65% 40%;
+  transform: scaleX(-1) rotate(-84deg);
   background-color: var(--skin);
   z-index: -4;
 }
