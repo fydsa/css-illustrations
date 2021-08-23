@@ -229,3 +229,30 @@ body {
   z-index: -3;
   left: 0px;
 }
+
+.ear-left {
+  position: absolute;
+  width: 50px;
+  height: 55px;
+  border-radius: 50% 55% 55% 55%/57% 50% 50% 50%;
+  border: 2px solid;
+  border-color: var(--black) transparent var(--black) var(--black);
+  left: 203px;
+  top: 143px;
+  background-color: var(--skin);
+  transform: rotate(3deg);
+}
+
+.ear-right {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 46%;
+  border: 2px solid;
+  border-color: var(--black) transparent var(--black) var(--black);
+  left: 783px;
+  top: 224px;
+  background-color: var(--skin);
+  transform: scaleX(-1) rotate(-10deg);
+  z-index: -4;
+}
