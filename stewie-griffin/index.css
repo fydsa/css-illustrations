@@ -99,64 +99,6 @@ body {
   z-index: -4;
 }
 
-/* /* .head {
-  position: absolute;
-  width: 420px;
-  height: 300px;
-
-.head-top-part {
-  position: absolute;
-  width: 183px;
-  height: 225px;
-  border: 2px solid;
-  border-color: transparent transparent transparent var(--black);
-  top: 27px;
-  left: 2px;
-  border-radius: 50% 20% 50% 50%/100% 50% 40% 65%;
-  transform: rotate(35deg);
-  background-color: var(--skin);
-}
-
-.head-top-part::after {
-  content: "";
-  position: absolute;
-  width: 183px;
-  height: 259px;
-  border: 2px solid;
-  border-color: transparent transparent transparent var(--black);
-  top: -197px;
-  left: 160px;
-  border-radius: 50% 20% 50% 50%/100% 50% 40% 65%;
-  transform: scaleX(-1) rotate(102deg);
-  background-color: var(--skin);
-}
-
-.head-bottom-part {
-  position: absolute;
-  width: 183px;
-  height: 259px;
-  border: 2px solid;
-  border-color: transparent var(--black) transparent transparent;
-  top: 50px;
-  left: 18px;
-  border-radius: 20% 50% 50% 50%/50% 100% 65% 40%;
-  transform: rotate(126deg);
-}
-
-.head-bottom-part::after {
-  content: "";
-  position: absolute;
-  width: 183px;
-  height: 259px;
-  border: 2px solid;
-  border-color: transparent var(--black) transparent transparent;
-  top: -209px;
-  left: -145px;
-  border-radius: 20% 50% 50% 50%/50% 100% 65% 40%;
-  transform: scaleX(-1) rotate(249deg);
-}
-*/
-
 .eye {
   position: absolute;
   width: 100px;
@@ -172,8 +114,8 @@ body {
   height: 12px;
   border-radius: 50%;
   background-color: var(--black);
-  left: 32px;
-  top: 0px;
+  left: 21px;
+  top: 5px;
 }
 
 .eye::after {
