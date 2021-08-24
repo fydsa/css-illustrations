@@ -518,3 +518,45 @@ body {
   transform: rotate(-9deg);
   border-radius: 0 30% 22% 0/0 50% 32% 0;
 }
+
+.collar {
+  position: absolute;
+  width: 134px;
+  height: 76px;
+  border-radius: 0 50% 50% 50%;
+  border: 2px solid;
+  border-color: transparent transparent var(--black) transparent;
+  background-color: var(--clothing-one);
+  top: 370px;
+  left: 480px;
+  z-index: -6;
+}
+
+.clothing-two-top {
+  position: absolute;
+  width: 36px;
+  height: 88px;
+  border: 2px solid;
+  border-color: transparent var(--black) transparent transparent;
+  background-color: var(--clothing-two);
+  top: 361px;
+  left: 463px;
+  border-radius: 49% 77% 90% 50%/50% 75% 73% 50%;
+  z-index: -5;
+  transform: rotate(-22deg);
+}
+
+.clothing-two-top::after {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 88px;
+  border: 2px solid;
+  border-color: transparent var(--black) transparent transparent;
+  background-color: var(--clothing-one);
+  top: -9px;
+  left: -34px;
+  border-radius: 49% 77% 43% 50%/50% 75% 61% 50%;
+  z-index: -5;
+  transform: rotate(6deg);
+}
