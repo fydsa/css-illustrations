@@ -560,3 +560,14 @@ body {
   z-index: -5;
   transform: rotate(6deg);
 }
+
+.button {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: var(--button);
+  border: 2px solid var(--black);
+  top: 425px;
+  left: 468px;
+}
