@@ -282,3 +282,90 @@ body {
   left: -34px;
   transform: rotate(-50deg);
 }
+
+.hair {
+  position: absolute;
+  border: 2px solid;
+  border-color: var(--black) var(--black) transparent transparent;
+}
+
+.hair-one {
+  width: 20px;
+  height: 47px;
+  top: 99px;
+  left: 255px;
+  border-radius: 50% 50% 50% 50%/50% 50% 50% 50%;
+  transform: rotate(-66deg);
+}
+
+.hair-two {
+  width: 21px;
+  height: 54px;
+  top: 57px;
+  left: 300px;
+  border-radius: 67% 50% 50% 50%/50% 50% 50% 50%;
+  transform: rotate(-62deg);
+}
+
+.hair-three {
+  width: 19px;
+  height: 60px;
+  top: 18px;
+  left: 374px;
+  border-radius: 67% 50% 50% 50%/50% 50% 50% 50%;
+  transform: rotate(-57deg);
+}
+
+.hair-four {
+  width: 27px;
+  height: 67px;
+  top: -4px;
+  left: 431px;
+  border-radius: 67% 50% 50% 50%/50% 50% 50% 50%;
+  transform: rotate(-54deg);
+}
+
+.hair-five {
+  width: 22px;
+  height: 57px;
+  top: -6px;
+  left: 503px;
+  border-radius: 62% 50% 50% 50%/35% 50% 50% 50%;
+  transform: rotate(-44deg);
+}
+
+.hair-six {
+  width: 18px;
+  height: 54px;
+  top: 10px;
+  left: 587px;
+  border-radius: 62% 50% 50% 50%/35% 50% 50% 50%;
+  transform: rotate(-31deg);
+}
+
+.hair-seven {
+  width: 17px;
+  height: 54px;
+  top: 42px;
+  left: 668px;
+  border-radius: 62% 50% 50% 50%/35% 50% 50% 50%;
+  transform: rotate(-26deg);
+}
+
+.hair-eight {
+  width: 16px;
+  height: 39px;
+  top: 90px;
+  left: 724px;
+  border-radius: 53% 50% 50% 50%/27% 50% 50% 50%;
+  transform: rotate(-4deg);
+}
+
+.hair-nine {
+  width: 16px;
+  height: 30px;
+  top: 164px;
+  left: 775px;
+  border-radius: 53% 50% 50% 50%/27% 50% 50% 50%;
+  transform: rotate(16deg);
+}
