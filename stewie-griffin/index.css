@@ -492,3 +492,29 @@ body {
   border-color: transparent var(--black) transparent transparent;
   border-radius: 50%;
 }
+
+.right-sleeve {
+  position: absolute;
+  width: 93px;
+  height: 125px;
+  border-radius: 40% 65% 50% 59%/50% 65% 44% 47%;
+  background-color: var(--clothing-one);
+  border: 2px solid var(--black);
+  top: 366px;
+  left: 581px;
+  z-index: -5;
+  transform: rotate(-23deg);
+}
+
+.right-sleeve::after {
+  content: "";
+  position: absolute;
+  width: 51px;
+  height: 64px;
+  border: 2px solid;
+  border-color: transparent var(--black) transparent transparent;
+  top: 23px;
+  left: 5px;
+  transform: rotate(-9deg);
+  border-radius: 0 30% 22% 0/0 50% 32% 0;
+}
