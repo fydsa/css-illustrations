@@ -736,3 +736,69 @@ body {
   top: -17.5px;
   left: 0px;
 }
+
+.clothing-two-part-one {
+  position: absolute;
+  width: 130px;
+  height: 250px;
+  border: 2px solid;
+  border-color: transparent var(--black) var(--black) transparent;
+  background-color: var(--clothing-two);
+  top: 437px;
+  left: 522px;
+  z-index: -7;
+  border-radius: 0% 49% 25% 35%/50% 50% 47% 17%;
+}
+
+.clothing-two-part-two {
+  position: absolute;
+  width: 132px;
+  height: 250px;
+  border: 2px solid;
+  border-color: transparent transparent var(--black) var(--black);
+  background-color: var(--clothing-two);
+  top: 437px;
+  left: 412px;
+  z-index: -10;
+  border-radius: 0% 0% 24% 44%/50% 50% 16% 17%;
+  transform: rotate(6deg);
+}
+
+.clothing-two-part-two::after {
+  content: "";
+  position: absolute;
+  width: 121px;
+  height: 165px;
+  background-color: var(--white);
+  border: 2px solid;
+  border-color: transparent var(--black) transparent transparent;
+  left: -109px;
+  top: 79px;
+  border-radius: 0% 50% 38% 0/0% 50% 55% 0;
+  transform: rotate(-6deg);
+}
+
+.clothing-two-line-two {
+  position: absolute;
+  width: 80px;
+  height: 137px;
+  border: 2px solid;
+  border-color: transparent var(--black) transparent transparent;
+  border-radius: 0 43% 64% 0/0 65% 32% 0;
+  top: 560px;
+  left: 466px;
+  transform: rotate(23deg);
+}
+
+.clothing-two-line-two::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 60px;
+  border: 2px solid;
+  border-color: transparent transparent var(--black) transparent;
+  border-radius: 0 0 50% 50%/0 0 20% 20%;
+  top: -50px;
+  left: 27px;
+  transform: rotate(-53deg);
+}
