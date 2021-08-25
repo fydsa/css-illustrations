@@ -600,6 +600,20 @@ body {
   z-index: -6;
 }
 
+.left-sleeve-part-one::after {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 40px;
+  border: 2px solid;
+  border-color: transparent transparent transparent var(--black);
+  top: 12px;
+  left: -10px;
+  border-radius: 22% 0% 0% 36%/52% 0% 0% 50%;
+  transform: rotate(89deg);
+  z-index: -6;
+}
+
 .left-sleeve-part-two {
   position: absolute;
   height: 52px;
@@ -801,4 +815,17 @@ body {
   top: -50px;
   left: 27px;
   transform: rotate(-53deg);
+}
+
+.shoe-left {
+  position: absolute;
+  width: 145px;
+  height: 84px;
+  border-radius: 10% 50% 52% 37%/43% 50% 45% 41%;
+  border: 2px solid var(--black);
+  background-color: var(--shoes);
+  z-index: -11;
+  top: 660px;
+  left: 399px;
+  transform: rotate(35deg);
 }
