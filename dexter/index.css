@@ -1,0 +1,12 @@
+--root {
+  --hair: #ff4701;
+  --glasses: #6fc8d8;
+  --gloves: #650e90;
+  --skin: #ffefe8;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+* {
+  box-sizing: border-box;
+}
