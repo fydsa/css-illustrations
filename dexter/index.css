@@ -30,7 +30,18 @@ body {
   width: 245px;
   height: 140px;
   background-color: var(--black);
-  border-radius: 0 0 50% 70%/0 0 76% 120%;
+  border-radius: 0 0 50% 70%/0 0 110% 120%;
+}
+
+.glasses::before {
+  content: "";
+  position: absolute;
+  width: 209px;
+  height: 109px;
+  background-color: var(--glasses);
+  border-radius: 0 0 50% 70%/0 0 110% 120%;
+  left: 19px;
+  top: 17px;
 }
 
 .glass-left {
