@@ -44,13 +44,24 @@ body {
   top: 17px;
 }
 
+.glasses::after {
+  content: "";
+  position: absolute;
+  width: 93px;
+  height: 40px;
+  border-radius: 0 0 50% 50%/0 0 100% 100%;
+  background-color: var(--black);
+  left: 100px;
+  top: 10px;
+}
+
 .glass-left {
   top: 1px;
   left: 10px;
 }
 
 .glass-right {
-  transform: scaleX(-0.97);
-  left: 248px;
+  transform: scaleX(0.97);
+  left: 242px;
   top: 1px;
 }
