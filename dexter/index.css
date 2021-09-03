@@ -106,3 +106,49 @@ body {
   left: 75px;
   transform: rotate(-42deg);
 }
+
+.face-part-one {
+  position: absolute;
+  width: 460px;
+  height: 270px;
+  border: 6px solid;
+  border-color: transparent var(--black) transparent var(--black);
+  z-index: -2;
+  background-color: var(--skin);
+  top: -120px;
+  left: -42px;
+}
+
+.face-part-one::after {
+  content: "";
+  position: absolute;
+  width: 205px;
+  height: 306px;
+  border-radius: 0 75% 50% 0/0 48% 60% 0;
+  background-color: var(--skin);
+  top: 107px;
+  left: 226px;
+  border: 6px solid;
+  border-color: transparent var(--black) transparent transparent;
+  transform: rotate(41deg);
+}
+
+.face-part-two {
+  position: absolute;
+  width: 266px;
+  height: 350px;
+  top: -77px;
+  left: 38px;
+  border: 6px solid;
+  border-color: transparent transparent transparent var(--black);
+  transform: rotate(-66deg);
+  z-index: -1;
+}
+
+.face-part-two::after {
+  content: "";
+  position: absolute;
+  background-color: var(--skin);
+  width: 80px;
+  height: 200px;
+}
