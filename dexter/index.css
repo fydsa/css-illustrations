@@ -65,3 +65,44 @@ body {
   left: 242px;
   top: 1px;
 }
+
+.nose-part-one {
+  position: absolute;
+  width: 135px;
+  border: 6px solid;
+  border-color: var(--black) transparent transparent transparent;
+  top: 79px;
+  left: 228px;
+}
+
+.nose-part-one::after {
+  content: "";
+  position: absolute;
+  height: 80px;
+  border: 6px solid;
+  border-color: transparent var(--black) transparent transparent;
+  top: -21px;
+  left: 90px;
+  transform: rotate(39deg);
+}
+
+.nose-part-two {
+  position: absolute;
+  width: 110px;
+  border: 6px solid;
+  border-color: transparent transparent var(--black) transparent;
+  top: 157px;
+  left: 221px;
+  transform: rotate(33deg);
+}
+
+.nose-part-two::after {
+  content: "";
+  position: absolute;
+  height: 47px;
+  border: 6px solid;
+  border-color: transparent var(--black) transparent transparent;
+  top: -41px;
+  left: 75px;
+  transform: rotate(-42deg);
+}
