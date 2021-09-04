@@ -163,3 +163,15 @@ body {
   left: -26px;
   transform: rotate(-106deg);
 }
+
+.ear {
+  position: absolute;
+  width: 70px;
+  height: 80px;
+  top: 48px;
+  left: -95px;
+  border: 6px solid;
+  border-color: var(--black) transparent var(--black) var(--black);
+  border-radius: 48% 57% 39% 65%/48% 56% 36% 68%;
+  background-color: var(--skin);
+}
