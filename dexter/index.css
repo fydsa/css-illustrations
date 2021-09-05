@@ -238,3 +238,22 @@ body {
   left: -23px;
   transform: rotate(0deg);
 }
+
+.hand {
+  position: absolute;
+  width: 4px;
+  height: 62px;
+  background-color: var(--black);
+  top: 193px;
+  left: 30px;
+}
+
+.hand::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 52px;
+  background-color: var(--black);
+  top: 10px;
+  left: 24px;
+}
