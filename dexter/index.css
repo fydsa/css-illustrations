@@ -86,6 +86,16 @@ body {
   transform: rotate(39deg);
 }
 
+.nose-hide {
+  position: absolute;
+  height: 100px;
+  border-top: 42px solid var(--skin);
+  border-left: 66px solid transparent;
+  border-right: 35px solid transparent;
+  top: 85px;
+  left: 250px;
+}
+
 .nose-part-two {
   position: absolute;
   width: 110px;
