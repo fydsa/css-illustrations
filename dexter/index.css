@@ -334,7 +334,7 @@ body {
   border-left: 90px solid transparent;
   border-bottom: 114px solid var(--black);
   width: 169px;
-  top: 242px;
+  top: 232px;
   left: -11px;
   z-index: -4;
   transform: rotate(-19deg);
@@ -358,7 +358,7 @@ body {
   border-right: 101px solid transparent;
   border-bottom: 116px solid var(--black);
   width: 244px;
-  top: 240px;
+  top: 230px;
   left: 161px;
   z-index: -4;
   transform: rotate(16deg);
