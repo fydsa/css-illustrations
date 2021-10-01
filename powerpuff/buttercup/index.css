@@ -29,8 +29,8 @@ body {
 
 .eye-left {
   position: absolute;
-  width: 294px;
-  height: 292px;
+  width: 289px;
+  height: 287px;
   border-radius: 50%;
   background-color: var(--white);
   border: 2px solid var(--black);
@@ -44,8 +44,8 @@ body {
   height: 265px;
   border-radius: 50%;
   transform: rotate(20deg);
-  left: 17px;
-  top: 10px;
+  left: 14px;
+  top: 9px;
 }
 
 .eye-inner-left::before {
@@ -72,13 +72,47 @@ body {
 
 .eyebrow-left {
   position: absolute;
-  width: 237px;
+  width: 258px;
   height: 5px;
   border: 10px solid;
   border-color: transparent transparent var(--black) transparent;
   background-color: var(--skin);
   z-index: 1;
-  top: 45px;
-  left: 102px;
+  top: 41px;
+  left: 87px;
   transform: rotate(28deg);
+}
+
+.eyebrow-left::after {
+  content: "";
+  position: absolute;
+  height: 39px;
+  width: 10px;
+  border-radius: 0% 130% 0% 0/0% 120% 0% 0;
+  left: 239px;
+  top: -29px;
+  background-color: var(--black);
+}
+
+.eyebrow-left::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 24px;
+  background-color: var(--skin);
+  top: -31px;
+  left: 26px;
+}
+
+.head {
+  position: absolute;
+  width: 580px;
+  height: 435px;
+  border-radius: 50%;
+  border: 11px solid var(--black);
+  background-color: var(--skin);
+  z-index: -1;
+  top: -48px;
+  left: -10px;
+  transform: rotate(10deg);
 }
