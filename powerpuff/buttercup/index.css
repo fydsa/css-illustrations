@@ -33,7 +33,7 @@ body {
   height: 287px;
   border-radius: 50%;
   background-color: var(--white);
-  border: 2px solid var(--black);
+  border: 3px solid var(--black);
   z-index: -1;
 }
 
@@ -106,13 +106,38 @@ body {
 
 .head {
   position: absolute;
-  width: 580px;
-  height: 435px;
+  width: 550px;
+  height: 441px;
   border-radius: 50%;
   border: 11px solid var(--black);
   background-color: var(--skin);
   z-index: -1;
   top: -48px;
-  left: -10px;
-  transform: rotate(10deg);
+  left: -6px;
+  transform: rotate(11deg);
+}
+
+.eye-right-bottom {
+  position: absolute;
+  width: 136px;
+  height: 179px;
+  border-radius: 50% 50% 29% 85%/50% 50% 30% 73%;
+  border: 3px solid;
+  border-color: transparent transparent var(--black) transparent;
+  /* background-color: var(--white); */
+  left: 381px;
+  top: 140px;
+  transform: rotate(14deg);
+}
+
+.eye-right-left {
+  position: absolute;
+  width: 100px;
+  height: 168px;
+  border-radius: 10% 10% 10% 73%/10% 10% 10% 91%;
+  border: 3px solid;
+  border-color: transparent transparent transparent var(--black);
+  left: -11.5px;
+  top: 8px;
+  transform: rotate(-11deg);
 }
