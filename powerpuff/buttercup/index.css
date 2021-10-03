@@ -119,13 +119,13 @@ body {
 
 .eye-right-bottom {
   position: absolute;
-  width: 136px;
+  width: 148px;
   height: 179px;
   border-radius: 50% 50% 29% 85%/50% 50% 30% 73%;
   border: 3px solid;
   border-color: transparent transparent var(--black) transparent;
   /* background-color: var(--white); */
-  left: 381px;
+  left: 371px;
   top: 140px;
   transform: rotate(14deg);
 }
@@ -137,7 +137,7 @@ body {
   border-radius: 10% 10% 10% 73%/10% 10% 10% 91%;
   border: 3px solid;
   border-color: transparent transparent transparent var(--black);
-  left: -11.5px;
+  left: -5.5px;
   top: 8px;
-  transform: rotate(-11deg);
+  transform: rotate(-7deg);
 }
