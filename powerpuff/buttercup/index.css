@@ -72,35 +72,36 @@ body {
 
 .eyebrow-left {
   position: absolute;
-  width: 258px;
+  width: 275px;
   height: 5px;
   border: 10px solid;
   border-color: transparent transparent var(--black) transparent;
   background-color: var(--skin);
   z-index: 1;
-  top: 41px;
+  top: 43px;
   left: 87px;
-  transform: rotate(28deg);
+  transform: rotate(31deg);
 }
 
 .eyebrow-left::after {
   content: "";
   position: absolute;
   height: 39px;
-  width: 10px;
+  width: 9px;
   border-radius: 0% 130% 0% 0/0% 120% 0% 0;
-  left: 239px;
+  left: 254px;
   top: -29px;
   background-color: var(--black);
+  transform: rotate(-5deg);
 }
 
 .eyebrow-left::before {
   content: "";
   position: absolute;
-  width: 150px;
-  height: 24px;
+  width: 189px;
+  height: 37px;
   background-color: var(--skin);
-  top: -31px;
+  top: -39px;
   left: 26px;
 }
 
