@@ -125,7 +125,7 @@ body {
   border-radius: 50% 50% 29% 85%/50% 50% 30% 73%;
   border: 3px solid;
   border-color: transparent transparent var(--black) transparent;
-  /* background-color: var(--white); */
+  background-color: var(--white);
   left: 371px;
   top: 140px;
   transform: rotate(14deg);
@@ -135,12 +135,48 @@ body {
   position: absolute;
   width: 100px;
   height: 168px;
-  border-radius: 10% 10% 10% 73%/10% 10% 10% 91%;
+  border-radius: 15% 10% 10% 82%/34% 10% 10% 67%;
   border: 3px solid;
   border-color: transparent transparent transparent var(--black);
-  left: -5.5px;
+  left: -2.5px;
   top: 8px;
   transform: rotate(-7deg);
+}
+
+.eye-inner-right {
+  position: absolute;
+  width: 151px;
+  height: 185px;
+  background-color: var(--green);
+  top: -24px;
+  left: 3px;
+  border-radius: 50%;
+  transform: rotate(11deg);
+}
+
+.eye-inner-right::before {
+  content: "";
+  position: absolute;
+  width: 119px;
+  height: 155px;
+  border: 10px solid var(--black);
+  background-color: var(--black);
+  top: -10px;
+  left: -13px;
+  border-radius: 34% 67% 66% 79%/56% 79% 56% 73%;
+  transform: rotate(-6deg);
+}
+
+.eye-inner-right::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 75px;
+  background-color: var(--white);
+  top: 0px;
+  left: 0px;
+  border-radius: 50%;
+  transform: rotate(-6deg);
 }
 
 .mouth {
