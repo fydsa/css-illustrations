@@ -78,8 +78,8 @@ body {
   border-color: transparent transparent var(--black) transparent;
   background-color: var(--skin);
   z-index: 1;
-  top: 43px;
-  left: 87px;
+  top: 48px;
+  left: 96px;
   transform: rotate(31deg);
 }
 
@@ -173,10 +173,45 @@ body {
   width: 70px;
   height: 75px;
   background-color: var(--white);
-  top: 0px;
+  top: 6px;
   left: 0px;
   border-radius: 50%;
   transform: rotate(-6deg);
+}
+
+.eyebrow-right {
+  position: absolute;
+  width: 141px;
+  height: 5px;
+  border: 10px solid;
+  border-color: transparent transparent var(--black) transparent;
+  background-color: var(--skin);
+  z-index: 1;
+  top: 108px;
+  left: 370px;
+  transform: rotate(-15deg);
+}
+
+.eyebrow-right::after {
+  content: "";
+  position: absolute;
+  height: 35px;
+  width: 9px;
+  border-radius: 130% 0% 0% 0/120% 0% 0% 0;
+  left: -7px;
+  top: -25.5px;
+  background-color: var(--black);
+  transform: rotate(15deg);
+}
+
+.eyebrow-right::before {
+  content: "";
+  position: absolute;
+  width: 87px;
+  height: 37px;
+  background-color: var(--skin);
+  top: -39px;
+  left: 21px;
 }
 
 .mouth {
