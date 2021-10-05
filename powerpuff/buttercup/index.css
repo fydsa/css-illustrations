@@ -105,17 +105,25 @@ body {
   left: 26px;
 }
 
-.head {
+.head,
+.head-stroke {
   position: absolute;
   width: 550px;
   height: 441px;
   border-radius: 50%;
-  border: 11px solid var(--black);
-  background-color: var(--skin);
-  z-index: -1;
   top: -48px;
   left: -6px;
   transform: rotate(11deg);
+}
+
+.head {
+  background-color: var(--skin);
+  z-index: -1;
+}
+
+.head-stroke {
+  z-index: 2;
+  border: 11px solid var(--black);
 }
 
 .eye-right-bottom {
