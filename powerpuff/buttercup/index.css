@@ -252,8 +252,8 @@ body {
   width: 25px;
   height: 65px;
   border-right: 6px solid var(--black);
-  border-radius: 77% 67%;
-  top: 40px;
+  border-radius: 62% 67%;
+  top: 39px;
   left: 42px;
   transform: rotate(35deg);
 }
@@ -341,8 +341,8 @@ body {
   border-bottom: 10px solid black;
   border-radius: 0 0 50% 50%/0 0 50% 50%;
   top: -26px;
-  left: 15px;
-  transform: rotate(-2deg);
+  left: 10px;
+  transform: rotate(-7deg);
 }
 
 .hair-bottom-left::before {
