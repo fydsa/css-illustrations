@@ -35,6 +35,7 @@ body {
   background-color: var(--white);
   border: 3px solid var(--black);
   z-index: -1;
+  top: 15px;
 }
 
 .eye-inner-left {
@@ -275,7 +276,7 @@ body {
   width: 100px;
   height: 108px;
   background-color: var(--black);
-  left: 205px;
+  left: 210px;
   top: 9px;
   transform: rotate(35deg);
   border-radius: 60% 0 0 0/50% 0 0 0;
@@ -284,14 +285,14 @@ body {
 .hair-top-left::before {
   content: "";
   position: absolute;
-  width: 323px;
-  height: 116px;
+  width: 340px;
+  height: 159px;
   border-radius: 71% 44% 0% 0%/23% 18% 0% 0%;
-  top: 94px;
-  left: -68.7px;
+  top: 98px;
+  left: -77.7px;
   border: 10px solid;
   border-color: var(--black) transparent transparent;
-  transform: rotate(9deg);
+  transform: rotate(6deg);
 }
 
 .hair-top-left-hide {
@@ -308,11 +309,11 @@ body {
 .hair-top-left-hide::before {
   content: "";
   position: absolute;
-  width: 75px;
-  height: 33px;
+  width: 79px;
+  height: 47px;
   background-color: var(--black);
   top: 22px;
-  left: -212px;
+  left: -215px;
   transform: rotate(-12deg);
   border-radius: 50% 0 0 0/100% 0 0 0;
 }
@@ -352,4 +353,78 @@ body {
   background-color: var(--bg);
   top: -23px;
   left: 84px;
+}
+
+.hair-top-right {
+  position: absolute;
+  width: 43px;
+  height: 139px;
+  border: 10px solid;
+  border-color: transparent var(--black) transparent transparent;
+  left: 364px;
+  top: -29px;
+  transform: rotate(-17deg);
+  z-index: 3;
+  border-radius: 0 70% 30% 0/0 65% 36% 0;
+}
+
+.hair-top-right::after {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 60px;
+  border: 10px solid;
+  border-color: var(--black) transparent transparent transparent;
+  border-radius: 50% 50% 0 0/32% 39% 0 0;
+  top: 153px;
+  left: -39px;
+  transform: rotate(50deg);
+}
+
+.hair-top-right-hide {
+  position: absolute;
+  width: 132px;
+  height: 63px;
+  background-color: var(--black);
+  left: 423px;
+  top: 70px;
+  border-radius: 0 100% 0 0/0 100% 0 0;
+  transform: rotate(31deg);
+  z-index: 2;
+}
+
+.hair-top-right-hide {
+  position: absolute;
+  width: 132px;
+  height: 63px;
+  background-color: var(--black);
+  left: 423px;
+  top: 70px;
+  border-radius: 0 100% 0 0/0 100% 0 0;
+  transform: rotate(31deg);
+  z-index: 2;
+}
+
+.hair-top-right-hide::before {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 30px;
+  background-color: var(--black);
+  left: -87px;
+  top: -14px;
+  border-radius: 100% 100% 0 73%/100% 100% 0 100%;
+  transform: rotate(8deg);
+}
+
+.hair-top-right-hide::after {
+  content: "";
+  position: absolute;
+  width: 99px;
+  height: 44px;
+  background-color: var(--black);
+  left: -68px;
+  top: -4px;
+  border-radius: 100% 100% 0 73%/100% 100% 0 100%;
+  transform: rotate(44deg);
 }
