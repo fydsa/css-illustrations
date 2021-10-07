@@ -555,3 +555,56 @@ body {
   z-index: -2;
   transform: rotate(-87deg);
 }
+
+.hand-left {
+  position: absolute;
+  width: 170px;
+  height: 86px;
+  border: 10px solid;
+  border-color: var(--black) transparent transparent var(--black);
+  top: 247px;
+  left: -70px;
+  border-radius: 100% 16% 0 4%/93% 0 0 23%;
+  transform: rotate(46deg);
+  z-index: -2;
+  background-color: var(--skin);
+}
+
+.hand-left::before {
+  content: "";
+  position: absolute;
+  width: 68px;
+  height: 109px;
+  border: 10px solid;
+  border-color: var(--black) transparent transparent var(--black);
+  top: -12px;
+  left: 1px;
+  border-radius: 50% 100% 0 88%/48% 70% 0 100%;
+  transform: rotate(-129deg);
+  z-index: 1;
+}
+
+.hand-left::after {
+  content: "";
+  position: absolute;
+  width: 104px;
+  height: 82px;
+  border: 10px solid;
+  border-color: var(--black) transparent transparent transparent;
+  top: 6px;
+  left: 82px;
+  border-radius: 83% 100% 0 0/69% 43% 0 0;
+  transform: rotate(-33deg);
+  background-color: var(--bg);
+}
+
+.hand-left-hide {
+  position: absolute;
+  width: 66px;
+  height: 74px;
+  border-radius: 50% 100% 0 63%/48% 70% 0 100%;
+  background-color: var(--skin);
+  top: 246px;
+  left: -70px;
+  transform: rotate(-70deg);
+}
