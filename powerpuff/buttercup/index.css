@@ -477,3 +477,16 @@ body {
   z-index: -2;
   transform: rotate(-1deg);
 }
+
+.hand-right-part-two {
+  position: absolute;
+  width: 122px;
+  height: 101px;
+  border: 10px solid;
+  border-color: transparent var(--black) transparent transparent;
+  border-radius: 0 100% 28% 0/0 57% 53% 0;
+  top: 312px;
+  left: 278px;
+  z-index: -2;
+  transform: rotate(42deg);
+}
