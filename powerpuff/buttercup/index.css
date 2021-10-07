@@ -673,7 +673,7 @@ body {
   border-color: transparent var(--black) transparent transparent;
   border-radius: 0 47% 50% 0/0 50% 69% 0;
   top: 43px;
-  left: 4px;
+  left: 5px;
   transform: rotate(5deg);
 }
 
@@ -733,4 +733,40 @@ body {
   top: -7px;
   left: 126px;
   transform: rotate(-31deg);
+}
+
+.foot-left {
+  position: absolute;
+  width: 108px;
+  height: 147px;
+  border-radius: 50%;
+  top: 446px;
+  left: 44px;
+  background-color: var(--black);
+  transform: rotate(10deg);
+}
+
+.foot-left::before {
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 89px;
+  border-radius: 50%;
+  top: 16px;
+  left: 23px;
+  background-color: var(--white);
+  transform: rotate(-9deg);
+}
+
+.foot-left::after {
+  content: "";
+  position: absolute;
+  width: 79px;
+  height: 24px;
+  border-radius: 50%;
+  border: 7px solid;
+  border-color: var(--black) transparent transparent transparent;
+  top: 50px;
+  left: 10px;
+  transform: rotate(1deg);
 }
