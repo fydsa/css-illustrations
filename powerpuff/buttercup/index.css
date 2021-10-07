@@ -464,3 +464,16 @@ body {
   top: -25px;
   left: -23px;
 }
+
+.hand-right {
+  position: absolute;
+  width: 291px;
+  height: 166px;
+  border: 10px solid;
+  border-color: transparent var(--black) transparent transparent;
+  border-radius: 0 100% 100% 0/0 68% 52% 0;
+  top: 312px;
+  left: 178px;
+  z-index: -2;
+  transform: rotate(-1deg);
+}
