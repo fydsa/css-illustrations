@@ -80,8 +80,8 @@ body {
   border-color: transparent transparent var(--black) transparent;
   background-color: var(--skin);
   z-index: 1;
-  top: 48px;
-  left: 96px;
+  top: 55px;
+  left: 93px;
   transform: rotate(31deg);
 }
 
@@ -197,9 +197,9 @@ body {
   border-color: transparent transparent var(--black) transparent;
   background-color: var(--skin);
   z-index: 1;
-  top: 108px;
+  top: 117px;
   left: 370px;
-  transform: rotate(-15deg);
+  transform: rotate(-13deg);
 }
 
 .eyebrow-right::after {
@@ -208,10 +208,10 @@ body {
   height: 35px;
   width: 9px;
   border-radius: 130% 0% 0% 0/120% 0% 0% 0;
-  left: -7px;
-  top: -25.5px;
+  left: -8px;
+  top: -25px;
   background-color: var(--black);
-  transform: rotate(15deg);
+  transform: rotate(7deg);
 }
 
 .eyebrow-right::before {
@@ -227,7 +227,7 @@ body {
 .mouth {
   position: absolute;
   width: 79px;
-  height: 103px;
+  height: 102px;
   border-bottom: 10px solid var(--black);
   border-radius: 72% 50%;
   top: 242px;
@@ -250,13 +250,13 @@ body {
 .mouth::after {
   content: "";
   position: absolute;
-  width: 25px;
+  width: 29px;
   height: 65px;
   border-right: 6px solid var(--black);
   border-radius: 62% 67%;
-  top: 39px;
-  left: 42px;
-  transform: rotate(35deg);
+  top: 37px;
+  left: 40px;
+  transform: rotate(37deg);
 }
 
 .hair-top-left {
