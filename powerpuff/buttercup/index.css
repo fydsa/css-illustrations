@@ -850,3 +850,39 @@ body {
   top: 7px;
   transform: rotate(109deg);
 }
+
+.shoe-right {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background-color: var(--white);
+  transform: rotate(20deg);
+  top: 714px;
+  left: 185px;
+  border-radius: 30% 30% 100% 30%/30% 30% 100% 30%;
+}
+
+.hide-parts-two {
+  position: absolute;
+  width: 52px;
+  height: 31px;
+  border-radius: 23%;
+  border: 10px solid;
+  border-color: transparent transparent transparent var(--black);
+  transform: rotate(-30deg);
+  top: 470px;
+  left: 36.5px;
+  z-index: -1;
+}
+
+.hide-parts-two::after {
+  content: "";
+  position: absolute;
+  width: 52px;
+  height: 31px;
+  border-radius: 23%;
+  background-color: var(--bg);
+  transform: rotate(-54deg);
+  top: 92px;
+  left: 12.5px;
+}
