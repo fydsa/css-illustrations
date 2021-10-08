@@ -562,10 +562,10 @@ body {
   height: 86px;
   border: 10px solid;
   border-color: var(--black) transparent transparent var(--black);
-  top: 209px;
-  left: -103px;
+  top: 197px;
+  left: -116px;
   border-radius: 100% 16% 0 4%/93% 0 0 23%;
-  transform: rotate(45deg);
+  transform: rotate(48deg);
   z-index: -2;
   background-color: var(--skin);
 }
@@ -604,8 +604,8 @@ body {
   height: 74px;
   border-radius: 50% 100% 0 63%/48% 70% 0 100%;
   background-color: var(--skin);
-  top: 209px;
-  left: -103px;
+  top: 194px;
+  left: -117px;
   transform: rotate(-70deg);
 }
 
