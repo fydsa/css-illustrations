@@ -266,7 +266,7 @@ body {
   background-color: var(--black);
   border-radius: 50%;
   left: 54px;
-  top: -41px;
+  top: -38px;
   z-index: 2;
   transform: rotate(-7deg);
 }
@@ -286,14 +286,14 @@ body {
 .hair-top-left::before {
   content: "";
   position: absolute;
-  width: 340px;
+  width: 339.7px;
   height: 159px;
   border-radius: 71% 44% 0% 0%/23% 18% 0% 0%;
-  top: 98px;
+  top: 96px;
   left: -77.7px;
   border: 10px solid;
   border-color: var(--black) transparent transparent;
-  transform: rotate(6deg);
+  transform: rotate(6.5deg);
 }
 
 .hair-top-left-hide {
@@ -301,7 +301,7 @@ body {
   width: 75px;
   height: 30px;
   background-color: var(--black);
-  top: 36px;
+  top: 37px;
   left: 238px;
   z-index: 2;
   transform: rotate(7deg);
