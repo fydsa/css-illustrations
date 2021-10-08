@@ -25,6 +25,7 @@ body {
   position: relative;
   width: 40%;
   height: 50%;
+  transform: rotate(8deg);
 }
 
 .eye-left {
@@ -473,7 +474,7 @@ body {
   border: 10px solid;
   border-color: transparent var(--black) transparent transparent;
   border-radius: 0 100% 100% 0/0 68% 52% 0;
-  top: 325px;
+  top: 319px;
   left: 187px;
   z-index: -2;
   transform: rotate(-5deg);
@@ -500,10 +501,10 @@ body {
   border: 10px solid;
   border-color: transparent var(--black) transparent transparent;
   border-radius: 0 100% 28% 0/0 57% 53% 0;
-  top: 331px;
-  left: 247px;
+  top: 323px;
+  left: 249px;
   z-index: -2;
-  transform: rotate(18deg);
+  transform: rotate(19deg);
   background-color: var(--bg);
 }
 
@@ -534,21 +535,21 @@ body {
 .hand-right-hide::before {
   content: "";
   position: absolute;
-  width: 18px;
-  height: 34px;
+  width: 50px;
+  height: 65px;
   border: 13px solid;
   border-color: transparent transparent transparent var(--bg);
   border-radius: 100% 0% 0% 81%/100% 0% 0% 77%;
-  top: 64px;
-  left: 177px;
+  top: 29px;
+  left: 172px;
   z-index: -2;
-  transform: rotate(-56deg);
+  transform: rotate(-58deg);
 }
 
 .hand-right-hide::after {
   content: "";
   position: absolute;
-  width: 14px;
+  width: 26px;
   height: 56px;
   background-color: var(--bg);
   top: 87px;
