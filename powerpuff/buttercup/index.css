@@ -816,3 +816,36 @@ body {
   left: 135px;
   transform: rotate(1deg);
 }
+
+.hide-parts {
+  position: absolute;
+  width: 140px;
+  height: 246px;
+  background-color: var(--bg);
+  top: 385px;
+  left: 220px;
+  z-index: -1;
+}
+
+.hide-parts::before {
+  content: "";
+  position: absolute;
+  width: 91px;
+  height: 153px;
+  border-radius: 85% 50% 0 55%/81% 50% 0 50%;
+  background-color: var(--bg);
+  left: -35px;
+  top: -6px;
+  transform: rotate(-22deg);
+}
+
+.hide-parts::after {
+  content: "";
+  position: absolute;
+  width: 44px;
+  height: 20px;
+  background-color: var(--bg);
+  left: 117px;
+  top: 7px;
+  transform: rotate(109deg);
+}
