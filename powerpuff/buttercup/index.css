@@ -23,7 +23,7 @@ body {
 
 .buttercup {
   position: relative;
-  width: 50%;
+  width: 40%;
   height: 50%;
 }
 
@@ -130,7 +130,7 @@ body {
 
 .eye-right-bottom {
   position: absolute;
-  width: 148px;
+  width: 147px;
   height: 179px;
   border-radius: 50% 50% 29% 85%/50% 50% 30% 73%;
   border: 3px solid;
