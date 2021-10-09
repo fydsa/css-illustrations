@@ -45,10 +45,8 @@ body {
 
 .eyes {
   display: flex;
-  /* justify-content: center; */
-  width: 1rem;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .eye-left {
