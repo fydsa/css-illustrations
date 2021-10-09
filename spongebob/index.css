@@ -1,7 +1,7 @@
 :root {
   --sponge: #fdf84c;
   --sponge-stroke: #9aaa36;
-  --eye: #36ccda;
+  --eye: #93f9ff;
   --cheek-stroke: #ed4b2d;
   --chin: #f1481c;
   --tie: #f30314;
@@ -66,6 +66,7 @@ body {
   border-radius: 50%;
   border: 0.3rem solid var(--black);
   top: 3.7rem;
+  background-color: var(--eye);
 }
 
 .inner-eye-left {
@@ -74,4 +75,15 @@ body {
 
 .inner-eye-right {
   left: 2.7rem;
+}
+
+.inner-eye::after {
+  content: "";
+  position: absolute;
+  width: 2.9rem;
+  height: 2.9rem;
+  border-radius: 50%;
+  background-color: var(--black);
+  left: 1.2rem;
+  top: 1.2rem;
 }
