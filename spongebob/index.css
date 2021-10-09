@@ -38,7 +38,7 @@ body {
 .eye {
   position: absolute;
   width: 13rem;
-  height: 13rem;
+  height: 13.7rem;
   border-radius: 50%;
   border: 0.35rem solid var(--black);
 }
@@ -57,4 +57,21 @@ body {
 .eye-right {
   border-radius: 50% 50% 50% 50%/45% 50% 50% 37%;
   left: calc(35% + 12.7rem);
+}
+
+.inner-eye {
+  position: absolute;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: 0.3rem solid var(--black);
+  top: 3.7rem;
+}
+
+.inner-eye-left {
+  left: 3.6rem;
+}
+
+.inner-eye-right {
+  left: 2.7rem;
 }
