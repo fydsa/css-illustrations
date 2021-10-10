@@ -67,6 +67,7 @@ body {
   border: 0.3rem solid var(--black);
   top: 3.7rem;
   background-color: var(--eye);
+  box-shadow: inset 0rem 0.7em 0.3rem 0.3rem rgb(0, 0, 0, 0.2);
 }
 
 .inner-eye-left {
