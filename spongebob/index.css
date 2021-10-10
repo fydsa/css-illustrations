@@ -78,8 +78,7 @@ body {
   left: 2.7rem;
 }
 
-.inner-eye::after {
-  content: "";
+.pupil {
   position: absolute;
   width: 2.9rem;
   height: 2.9rem;
