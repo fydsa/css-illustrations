@@ -131,3 +131,15 @@ body {
   left: 0.25rem;
   transform: rotate(12deg);
 }
+
+.nose::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #b3b91b;
+  filter: blur(1rem);
+}
