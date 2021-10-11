@@ -148,3 +148,23 @@ body {
   box-shadow: inset -2.5rem -2.5rem 1.5rem -3.5rem var(--sponge),
     inset -1.5rem -3.5rem 0.9rem -1.5rem var(--sponge-shadow);
 }
+
+.cheek {
+  position: absolute;
+  width: 6.5rem;
+  height: 5.4rem;
+  border-radius: 50%;
+  background-color: var(--cheek-stroke);
+}
+
+.cheek-left {
+  left: -1.5rem;
+  top: 2rem;
+  transform: rotate(-3deg);
+}
+
+.cheek-right {
+  left: 20.5rem;
+  top: 2rem;
+  transform: rotate(3deg);
+}
