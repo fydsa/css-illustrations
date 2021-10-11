@@ -1,6 +1,7 @@
 :root {
   --sponge: #fdf84c;
   --sponge-stroke: #9aaa36;
+  --sponge-shadow: #b3b91b;
   --eye: #93f9ff;
   --cheek-stroke: #ed4b2d;
   --chin: #f1481c;
@@ -37,6 +38,20 @@ body {
   height: 13.7rem;
   border-radius: 50%;
   border: 0.35rem solid var(--black);
+  background-color: var(--white);
+}
+
+.eye::before {
+  content: "";
+  position: absolute;
+  width: 11.5rem;
+  height: 11rem;
+  border-radius: 50%;
+  box-shadow: 0.5rem 0.5rem 0.3rem 0.2rem var(--sponge-shadow);
+  z-index: -1;
+  transform: rotate(45deg);
+  top: 2rem;
+  left: 0.2rem;
 }
 
 .eyes {
@@ -131,5 +146,5 @@ body {
   left: 0.25rem;
   transform: rotate(12deg);
   box-shadow: inset -2.5rem -2.5rem 1.5rem -3.5rem var(--sponge),
-    inset -1.5rem -3.5rem 0.9rem -1.5rem #b3b91b;
+    inset -1.5rem -3.5rem 0.9rem -1.5rem var(--sponge-shadow);
 }
