@@ -111,12 +111,23 @@ body {
 
 .nose {
   position: absolute;
-  width: 5.5rem;
-  height: 6rem;
-  border: 0.4rem solid;
-  border-color: var(--black) transparent transparent transparent;
-  border-radius: 50% 50% 0 0/50% 50% 0 0;
-  top: 2rem;
-  left: 10rem;
+  width: 4.7rem;
+  height: 5.5rem;
+  border-radius: 108% 85% 176% 0/100% 73% 125% 0;
+  background-color: var(--black);
+  top: 1.2rem;
+  left: 10.8rem;
+  transform: rotate(-23deg);
+}
+
+.nose::after {
+  content: "";
+  position: absolute;
+  width: 3.8rem;
+  height: 5.6rem;
+  border-radius: 111% 97% 211% 0/93% 60% 147% 0;
   background-color: var(--sponge);
+  top: 0.3rem;
+  left: 0.25rem;
+  transform: rotate(12deg);
 }
