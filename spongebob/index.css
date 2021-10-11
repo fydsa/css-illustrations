@@ -97,7 +97,9 @@ body {
   background-color: var(--white);
   top: -0.3rem;
   left: 0.2rem;
+  filter: blur(0.1rem);
 }
+
 .pupil::after {
   content: "";
   position: absolute;
@@ -107,4 +109,5 @@ body {
   background-color: var(--white);
   top: 2.4rem;
   left: 1.9rem;
+  filter: blur(0.08rem);
 }
