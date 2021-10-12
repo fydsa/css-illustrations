@@ -172,7 +172,7 @@ body {
 .cheek::before {
   content: "";
   position: absolute;
-  width: 5.85rem;
+  width: 5.95rem;
   height: 5.45rem;
   border-radius: 50%;
   background-color: var(--sponge);
