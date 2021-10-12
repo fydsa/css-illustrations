@@ -219,3 +219,29 @@ body {
   top: 2.5rem;
   left: 3.3rem;
 }
+
+.eyelash {
+  position: absolute;
+  width: 0.8rem;
+  height: 5rem;
+  background-color: var(--black);
+  z-index: -1;
+}
+
+.eyelash-one {
+  top: -2.5rem;
+  left: 2.5rem;
+  transform: rotate(-16deg);
+}
+
+.eyelash-two {
+  top: -3rem;
+  left: 5.5rem;
+  transform: rotate(-1deg);
+}
+
+.eyelash-three {
+  top: -2.5rem;
+  left: 8.4rem;
+  transform: rotate(13deg);
+}
