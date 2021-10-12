@@ -151,8 +151,8 @@ body {
 
 .cheek {
   position: absolute;
-  width: 6.5rem;
-  height: 5.4rem;
+  width: 6.9rem;
+  height: 5.7rem;
   border-radius: 50%;
   background-color: var(--cheek-stroke);
 }
@@ -160,11 +160,22 @@ body {
 .cheek-left {
   left: -1.5rem;
   top: 2rem;
-  transform: rotate(-3deg);
+  transform: rotate(-5deg);
 }
 
 .cheek-right {
   left: 20.5rem;
   top: 2rem;
-  transform: rotate(3deg);
+  transform: rotate(5deg);
+}
+
+.cheek::before {
+  content: "";
+  position: absolute;
+  width: 5.85rem;
+  height: 5.45rem;
+  border-radius: 50%;
+  background-color: var(--sponge);
+  top: 0.5rem;
+  left: 0.45rem;
 }
