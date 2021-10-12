@@ -178,4 +178,6 @@ body {
   background-color: var(--sponge);
   top: 0.5rem;
   left: 0.45rem;
+  box-shadow: inset 0rem 0rem 1rem 1rem var(--sponge),
+    inset 0rem 0rem 4rem 0.1rem var(--cheek-stroke);
 }
