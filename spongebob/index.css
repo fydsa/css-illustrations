@@ -314,3 +314,21 @@ body {
   border-color: transparent var(--black) transparent transparent;
   border-radius: 0 31% 21% 0/0 57% 46% 0;
 }
+
+.tooth-left,
+.tooth-right {
+  position: absolute;
+  width: 3rem;
+  height: 4.3rem;
+  border: 0.35rem solid var(--black);
+  top: 12rem;
+  z-index: -2;
+}
+
+.tooth-left {
+  left: 9.8rem;
+}
+
+.tooth-right {
+  left: 13.3rem;
+}
