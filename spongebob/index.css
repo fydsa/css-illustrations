@@ -245,3 +245,25 @@ body {
   left: 8.4rem;
   transform: rotate(13deg);
 }
+
+.mouth {
+  position: absolute;
+  width: 22.5rem;
+  height: 11rem;
+  border-radius: 0 0 50% 50%/0 0 65% 65%;
+  background-color: var(--black);
+  top: 3rem;
+  left: 1.85rem;
+  z-index: -1;
+}
+
+.mouth::before {
+  content: "";
+  position: absolute;
+  width: 22.2rem;
+  height: 11.2rem;
+  border-radius: 0 0 50% 50%/0 0 65% 65%;
+  background-color: var(--sponge);
+  top: -0.5rem;
+  left: 0.15rem;
+}
