@@ -267,3 +267,31 @@ body {
   top: -0.5rem;
   left: 0.15rem;
 }
+
+.mouth-part-two {
+  position: absolute;
+  width: 2rem;
+  height: 3rem;
+  border-radius: 31% 0 0 21%/57% 0 0 46%;
+  border: 0.3rem solid var(--black);
+  border-color: transparent transparent transparent var(--black);
+}
+
+.mouth-part-two::after {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 3rem;
+  border-radius: 50% 50% 0 0/30% 30% 0 0;
+  border: 0.3rem solid var(--black);
+  border-color: var(--black) transparent transparent transparent;
+  top: -0.1rem;
+  left: -1.5rem;
+  transform: rotate(9deg);
+}
+
+.left-side {
+  top: 5.5rem;
+  left: 1.75rem;
+  transform: rotate(-12deg);
+}
