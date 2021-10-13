@@ -151,14 +151,14 @@ body {
 
 .cheek {
   position: absolute;
-  width: 6.9rem;
+  width: 7.7rem;
   height: 5.7rem;
   border-radius: 50%;
   background-color: var(--cheek-stroke);
 }
 
 .cheek-left {
-  left: -1.5rem;
+  left: -2.1rem;
   top: 2rem;
   transform: rotate(-5deg);
 }
@@ -172,7 +172,7 @@ body {
 .cheek::before {
   content: "";
   position: absolute;
-  width: 5.95rem;
+  width: 6.7rem;
   height: 5.45rem;
   border-radius: 50%;
   background-color: var(--sponge);
