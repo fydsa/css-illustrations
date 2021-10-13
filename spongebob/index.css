@@ -268,16 +268,16 @@ body {
   left: 0.15rem;
 }
 
-.mouth-part-two {
+.mouth-part-two-left,
+.mouth-part-two-right {
   position: absolute;
   width: 2rem;
   height: 3rem;
-  border-radius: 31% 0 0 21%/57% 0 0 46%;
   border: 0.3rem solid var(--black);
-  border-color: transparent transparent transparent var(--black);
 }
 
-.mouth-part-two::after {
+.mouth-part-two-left::after,
+.mouth-part-two-right::after {
   content: "";
   position: absolute;
   width: 2rem;
@@ -285,13 +285,32 @@ body {
   border-radius: 50% 50% 0 0/30% 30% 0 0;
   border: 0.3rem solid var(--black);
   border-color: var(--black) transparent transparent transparent;
+}
+
+.mouth-part-two-left::after {
   top: -0.1rem;
   left: -1.5rem;
   transform: rotate(9deg);
 }
 
-.left-side {
+.mouth-part-two-right::after {
+  top: -0.1rem;
+  left: -0.1rem;
+  transform: rotate(9deg);
+}
+
+.mouth-part-two-left {
   top: 5.5rem;
   left: 1.75rem;
   transform: rotate(-12deg);
+  border-color: transparent transparent transparent var(--black);
+  border-radius: 31% 0 0 21%/57% 0 0 46%;
+}
+
+.mouth-part-two-right {
+  top: 5.5rem;
+  left: 22.45rem;
+  transform: rotate(12deg);
+  border-color: transparent var(--black) transparent transparent;
+  border-radius: 0 31% 21% 0/0 57% 46% 0;
 }
