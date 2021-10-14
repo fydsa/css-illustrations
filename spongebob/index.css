@@ -344,3 +344,16 @@ body {
   left: 7.5rem;
   transform: rotate(-58deg);
 }
+
+.chin-part-one::before {
+  content: "";
+  position: absolute;
+  width: 6rem;
+  height: 10rem;
+  border: 0.35rem solid;
+  border-color: var(--cheek-stroke) transparent transparent transparent;
+  border-radius: 50% 50% 0 0/30% 30% 0 0;
+  top: 4.1rem;
+  left: -5rem;
+  transform: rotate(59deg);
+}
