@@ -332,3 +332,15 @@ body {
 .tooth-right {
   left: 13.3rem;
 }
+
+.chin-part-one {
+  position: absolute;
+  width: 6rem;
+  height: 7rem;
+  border: 0.35rem solid;
+  border-color: transparent transparent transparent var(--cheek-stroke);
+  border-radius: 21% 0 0 87%/57% 0 0 77%;
+  top: 12rem;
+  left: 7.5rem;
+  transform: rotate(-54deg);
+}
