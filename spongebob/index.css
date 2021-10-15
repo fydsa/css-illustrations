@@ -339,21 +339,21 @@ body {
   height: 7rem;
   border: 0.35rem solid;
   border-color: transparent transparent transparent var(--cheek-stroke);
-  border-radius: 21% 0 0 87%/57% 0 0 77%;
-  top: 12.5rem;
-  left: 7.5rem;
-  transform: rotate(-58deg);
+  border-radius: 38% 0 0 100%/60% 0 0 58%;
+  top: 12rem;
+  left: 7.1rem;
+  transform: rotate(-68deg);
 }
 
 .chin-part-one::before {
   content: "";
   position: absolute;
-  width: 6rem;
-  height: 10rem;
+  width: 3.5rem;
+  height: 5.2rem;
   border: 0.35rem solid;
   border-color: var(--cheek-stroke) transparent transparent transparent;
   border-radius: 50% 50% 0 0/30% 30% 0 0;
-  top: 4.1rem;
-  left: -5rem;
-  transform: rotate(59deg);
+  top: 4.315rem;
+  left: -2.95rem;
+  transform: rotate(74deg);
 }
