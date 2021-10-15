@@ -333,16 +333,30 @@ body {
   left: 13.3rem;
 }
 
-.chin-part-one {
+.chin-part-one,
+.chin-part-two {
   position: absolute;
   width: 6rem;
   height: 7rem;
   border: 0.35rem solid;
   border-color: transparent transparent transparent var(--cheek-stroke);
   border-radius: 38% 0 0 100%/60% 0 0 58%;
+}
+
+.chin-part-one {
+  border-color: transparent transparent transparent var(--cheek-stroke);
+  border-radius: 38% 0 0 100%/60% 0 0 58%;
   top: 12rem;
   left: 7.1rem;
   transform: rotate(-68deg);
+}
+
+.chin-part-two {
+  border-color: transparent var(--cheek-stroke) transparent transparent;
+  border-radius: 0 38% 100% 0/0 60% 58% 0;
+  top: 12.2rem;
+  left: 12.52rem;
+  transform: rotate(76deg);
 }
 
 .chin-part-one::before {
@@ -356,4 +370,15 @@ body {
   top: 4.315rem;
   left: -2.95rem;
   transform: rotate(74deg);
+}
+
+.chin-part-two::before {
+  position: absolute;
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--sponge);
+  top: 5.1rem;
+  left: 4.5rem;
+  transform: rotate(45deg);
 }
