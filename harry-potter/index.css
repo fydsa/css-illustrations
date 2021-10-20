@@ -58,7 +58,7 @@ body {
 }
 
 .eye-right {
-  left: 7rem;
+  left: 6.3rem;
 }
 
 .eye-left::after,
@@ -95,4 +95,22 @@ body {
   left: 1.55rem;
   top: 0.35rem;
   filter: blur(0.01rem);
+}
+
+.glasses-left,
+.glasses-right {
+  position: absolute;
+  width: 10.5rem;
+  height: 10.5rem;
+  border-radius: 50%;
+  border: 0.4rem solid var(--glasses-two);
+  top: -4rem;
+}
+
+.glasses-left {
+  left: -8.1rem;
+}
+
+.glasses-right {
+  left: 3.5rem;
 }
