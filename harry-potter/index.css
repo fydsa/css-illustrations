@@ -5,7 +5,9 @@
   --hair-left: #020300;
   --skin-one: #fedbc3;
   --skin-two: #ed8f6f;
-  --eye: #183943;
+  --eye-ball: #183943;
+  --eye-one: #eef1f5;
+  --eye-two: #d2cfdc;
   --cheek: #f6ada7;
   --glasses-one: #1d1917;
   --glasses-two: #514f52;
@@ -38,4 +40,14 @@ body {
 
 .harry {
   position: relative;
+}
+
+.eye-left,
+.eye-right {
+  position: absolute;
+  width: 2.93em;
+  height: 3.25rem;
+  border-radius: 50%;
+  background-color: var(--eye-one);
+  box-shadow: inset 0.1rem -0.15rem 0.3rem 0.01rem var(--eye-two);
 }
