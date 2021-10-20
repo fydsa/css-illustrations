@@ -49,13 +49,16 @@ body {
   height: 3.8rem;
   border-radius: 50%;
   background-color: var(--eye-one);
-  box-shadow: inset 0.1rem -0.15rem 0.55rem 0.01rem var(--eye-two);
 }
 
 .eye-left {
   left: -4rem;
+  box-shadow: inset 0.1rem 0.5rem 0.05rem 0.01rem var(--black),
+    inset 0.1rem -0.15rem 0.55rem 0.01rem var(--eye-two);
 }
 
 .eye-right {
   left: 7rem;
+  box-shadow: inset -0.1rem 0.5rem 0.05rem 0.01rem var(--black),
+    inset 0.1rem -0.15rem 0.55rem 0.01rem var(--eye-two);
 }
