@@ -1,0 +1,21 @@
+:root {
+  --hair-top: #6c524b;
+  --hair-right: #000001;
+  --hair-left: #020300;
+  --skin-one: #fedbc3;
+  --skin-two: #ed8f6f;
+  --eye: #183943;
+  --cheek: #f6ada7;
+  --glasses-one: #1d1917;
+  --glasses-two: #514f52;
+  --tie: #c13422;
+  --collar-one: #f3903a;
+  --collart-two: #bc5d26;
+  --badge: #d1701c;
+  --wand-one: #6e4e2e;
+  --wand-two: #bdab91;
+  ---wand-glow: #85cade;
+  --gown: #343436;
+  --white: #ffffff;
+  --black: #000000;
+}
