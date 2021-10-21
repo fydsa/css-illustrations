@@ -12,6 +12,7 @@
   --cheek: #f6ada7;
   --glasses-one: #1d1917;
   --glasses-two: #514f52;
+  --glasses-bridge: #6d6d71;
   --tie: #c13422;
   --collar-one: #f3903a;
   --collart-two: #bc5d26;
@@ -128,4 +129,15 @@ body {
   top: -0.35rem;
   box-shadow: 0 0 0.1rem 0.05rem var(--glasses-two),
     inset 0 0 0.1rem 0.1rem var(--glasses-two);
+}
+
+.glasses-bridge {
+  position: absolute;
+  width: 1.2rem;
+  height: 0.6rem;
+  background-color: var(--glasses-bridge);
+  filter: blur(0.01rem);
+  top: 1.3rem;
+  left: 2.5rem;
+  z-index: -1;
 }
