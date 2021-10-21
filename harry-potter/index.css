@@ -105,7 +105,7 @@ body {
   border-radius: 50%;
   border: 0.4rem solid var(--glasses-two);
   top: -4rem;
-  box-shadow: 0rem 0rem 0.07rem 0.25rem var(--black);
+  box-shadow: 0rem 0rem 0.07rem 0.25rem var(--glasses-one);
 }
 
 .glasses-left {
@@ -114,4 +114,18 @@ body {
 
 .glasses-right {
   left: 3.5rem;
+}
+
+.glasses-left::after,
+.glasses-right::after {
+  content: "";
+  position: absolute;
+  width: 10.5rem;
+  height: 10.5rem;
+  border-radius: 50%;
+  border: 0.1rem solid var(--glasses-two);
+  left: -0.5rem;
+  top: -0.5rem;
+  box-shadow: 0 0 0.1rem 0.05rem var(--glasses-two),
+    inset 0 0 0.1rem 0.1rem var(--glasses-two);
 }
