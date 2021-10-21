@@ -272,4 +272,5 @@ body {
   z-index: -2;
   left: -11rem;
   top: -16rem;
+  filter: blur(0.04rem);
 }
