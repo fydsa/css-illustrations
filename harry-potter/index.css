@@ -237,6 +237,7 @@ body {
   top: -11rem;
   left: -4rem;
   transform: rotate(-5deg);
+  filter: blur(0.025);
 }
 
 .scar::before {
