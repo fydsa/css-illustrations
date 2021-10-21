@@ -172,7 +172,7 @@ body {
 
 .eyebrow {
   position: absolute;
-  width: 3.9rem;
+  width: 4.2rem;
   height: 1rem;
   border-radius: 100% 138% 75% 100%/190% 190% 45% 50%;
   background-color: var(--eyebrow);
