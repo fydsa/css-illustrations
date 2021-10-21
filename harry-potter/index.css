@@ -234,7 +234,7 @@ body {
   border-left: 0.5rem solid var(--scar);
   border-top: 2rem solid transparent;
   border-bottom: 0.7rem solid transparent;
-  top: -11rem;
+  top: -10.5rem;
   left: -4rem;
   transform: rotate(-5deg);
   filter: blur(0.025);
