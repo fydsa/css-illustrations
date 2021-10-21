@@ -13,7 +13,7 @@
   --nose-one: #f6c1a3;
   --nose-two: #e69579;
   --mouth: #d19183;
-  --cheek: #f6ada7;
+  --cheek: #f8b0ab;
   --glasses-one: #1d1917;
   --glasses-two: #514f52;
   --glasses-bridge: #6d6d71;
@@ -179,4 +179,24 @@ body {
   left: -5.7rem;
   transform: rotate(-12deg);
   filter: blur(0.02rem);
+}
+
+.cheek-left,
+.cheek-right {
+  position: absolute;
+  width: 3.8rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  background-color: var(--cheek);
+  top: 3.8rem;
+  z-index: -1;
+  filter: blur(0.8rem);
+}
+
+.cheek-left {
+  left: -6.1rem;
+}
+
+.cheek-right {
+  left: 8.2rem;
 }
