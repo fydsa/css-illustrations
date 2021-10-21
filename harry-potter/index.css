@@ -261,3 +261,15 @@ body {
   top: -0.85rem;
   transform: rotate(-3deg);
 }
+
+.head {
+  position: absolute;
+  width: 28rem;
+  height: 26.5rem;
+  border-radius: 50%;
+  background-color: var(--skin-one);
+  box-shadow: inset 0rem -0.5rem 3rem 0.01rem var(--skin-two);
+  z-index: -2;
+  left: -11rem;
+  top: -16rem;
+}
