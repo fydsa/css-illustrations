@@ -111,7 +111,10 @@ body {
   border-radius: 50%;
   border: 0.3rem solid var(--glasses-two);
   top: -4rem;
-  box-shadow: 0rem 0rem 0.07rem 0.25rem var(--glasses-one);
+  box-shadow: 0rem 0rem 0.07rem 0.25rem var(--glasses-one),
+    0rem 0.2rem 0.2rem 0.1rem var(--skin-one), 0rem 0.5rem 0.1rem 0.2rem #f1c3a8,
+    inset 0.1rem 0.1rem 0.3rem 0.01rem var(--skin-one),
+    inset 0.2rem 0.2rem 0.1rem 0.1rem #f1c3a8;
 }
 
 .glasses-left {
@@ -120,6 +123,16 @@ body {
 
 .glasses-right {
   left: 3.7rem;
+}
+
+.glasses-left::before,
+.glasses-right::before {
+  /* content: "";
+  position: absolute;
+  width: 10.5rem;
+  height: 11rem;
+  box-shadow: inset 1rem 1rem 1rem 1rem red, 1rem 1rem 1rem 1rem blue;
+  border-radius: 50%; */
 }
 
 .glasses-left::after,
