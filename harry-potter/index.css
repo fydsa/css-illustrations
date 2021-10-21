@@ -11,6 +11,7 @@
   --eye-two: #d2cfdc;
   --nose-one: #f6c1a3;
   --nose-two: #e69579;
+  --mouth: #d19183;
   --cheek: #f6ada7;
   --glasses-one: #1d1917;
   --glasses-two: #514f52;
@@ -146,12 +147,23 @@ body {
 
 .nose {
   position: absolute;
-  width: 2.5rem;
-  height: 1.9rem;
+  width: 2.15rem;
+  height: 1.6rem;
   border-radius: 50%;
   background-color: var(--nose-one);
   box-shadow: inset 0rem -0.5rem 0.5rem 0.1rem var(--nose-two);
-  top: 3.5rem;
-  left: 1.8rem;
+  top: 3.2rem;
+  left: 1.97rem;
   filter: blur(0.025rem) drop-shadow(0 0.3rem 0.1rem #e2c0ad);
+}
+
+.mouth {
+  position: absolute;
+  width: 2.9rem;
+  height: 1.1rem;
+  border-bottom: 0.35rem solid var(--mouth);
+  border-radius: 0 0 50% 50%/0 0 40% 40%;
+  top: 6.2rem;
+  left: 1.65rem;
+  filter: blur(0.025rem);
 }
