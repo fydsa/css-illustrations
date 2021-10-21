@@ -7,6 +7,7 @@
   --skin-two: #ed8f6f;
   --eyeball-one: #183943;
   --eyeball-two: #356c72;
+  --eyebrow: #56361a;
   --eye-one: #eef1f5;
   --eye-two: #d2cfdc;
   --nose-one: #f6c1a3;
@@ -166,4 +167,16 @@ body {
   top: 6.2rem;
   left: 1.65rem;
   filter: blur(0.025rem);
+}
+
+.eyebrow {
+  position: absolute;
+  width: 3.9rem;
+  height: 1rem;
+  border-radius: 100% 138% 75% 100%/190% 190% 45% 50%;
+  background-color: var(--eyebrow);
+  top: -5.5rem;
+  left: -5.7rem;
+  transform: rotate(-12deg);
+  filter: blur(0.02rem);
 }
