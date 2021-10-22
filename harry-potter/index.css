@@ -18,7 +18,8 @@
   --glasses-one: #1d1917;
   --glasses-two: #514f52;
   --glasses-bridge: #6d6d71;
-  --tie: #c13422;
+  --tie-one: #c13422;
+  --tie-two: #851312;
   --collar-one: #f3903a;
   --collart-two: #bc5d26;
   --badge: #d1701c;
@@ -296,4 +297,40 @@ body {
   left: -11rem;
   top: -16rem;
   filter: blur(0.04rem);
+}
+
+.tie {
+  position: absolute;
+  width: 0.5rem;
+  height: 1rem;
+  border-radius: 40%;
+  background-color: var(--tie-one);
+  top: 10.2rem;
+  left: 2.6rem;
+  z-index: -3;
+  transform: rotate(-33deg);
+}
+
+.tie::before {
+  content: "";
+  position: absolute;
+  width: 0.5rem;
+  height: 1rem;
+  border-radius: 40%;
+  background-color: var(--tie-one);
+  top: 0.28rem;
+  left: 0.45rem;
+  transform: rotate(63deg);
+}
+
+.tie::after {
+  content: "";
+  position: absolute;
+  width: 0.5rem;
+  height: 1rem;
+  border-radius: 40%;
+  background-color: var(--tie-one);
+  top: 0.12rem;
+  left: 0.25rem;
+  transform: rotate(32deg);
 }
