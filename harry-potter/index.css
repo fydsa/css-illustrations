@@ -111,18 +111,22 @@ body {
   border-radius: 50%;
   border: 0.3rem solid var(--glasses-two);
   top: -4rem;
+}
+
+.glasses-left {
+  left: -8.1rem;
   box-shadow: 0rem 0rem 0.07rem 0.25rem var(--glasses-one),
     0rem 0.2rem 0.2rem 0.1rem var(--skin-one), 0rem 0.5rem 0.1rem 0.2rem #f1c3a8,
     inset 0.1rem 0.1rem 0.3rem 0.01rem var(--skin-one),
     inset 0.2rem 0.2rem 0.1rem 0.1rem #f1c3a8;
 }
 
-.glasses-left {
-  left: -8.1rem;
-}
-
 .glasses-right {
   left: 3.7rem;
+  box-shadow: 0rem 0rem 0.07rem 0.25rem var(--glasses-one),
+    0rem 0.2rem 0.2rem 0.1rem var(--skin-one), 0rem 0.5rem 0.1rem 0.2rem #f1c3a8,
+    inset -0.1rem 0.1rem 0.3rem 0.01rem var(--skin-one),
+    inset -0.2rem 0.2rem 0.1rem 0.1rem #f1c3a8;
 }
 
 .glasses-left::before,
