@@ -26,6 +26,7 @@
   --wand-one: #6e4e2e;
   --wand-two: #bdab91;
   ---wand-glow: #85cade;
+  --gown-collar: #929499;
   --gown: #343436;
   --white: #ffffff;
   --black: #000000;
@@ -424,4 +425,17 @@ body {
   left: -0.65rem;
   border: 0.11rem solid var(--collar-two);
   filter: blur(0.025rem);
+}
+
+.gown-collar {
+  position: absolute;
+  width: 8rem;
+  height: 7.5rem;
+  background-color: var(--gown-collar);
+  top: 5.2rem;
+  left: -0.8rem;
+  transform: rotate(55deg) skew(20deg);
+  z-index: -6;
+  box-shadow: inset -0.3rem 0.5rem 1.6rem 0.2rem rgba(0, 0, 0, 0.15),
+    inset 0.3rem -0.5rem 1.6rem 0.2rem rgba(0, 0, 0, 0.15);
 }
