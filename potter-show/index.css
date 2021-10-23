@@ -1,0 +1,11 @@
+:root {
+  --bg: #ae0002;
+  --scar: #eeba32;
+  --glasses: #020000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
