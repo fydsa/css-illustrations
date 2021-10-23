@@ -623,11 +623,11 @@ body {
 
 .wand {
   position: absolute;
-  width: 9rem;
+  width: 7.7rem;
   height: 0.65rem;
   background-image: linear-gradient(to right, var(--wand-one), var(--wand-two));
   border-radius: 1.5rem;
-  top: 8.3rem;
+  top: 8.6rem;
   left: 12.6rem;
   transform: rotate(-35deg);
 }
