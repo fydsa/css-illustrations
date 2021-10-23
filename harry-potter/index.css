@@ -448,7 +448,7 @@ body {
   z-index: -7;
   background-color: var(--gown);
   border-radius: 15% 0 0 100%/63% 0 0 10%;
-  box-shadow: inset 0.3rem 1rem 0.7rem 0.01rem rgb(255 255 255 / 20%);
+  box-shadow: inset 0.1rem 1rem 0.7rem 0.01rem rgb(255 255 255 / 20%);
   transform: rotate(8deg);
   top: 9rem;
   left: -2.6rem;
