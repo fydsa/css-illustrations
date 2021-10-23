@@ -630,6 +630,7 @@ body {
   top: 8.6rem;
   left: 12.6rem;
   transform: rotate(-35deg);
+  filter: blur(0.025rem);
 }
 
 .wand::after {
@@ -644,4 +645,25 @@ body {
   top: -0.05rem;
   left: 7rem;
   filter: blur(0.05rem);
+}
+
+.badge,
+.badge::after {
+  position: absolute;
+  width: 0.6rem;
+  height: 1.2rem;
+  border-radius: 99% 0 0 200%/35% 0 0 172%;
+  background-color: var(--badge);
+  filter: blur(0.025rem);
+}
+
+.badge {
+  top: 14.1rem;
+  left: 5.8rem;
+}
+
+.badge::after {
+  content: "";
+  transform: scaleX(-1);
+  left: 0.55rem;
 }
