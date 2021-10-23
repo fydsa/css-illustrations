@@ -57,6 +57,18 @@ body {
   top: 9.5rem;
 }
 
+.glasses-one::after {
+  content: "";
+  position: absolute;
+  width: 5.9rem;
+  height: 7rem;
+  border: 0.3rem solid;
+  border-color: var(--glasses) transparent transparent transparent;
+  border-radius: 47% 47% 0 0/50% 50% 0 0;
+  top: 3.5rem;
+  left: 8.5rem;
+}
+
 .glasses-one {
   left: -9rem;
 }
