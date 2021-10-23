@@ -18,6 +18,7 @@
   --glasses-one: #1d1917;
   --glasses-two: #514f52;
   --glasses-bridge: #6d6d71;
+  --glass: #ffe4d0;
   --tie-one: #c13422;
   --tie-two: #851312;
   --collar-one: #f2923f;
@@ -108,6 +109,44 @@ body {
   left: 1.55rem;
   top: 0.35rem;
   filter: blur(0.01rem);
+}
+
+.eye-glass-left,
+.eye-glass-right {
+  position: absolute;
+  width: 2.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  background-color: var(--glass);
+  transform: rotate(45deg);
+  top: -3.7rem;
+  left: -6rem;
+  filter: blur(0.025rem);
+  opacity: 0.9;
+}
+
+.eye-glass-right {
+  transform: rotate(-205deg) scale(-1);
+  left: 4.7rem;
+  top: -0.1rem;
+  z-index: -1;
+}
+
+.eye-glass-left::after,
+.eye-glass-right::after {
+  content: "";
+  position: absolute;
+  width: 2.4rem;
+  height: 6.5rem;
+  border-radius: 50%;
+  background-color: var(--skin-one);
+  top: -0.45rem;
+  left: 0.35rem;
+}
+
+.eye-glass-right::after {
+  top: -0.55rem;
+  left: 0.45rem;
 }
 
 .glasses-left,
