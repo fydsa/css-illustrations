@@ -21,6 +21,7 @@ body {
 
 .show {
   position: relative;
+  height: 50%;
 }
 
 .scar {
