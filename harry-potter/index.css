@@ -474,3 +474,34 @@ body {
   transform: rotate(-8deg);
   border-radius: 0 0 27% 18%/0 0 5% 4%;
 }
+
+.foot {
+  position: absolute;
+  border-right: 2.8em solid var(--gown);
+  border-left: 0.4rem solid transparent;
+  border-top: 2.1rem solid var(--gown);
+  filter: blur(0.025rem);
+}
+
+.foot-left {
+  top: 23.6rem;
+  left: -0.3rem;
+}
+
+.foot::after {
+  content: "";
+  position: absolute;
+  width: 3.6rem;
+  height: 1.4rem;
+  border-radius: 71% 50% 35% 50%/70% 50% 65% 50%;
+  background-color: var(--gown);
+  top: -0.5rem;
+  left: -0.78rem;
+  transform: rotate(-9deg);
+}
+
+.foot-right {
+  transform: scaleX(-1);
+  top: 23.6rem;
+  left: 3.3rem;
+}
