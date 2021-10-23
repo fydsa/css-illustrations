@@ -541,9 +541,9 @@ body {
   border: 0.3rem solid;
   border-color: transparent transparent var(--gown) transparent;
   z-index: -8;
-  top: 11rem;
-  left: 4.7rem;
-  transform: rotate(39deg);
+  top: 10.7rem;
+  left: 4.3rem;
+  transform: rotate(34deg);
   filter: blur(0.025rem);
 }
 
@@ -556,7 +556,7 @@ body {
   top: -0.8rem;
   left: -2.6rem;
   transform: rotate(-39deg);
-  background-image: linear-gradient(to top right, var(--gown) 55%, #535255);
+  background-image: linear-gradient(to top right, var(--gown) 45%, #535255);
 }
 
 .sleeve-right::after {
@@ -577,7 +577,7 @@ body {
   height: 5rem;
   top: 11rem;
   left: 5.95rem;
-  transform: rotate(47deg);
+  transform: rotate(39deg);
 }
 
 .sleeve-right-hide::after {
@@ -599,14 +599,14 @@ body {
   width: 2rem;
   height: 1rem;
   top: 3.1rem;
-  left: 6.85rem;
-  transform: rotate(-85deg);
+  left: 6.25rem;
+  transform: rotate(-80deg);
   filter: blur(0.025rem);
 }
 
 .paw-right {
   position: absolute;
-  width: 2.8rem;
+  width: 2.7rem;
   height: 4.5rem;
   border-radius: 2rem;
   background-image: linear-gradient(
@@ -615,8 +615,19 @@ body {
     var(--skin-one)
   );
   transform: rotate(78deg);
-  top: 9.5rem;
-  left: 11.7rem;
+  top: 8.95rem;
+  left: 11.1rem;
   filter: blur(0.025rem);
   z-index: -9;
+}
+
+.wand {
+  position: absolute;
+  width: 9rem;
+  height: 0.65rem;
+  background-image: linear-gradient(to right, var(--wand-one), var(--wand-two));
+  border-radius: 1.5rem;
+  top: 8.3rem;
+  left: 12.6rem;
+  transform: rotate(-35deg);
 }
