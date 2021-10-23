@@ -609,7 +609,11 @@ body {
   width: 2.8rem;
   height: 4.5rem;
   border-radius: 2rem;
-  background-image: linear-gradient(30deg, var(--skin-two), var(--skin-one));
+  background-image: linear-gradient(
+    to top left,
+    var(--skin-two) 5%,
+    var(--skin-one)
+  );
   transform: rotate(78deg);
   top: 9.5rem;
   left: 12rem;
