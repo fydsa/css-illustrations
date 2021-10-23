@@ -46,3 +46,21 @@ body {
   left: 0.95rem;
   transform: scale(-1);
 }
+
+.glasses-one,
+.glasses-two {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: 0.3rem solid var(--glasses);
+  top: 9.5rem;
+}
+
+.glasses-one {
+  left: -9rem;
+}
+
+.glasses-two {
+  left: 5rem;
+}
