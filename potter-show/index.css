@@ -9,3 +9,40 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  background-color: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.show {
+  position: relative;
+}
+
+.scar {
+  position: absolute;
+  border-left: 3.2rem solid transparent;
+  border-right: 0.5rem solid transparent;
+  border-bottom: 5rem solid var(--scar);
+}
+
+.scar::after {
+  content: "";
+  position: absolute;
+  border-left: 2.8rem solid transparent;
+  border-right: 0.5rem solid transparent;
+  border-bottom: 8.5rem solid var(--bg);
+  top: -4.8rem;
+  left: -1.25rem;
+  transform: rotate(-3deg);
+}
+
+.part-two {
+  top: 3.5rem;
+  left: 0.95rem;
+  transform: scale(-1);
+}
