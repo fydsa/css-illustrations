@@ -452,14 +452,14 @@ body {
   transform: rotate(8deg);
   top: 9rem;
   left: -2.6rem;
-  filter: blur(0.02rem);
+  filter: blur(0.025rem);
 }
 
 .gown-part-two {
   transform: scaleX(-1) rotate(7deg);
   left: 3.9rem;
   top: 9.05rem;
-  filter: blur(0.02rem);
+  filter: blur(0.025rem);
 }
 
 .gown-part-two::after {
