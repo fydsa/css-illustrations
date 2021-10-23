@@ -25,7 +25,7 @@
   --badge: #d1701c;
   --wand-one: #6e4e2e;
   --wand-two: #bdab91;
-  ---wand-glow: #85cade;
+  --wand-glow: #85cade;
   --gown-collar: #929499;
   --gown: #343436;
   --white: #ffffff;
@@ -630,4 +630,18 @@ body {
   top: 8.6rem;
   left: 12.6rem;
   transform: rotate(-35deg);
+}
+
+.wand::after {
+  content: "";
+  position: absolute;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: var(--white);
+  box-shadow: 0 0 1.4rem 1.1rem var(--wand-glow),
+    inset 0 0 0.25rem 0.01rem var(--wand-glow);
+  border-radius: 50%;
+  top: -0.05rem;
+  left: 7rem;
+  filter: blur(0.05rem);
 }
