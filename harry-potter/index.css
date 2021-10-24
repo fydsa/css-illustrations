@@ -773,3 +773,40 @@ body {
   left: -3.2rem;
   transform: rotate(69deg);
 }
+
+.hair-right {
+  position: absolute;
+  width: 7rem;
+  height: 5rem;
+  border: 0.3rem solid;
+  border-color: var(--hair-bottom) transparent transparent transparent;
+  top: -5.2rem;
+  left: 2.15rem;
+  transform: rotate(43deg);
+}
+
+.hair-right::before {
+  content: "";
+  position: absolute;
+  width: 13.2rem;
+  height: 4.5rem;
+  border: 0.3rem solid;
+  border-color: transparent transparent var(--hair-bottom) transparent;
+  border-radius: 0 0 50% 50%/0 0 54% 43%;
+  left: -2.5rem;
+  top: -6.4rem;
+  transform: rotate(-24deg);
+}
+
+.hair-right::after {
+  content: "";
+  position: absolute;
+  width: 3rem;
+  height: 7.9rem;
+  border: 0.3rem solid;
+  border-color: transparent var(--hair-right) transparent transparent;
+  border-radius: 0 31% 73% 0/0 61% 73% 0;
+  transform: rotate(-45deg);
+  left: 9.9rem;
+  top: -5.5rem;
+}
