@@ -703,8 +703,8 @@ body {
   border: 0.3rem solid;
   border-color: transparent transparent transparent var(--hair-left);
   border-radius: 69% 0 0 50%/50% 0 0 50%;
-  top: -8.1rem;
-  left: -10.1rem;
+  top: -7.8rem;
+  left: -9.9rem;
   transform: rotate(3deg);
   z-index: -1;
 }
@@ -841,10 +841,35 @@ body {
   content: "";
   position: absolute;
   width: 14rem;
-  height: 5.4rem;
+  height: 5.6rem;
   border-radius: 49% 52% 0 0/58% 87% 0 0;
-  transform: rotate(-29deg);
+  transform: rotate(-27deg);
   left: 0.9rem;
-  top: -7.2rem;
+  top: -7rem;
   background-image: linear-gradient(30deg, var(--hair-left), var(--hair-top));
+}
+
+.hair-left-hide {
+  position: absolute;
+  width: 1.4rem;
+  height: 7.3rem;
+  background-color: var(--hair-left);
+  top: -4rem;
+  left: -11.05rem;
+  z-index: -1;
+  border-radius: 3% 0 0 110%/3% 0 0 103%;
+  transform: rotate(-2deg);
+}
+
+.hair-left-hide::before {
+  content: "";
+  position: absolute;
+  width: 1.2rem;
+  height: 4.75rem;
+  background-color: var(--hair-left);
+  top: 0rem;
+  left: -0.75rem;
+  z-index: -1;
+  border-radius: 3% 0 0 110%/3% 0 0 103%;
+  transform: rotate(-2deg);
 }
