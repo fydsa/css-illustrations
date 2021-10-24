@@ -810,3 +810,41 @@ body {
   left: 9.9rem;
   top: -5.5rem;
 }
+
+.hair-left-part-two {
+  position: absolute;
+  width: 3rem;
+  height: 12rem;
+  border: 0.3rem solid;
+  border-color: transparent transparent transparent var(--hair-left);
+  border-radius: 71% 0 0 58%/54% 0 0 59%;
+  transform: rotate(-16deg);
+  left: -11.6rem;
+  top: -7.3rem;
+}
+
+.hair-left-part-two::before {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 9rem;
+  border: 0.3rem solid;
+  border-color: transparent transparent transparent var(--hair-left);
+  border-radius: 75% 0 0 50%/58% 0 0 50%;
+  transform: rotate(23deg);
+  left: 1.1rem;
+  top: -5.5rem;
+  background-color: var(--hair-left);
+}
+
+.hair-left-part-two::after {
+  content: "";
+  position: absolute;
+  width: 14rem;
+  height: 5.4rem;
+  border-radius: 49% 52% 0 0/58% 87% 0 0;
+  transform: rotate(-29deg);
+  left: 0.9rem;
+  top: -7.2rem;
+  background-image: linear-gradient(30deg, var(--hair-left), var(--hair-top));
+}
