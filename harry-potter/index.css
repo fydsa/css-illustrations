@@ -707,6 +707,7 @@ body {
   left: -9.9rem;
   transform: rotate(3deg);
   z-index: -1;
+  filter: blur(0.03rem);
 }
 
 .hair-left::before {
@@ -745,8 +746,7 @@ body {
   transform: rotate(-25deg);
   left: -1.65rem;
   top: -14.22rem;
-  /* background-color: red; */
-  /* filter: drop-shadow(30px 10px 4px #4444dd); */
+  filter: blur(0.03rem);
 }
 
 .hair-bottom::before {
@@ -784,6 +784,7 @@ body {
   left: 2.15rem;
   transform: rotate(43deg);
   z-index: -1;
+  filter: blur(0.03rem);
 }
 
 .hair-right::before {
@@ -822,6 +823,7 @@ body {
   transform: rotate(-16deg);
   left: -11.6rem;
   top: -7.3rem;
+  filter: blur(0.03rem);
 }
 
 .hair-left-part-two::before {
@@ -864,6 +866,7 @@ body {
   z-index: -1;
   border-radius: 3% 0 0 110%/3% 0 0 103%;
   transform: rotate(-2deg);
+  filter: blur(0.03rem);
 }
 
 .hair-left-hide::before {
@@ -895,12 +898,12 @@ body {
   width: 18.2rem;
   height: 7rem;
   border-radius: 50% 50% 50% 50%/50% 50% 50% 50%;
-  /* background-image: linear-gradient(var(--hair-left), var(--hair-right)); */
   top: -17rem;
   left: -4rem;
   z-index: -1;
   background-color: var(--hair-bottom);
   transform: rotate(13deg);
+  filter: blur(0.03rem);
 }
 
 .hair-top-part-two::before {
@@ -926,6 +929,7 @@ body {
   left: 13.6rem;
   z-index: -1;
   transform: rotate(13deg);
+  filter: blur(0.03rem);
 }
 
 .hair-right-part-two::after {
@@ -963,6 +967,7 @@ body {
   top: -8.1rem;
   left: -8.6rem;
   z-index: -1;
+  filter: blur(0.03rem);
 }
 
 .hair-left-hide-part-two::before {
@@ -996,6 +1001,7 @@ body {
   top: -4rem;
   left: 8rem;
   transform: rotate(-51deg);
+  filter: blur(0.03rem);
 }
 
 .hair-bottom-hide::before {
@@ -1031,6 +1037,7 @@ body {
   border-radius: 0 0 0 100%/0 0 0 100%;
   left: -0.55rem;
   transform: rotate(-5deg);
+  filter: blur(0.03rem);
 }
 
 .hair-bottom-hide-part-two::before {
@@ -1065,12 +1072,8 @@ body {
   transform: rotate(11deg);
   border-radius: 0 0 146% 65%/0 0 155% 127%;
   z-index: -1;
-}
-
-.hair {
   filter: blur(0.03rem);
 }
-
 .ear {
   position: absolute;
   width: 3.8rem;
@@ -1102,6 +1105,7 @@ body {
   top: -17.7rem;
   left: -2.2rem;
   z-index: -1;
+  filter: blur(0.03rem);
 }
 
 .hair-toppest::before {
@@ -1137,6 +1141,7 @@ body {
   top: -20.5rem;
   left: 0.1rem;
   transform: rotate(1deg);
+  filter: blur(0.03rem);
 }
 
 .hair-toppest-part-two::after {
@@ -1161,6 +1166,7 @@ body {
   top: -19.5rem;
   transform: rotate(-46deg);
   z-index: -2;
+  filter: blur(0.03rem);
 }
 
 .hair-toppest-part-three::after {
