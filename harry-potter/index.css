@@ -1070,3 +1070,24 @@ body {
 .hair {
   filter: blur(0.03rem);
 }
+
+.ear {
+  position: absolute;
+  width: 3.8rem;
+  height: 6rem;
+  border-radius: 80% 0 40% 63%/62% 0 14% 50%;
+  background-image: linear-gradient(to right, var(--skin-one), var(--skin-two));
+  filter: blur(0.02rem);
+  top: 0rem;
+  z-index: -3;
+}
+
+.ear-left {
+  transform: rotate(-40deg);
+  left: -12.3rem;
+}
+
+.ear-right {
+  left: 14.4rem;
+  transform: rotate(40deg) scaleX(-1);
+}
