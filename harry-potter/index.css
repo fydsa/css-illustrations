@@ -2,8 +2,8 @@
   --bg: #f1eee3;
   --hair-top: #6c524b;
   --hair-right: #000001;
-  --hair-left: #020300;
-  --hair-bottom: #331811;
+  --hair-left: #200c06;
+  --hair-bottom: #4a2e2a;
   --skin-one: #fedbc3;
   --skin-two: #ed8f6f;
   --scar: #e5aa9c;
@@ -848,9 +848,9 @@ body {
   left: 0.95rem;
   top: -6.9rem;
   background-image: linear-gradient(
-    to left bottom,
-    var(--hair-bottom) 60%,
-    var(--hair-left)
+    to left,
+    var(--hair-bottom) 17%,
+    var(--hair-left) 91%
   );
 }
 
