@@ -888,14 +888,14 @@ body {
 
 .hair-top-part-two {
   position: absolute;
-  width: 18rem;
+  width: 18.2rem;
   height: 7rem;
   border-radius: 50% 50% 50% 50%/50% 50% 50% 50%;
-  /* background-image: linear-gradient( to bottom right, #3b2e29, var(--hair-top)); */
+  /* background-image: linear-gradient(var(--hair-left), var(--hair-right)); */
   top: -17rem;
   left: -4rem;
   z-index: -1;
-  background-color: var(--hair-top);
+  background-color: var(--hair-bottom);
   transform: rotate(13deg);
 }
 
@@ -964,7 +964,7 @@ body {
 .hair-left-hide-part-two::before {
   content: "";
   position: absolute;
-  width: 1rem;
+  width: 1.2rem;
   height: 5rem;
   background-color: var(--hair-left);
   transform: rotate(35deg);
@@ -981,4 +981,62 @@ body {
   transform: rotate(24deg);
   left: 0.8rem;
   top: -0.5rem;
+}
+
+.hair-bottom-hide {
+  position: absolute;
+  width: 0.7rem;
+  height: 1.9rem;
+  border-radius: 50% 50% 6% 100%/50% 50% 50% 82%;
+  background-color: var(--hair-bottom);
+  top: -4rem;
+  left: 8rem;
+  transform: rotate(-51deg);
+}
+
+.hair-bottom-hide::before {
+  content: "";
+  position: absolute;
+  width: 1.28rem;
+  height: 9.8rem;
+  background-color: var(--hair-bottom);
+  border-radius: 50% 0 0 50%/50% 0 0 50%;
+  top: -9.5rem;
+  left: -0.14rem;
+  transform: rotate(6deg);
+}
+
+.hair-bottom-hide::after {
+  content: "";
+  position: absolute;
+  width: 12.8rem;
+  height: 2.9rem;
+  background-color: var(--hair-bottom);
+  transform: rotate(56deg);
+  top: -6.65rem;
+  left: -1.45rem;
+  border-radius: 0% 0 0 27%/50% 0 0 71%;
+}
+
+.hair-bottom-hide-part-two {
+  position: absolute;
+  width: 0.7rem;
+  height: 4.9rem;
+  background-color: var(--hair-bottom);
+  top: -12rem;
+  border-radius: 0 0 0 100%/0 0 0 100%;
+  left: -0.55rem;
+  transform: rotate(-5deg);
+}
+
+.hair-bottom-hide-part-two::before {
+  content: "";
+  position: absolute;
+  width: 1.3rem;
+  height: 5.9rem;
+  border-radius: 0 0 50% 50%/0 0 50% 70%;
+  transform: rotate(-13deg);
+  background-color: var(--hair-bottom);
+  left: -0.97rem;
+  top: -1.5rem;
 }
