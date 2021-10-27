@@ -176,17 +176,6 @@ body {
     inset -0.2rem 0.2rem 0.1rem 0.1rem #f1c3a8;
 }
 
-.glasses-left::before {
-  /* content: "";
-  position: absolute;
-  width: 12rem;
-  height: 3rem;
-  border-left: 0.5rem solid red;
-  border-radius: 50%;
-  top: 0.5rem;
-  left: 0.5rem; */
-}
-
 .glasses-left::after,
 .glasses-right::after {
   content: "";
@@ -950,12 +939,12 @@ body {
   content: "";
   position: absolute;
   width: 1.77rem;
-  height: 2.6rem;
+  height: 3.7rem;
   background-color: var(--hair-bottom);
-  border-radius: 0 16% 108% 0/0 0% 100% 0;
+  border-radius: 0 16% 55% 0/0 0% 100% 0;
   left: 1.7rem;
-  top: 3.5rem;
-  transform: rotate(-19deg);
+  top: 2.8rem;
+  transform: rotate(-14deg);
 }
 
 .hair-left-hide-part-two {
@@ -1043,23 +1032,24 @@ body {
 .hair-bottom-hide-part-two::before {
   content: "";
   position: absolute;
-  width: 1.3rem;
-  height: 5.9rem;
-  border-radius: 0 0 50% 50%/0 0 50% 70%;
+  width: 1.48rem;
+  height: 6rem;
+  border-radius: 0 0 50% 61%/0 0 100% 100%;
   transform: rotate(-13deg);
   background-color: var(--hair-bottom);
-  left: -0.97rem;
+  left: -0.99rem;
   top: -1.5rem;
 }
 
 .hair-bottom-hide-part-two::after {
   content: "";
   position: absolute;
-  width: 0.5rem;
+  width: 3.5rem;
   height: 0.5rem;
   background-color: var(--hair-bottom);
-  left: 0.5rem;
+  left: -0.9rem;
   top: 0.2rem;
+  transform: rotate(68deg);
 }
 
 .hair-right-hide {
@@ -1074,6 +1064,32 @@ body {
   z-index: -1;
   filter: blur(0.03rem);
 }
+
+.hair-right-hide::before {
+  content: "";
+  position: absolute;
+  width: 0.6rem;
+  height: 3.2rem;
+  background-color: var(--hair-bottom);
+  left: -0.05rem;
+  top: 0.6rem;
+  transform: rotate(4deg);
+  border-radius: 0 0 91% 65%/0 0 124% 127%;
+}
+
+.hair-right-hide::after {
+  content: "";
+  position: absolute;
+  width: 0.6rem;
+  height: 4.2rem;
+  background-color: var(--hair-bottom);
+  left: -0.7rem;
+  top: -3rem;
+  transform: rotate(-18deg);
+  /* background: red; */
+  /* border-radius: 0 0 91% 65%/0 0 124% 127%; */
+}
+
 .ear {
   position: absolute;
   width: 3.8rem;
