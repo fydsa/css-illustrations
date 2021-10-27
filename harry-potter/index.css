@@ -651,13 +651,13 @@ body {
 
 .wand {
   position: absolute;
-  width: 7.7rem;
+  width: 8.5rem;
   height: 0.65rem;
   background-image: linear-gradient(to right, var(--wand-one), var(--wand-two));
   border-radius: 1.5rem;
-  top: 8.6rem;
-  left: 12.6rem;
-  transform: rotate(-35deg);
+  top: 8.9rem;
+  left: 12.9rem;
+  transform: rotate(-27deg);
   filter: blur(0.025rem);
 }
 
@@ -671,7 +671,7 @@ body {
     inset 0 0 0.25rem 0.01rem var(--wand-glow);
   border-radius: 50%;
   top: -0.05rem;
-  left: 7rem;
+  left: 7.8rem;
   filter: blur(0.05rem);
 }
 
