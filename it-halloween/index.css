@@ -1,0 +1,21 @@
+:root {
+  --bg: #f3f3f3;
+  --frame: #554f58;
+  --hair: #ea7406;
+  --skin: #fcf6e6;
+  --mark: #a53d1c;
+  --eye: #f2ebe3;
+  --eye-inner-one: #f5dfbf;
+  --eye-inner-two: #3e1d07;
+  --eye-inner-three: #d6761d;
+  --eye-inner-stroke: #6c390c;
+  --eye-outer-stroke: #1f1a1f;
+  --nose-one: #eae4d2;
+  --nose-two: #b73002;
+  --mouth-inner: #643222;
+  --lip: #b62e04;
+  --tooth: #f9f3e4;
+  --ear-inner: #ece3d2;
+  --collar-one: #dec7a4;
+  --collar-two: #ece9df;
+}
