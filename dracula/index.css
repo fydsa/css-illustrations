@@ -115,3 +115,24 @@ body {
 .cheek-right {
   left: 18.2rem;
 }
+
+.nose {
+  position: absolute;
+  width: 2rem;
+  height: 1.7rem;
+  background-color: var(--black);
+  border-radius: 50%;
+  left: 6.5rem;
+  top: 9rem;
+}
+
+.nose::after {
+  content: "";
+  position: absolute;
+  width: 2.2rem;
+  height: 1.5rem;
+  background-color: var(--bg);
+  border-radius: 50%;
+  top: 0.5rem;
+  left: -0.1rem;
+}
