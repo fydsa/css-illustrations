@@ -27,15 +27,16 @@ body {
   height: 45vh;
 }
 
-.eye-left {
+.eye {
   position: absolute;
   width: 10.9rem;
   height: 10.5rem;
   border-radius: 50%;
   background-color: var(--black);
+  left: -9rem;
 }
 
-.eye-left::before {
+.eye::before {
   content: "";
   position: absolute;
   width: 8.7rem;
@@ -46,7 +47,7 @@ body {
   top: 1.6rem;
 }
 
-.eye-left::after {
+.eye::after {
   content: "";
   position: absolute;
   width: 7.7rem;
@@ -65,4 +66,10 @@ body {
   border-radius: 50%;
   top: 4rem;
   left: 2.1rem;
+  z-index: 1;
+}
+
+.eye-left {
+  transform: scaleX(-1);
+  left: 13rem;
 }
