@@ -82,7 +82,7 @@ body {
   border-left: 1rem solid transparent;
   top: -4rem;
   left: -5.2rem;
-  transform: rotate(13deg);
+  transform: rotate(17deg);
 }
 
 .eyebrow::after {
@@ -97,7 +97,7 @@ body {
 }
 
 .eyebrow-right {
-  transform: scaleX(-1) rotate(7deg);
+  transform: scaleX(-1) rotate(9deg);
   left: 14.2rem;
   top: -3.7rem;
 }
