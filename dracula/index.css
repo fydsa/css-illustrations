@@ -101,3 +101,17 @@ body {
   left: 14.2rem;
   top: -3.7rem;
 }
+
+.cheek {
+  position: absolute;
+  width: 5.6rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  background-color: var(--cheek);
+  top: 10.5rem;
+  left: -9rem;
+}
+
+.cheek-right {
+  left: 18.2rem;
+}
