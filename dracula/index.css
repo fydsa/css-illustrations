@@ -1,0 +1,68 @@
+:root {
+  --skin: #ffdcc8;
+  --cheek: #ff8b9e;
+  --collar: #ff0100;
+  --ear-inner: #ee9d6f;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  background-color: #81e797;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.dracula {
+  position: relative;
+  height: 45vh;
+}
+
+.eye-left {
+  position: absolute;
+  width: 10.9rem;
+  height: 10.5rem;
+  border-radius: 50%;
+  background-color: var(--black);
+}
+
+.eye-left::before {
+  content: "";
+  position: absolute;
+  width: 8.7rem;
+  height: 8.4rem;
+  background-color: var(--white);
+  border-radius: 50%;
+  left: 1.6rem;
+  top: 1.6rem;
+}
+
+.eye-left::after {
+  content: "";
+  position: absolute;
+  width: 7.7rem;
+  height: 7.5rem;
+  border-radius: 50%;
+  background-color: var(--black);
+  left: 2.9rem;
+  top: 2.2rem;
+}
+
+.eye-inner {
+  position: absolute;
+  width: 2.3rem;
+  height: 1.15rem;
+  background-color: var(--white);
+  border-radius: 50%;
+  top: 4rem;
+  left: 2.1rem;
+}
