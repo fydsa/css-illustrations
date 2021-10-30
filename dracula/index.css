@@ -90,7 +90,7 @@ body {
   content: "";
   width: 5.6rem;
   height: 3rem;
-  background-color: var(--bg);
+  background-color: var(--skin);
   transform: skew(-16deg) rotate(8deg);
   top: -2.5rem;
   left: -0.28rem;
@@ -123,7 +123,7 @@ body {
   background-color: var(--black);
   border-radius: 50%;
   left: 6.5rem;
-  top: 9rem;
+  top: 8.9rem;
   z-index: 2;
 }
 
@@ -132,7 +132,7 @@ body {
   position: absolute;
   width: 2.2rem;
   height: 1.5rem;
-  background-color: var(--bg);
+  background-color: var(--skin);
   border-radius: 50%;
   top: 0.5rem;
   left: -0.1rem;
@@ -153,8 +153,53 @@ body {
   position: absolute;
   width: 8.1rem;
   height: 3rem;
-  background-color: var(--bg);
+  background-color: var(--skin);
   left: -0.7rem;
   top: -0.65rem;
   border-radius: 50%;
+}
+
+.tooth {
+  position: absolute;
+  width: 2rem;
+  height: 2.5rem;
+  border: 0.35rem solid;
+  border-color: transparent transparent transparent var(--black);
+  border-radius: 10% 0 0 100%/10% 0 0 59%;
+  background-color: var(--white);
+  top: 10.7rem;
+  left: 4.7rem;
+  z-index: -1;
+  transform: rotate(29deg);
+}
+
+.tooth::after {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 1.7rem;
+  border: 0.35rem solid;
+  border-color: transparent transparent transparent var(--black);
+  border-radius: 10% 0 0 50%/10% 0 0 83%;
+  left: 1rem;
+  top: 0.1rem;
+  background-color: var(--skin);
+  transform: rotate(4deg);
+}
+
+.tooth-right {
+  transform: scaleX(-1) rotate(26deg);
+  left: 8.4rem;
+}
+
+.head {
+  position: absolute;
+  width: 41.7rem;
+  height: 33rem;
+  border-radius: 36% 37% 46% 46%/62% 62% 62% 62%;
+  background-color: var(--skin);
+  border: 0.7rem solid var(--black);
+  left: -13.5rem;
+  top: -14.5rem;
+  z-index: -2;
 }
