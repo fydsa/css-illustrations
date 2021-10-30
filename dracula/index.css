@@ -95,3 +95,9 @@ body {
   top: -2.5rem;
   left: -0.28rem;
 }
+
+.eyebrow-right {
+  transform: scaleX(-1) rotate(7deg);
+  left: 14.2rem;
+  top: -3.7rem;
+}
