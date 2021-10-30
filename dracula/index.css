@@ -124,6 +124,7 @@ body {
   border-radius: 50%;
   left: 6.5rem;
   top: 9rem;
+  z-index: 2;
 }
 
 .nose::after {
@@ -135,4 +136,25 @@ body {
   border-radius: 50%;
   top: 0.5rem;
   left: -0.1rem;
+}
+
+.mouth {
+  position: absolute;
+  width: 6.7rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: var(--black);
+  left: 4.2rem;
+  top: 9.2rem;
+}
+
+.mouth::after {
+  content: "";
+  position: absolute;
+  width: 8.1rem;
+  height: 3rem;
+  background-color: var(--bg);
+  left: -0.7rem;
+  top: -0.65rem;
+  border-radius: 50%;
 }
