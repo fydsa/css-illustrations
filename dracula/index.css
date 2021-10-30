@@ -203,3 +203,32 @@ body {
   top: -14.5rem;
   z-index: -2;
 }
+
+.collar,
+.collar::before,
+.collar::after {
+  position: absolute;
+  width: 6rem;
+  height: 6rem;
+  border: 0.4rem solid var(--black);
+  background-color: var(--white);
+  z-index: -3;
+}
+
+.collar {
+  top: 15rem;
+  left: 4.5rem;
+  transform: rotate(45deg);
+}
+
+.collar::before {
+  content: "";
+  top: 1rem;
+  left: -4rem;
+}
+
+.collar::after {
+  content: "";
+  top: -3.9rem;
+  left: 1.1rem;
+}
