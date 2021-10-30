@@ -1,4 +1,5 @@
 :root {
+  --bg: #81e797;
   --skin: #ffdcc8;
   --cheek: #ff8b9e;
   --collar: #ff0100;
@@ -14,7 +15,7 @@
 }
 
 body {
-  background-color: #81e797;
+  background-color: var(--bg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,7 +70,28 @@ body {
   z-index: 1;
 }
 
-.eye-left {
+.eye-right {
   transform: scaleX(-1);
   left: 13rem;
+}
+
+.eyebrow {
+  position: absolute;
+  border-bottom: 1.8rem solid var(--black);
+  border-right: 5rem solid var(--black);
+  border-left: 1rem solid transparent;
+  top: -4rem;
+  left: -5.2rem;
+  transform: rotate(13deg);
+}
+
+.eyebrow::after {
+  position: absolute;
+  content: "";
+  width: 5.6rem;
+  height: 3rem;
+  background-color: var(--bg);
+  transform: skew(-16deg) rotate(8deg);
+  top: -2.5rem;
+  left: -0.28rem;
 }
