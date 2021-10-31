@@ -361,3 +361,27 @@ body {
   transform: scaleX(-1) rotate(-45deg);
   left: 22rem;
 }
+
+.head-hide {
+  position: absolute;
+  width: 5rem;
+  height: 15rem;
+  background-color: var(--skin);
+  left: -11.75rem;
+  top: -1.5rem;
+  border-radius: 41% 0 0 50%/50% 0 0 50%;
+  z-index: -2;
+  transform: rotate(-5deg);
+}
+
+.head-hide::before {
+  content: "";
+  position: absolute;
+  width: 5rem;
+  height: 15rem;
+  background-color: var(--skin);
+  left: 33.28rem;
+  top: 1.7rem;
+  border-radius: 0 41% 50% 0/0 50% 50% 0;
+  transform: rotate(4deg);
+}
