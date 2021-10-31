@@ -430,3 +430,41 @@ body {
   left: 27.75rem;
   top: -15.3rem;
 }
+
+.hair-top {
+  position: absolute;
+  width: 31rem;
+  height: 12rem;
+  border: 0.7rem solid;
+  border-color: var(--black) transparent transparent transparent;
+  border-radius: 51% 50% 0 0/87% 50% 0 0;
+  top: -23rem;
+  left: -20rem;
+  transform: rotate(-22deg);
+}
+
+.hair-top::after {
+  content: "";
+  position: absolute;
+  width: 31rem;
+  height: 5rem;
+  border: 0.7rem solid;
+  border-color: transparent var(--black) transparent transparent;
+  border-radius: 50%;
+  left: 2.8rem;
+  top: -13rem;
+  transform: rotate(50deg);
+}
+
+.hair-top::before {
+  content: "";
+  position: absolute;
+  width: 31.5rem;
+  height: 12rem;
+  border: 0.7rem solid;
+  border-color: var(--black) transparent transparent transparent;
+  border-radius: 50%;
+  left: 18.5rem;
+  top: 6rem;
+  transform: rotate(49deg);
+}
