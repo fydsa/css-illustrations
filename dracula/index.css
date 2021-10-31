@@ -297,7 +297,7 @@ body {
   transform: rotate(-3deg);
 }
 
-.ear::before {
+.ear::after {
   content: "";
   position: absolute;
   width: 1.9rem;
@@ -309,7 +309,7 @@ body {
   transform: rotate(24deg);
 }
 
-.ear::after {
+.ear::before {
   content: "";
   position: absolute;
   width: 2rem;
@@ -319,4 +319,40 @@ body {
   top: 0.98rem;
   border-radius: 0 50% 50% 0/0 50% 0 50%;
   transform: rotate(-3deg);
+}
+
+.ear-inner {
+  position: absolute;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 56% 0 0 47%/47% 0 0 49%;
+  border: 0.7rem solid;
+  border-color: transparent transparent transparent var(--ear-inner);
+  left: 1rem;
+  top: 0.6rem;
+}
+
+.ear-inner::after {
+  content: "";
+  position: absolute;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 0 56% 47% 0/0 47% 49% 0;
+  border: 0.7rem solid;
+  border-color: transparent var(--ear-inner) transparent transparent;
+  left: -6.1rem;
+  top: -0.6rem;
+  transform: rotate(-11deg);
+}
+
+.ear-inner::before {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 5rem;
+  border-radius: 48%;
+  background-color: var(--ear-inner);
+  left: -0.3rem;
+  top: 0.4rem;
+  transform: rotate(-5deg);
 }
