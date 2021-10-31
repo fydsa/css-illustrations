@@ -385,3 +385,48 @@ body {
   border-radius: 0 41% 50% 0/0 50% 50% 0;
   transform: rotate(4deg);
 }
+
+.hair {
+  position: absolute;
+  width: 3rem;
+  height: 19rem;
+  border: 0.7rem solid;
+  border-color: transparent transparent transparent var(--black);
+  left: -16.2rem;
+  top: -15rem;
+  transform: rotate(-1deg);
+  z-index: -1;
+  border-radius: 10% 0 0 51%/10% 0 0 77%;
+}
+
+.hair::before {
+  content: "";
+  position: absolute;
+  width: 6rem;
+  height: 11rem;
+  border-radius: 88% 0 0 21%/53% 0 0 39%;
+  border: 0.7rem solid;
+  border-color: transparent transparent transparent var(--black);
+  left: 4.2rem;
+  top: 9rem;
+  transform: rotate(-1deg);
+}
+
+.hair::after {
+  content: "";
+  position: absolute;
+  width: 33rem;
+  height: 41rem;
+  border: 0.7rem solid;
+  border-color: var(--black) transparent transparent transparent;
+  border-radius: 43% 58% 0 0/94% 97% 0 0;
+  left: 5.8rem;
+  top: -3.85rem;
+  transform: rotate(-35deg);
+}
+
+.hair-right {
+  transform: scaleX(-1);
+  left: 27.75rem;
+  top: -15.3rem;
+}
