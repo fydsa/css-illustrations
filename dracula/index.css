@@ -356,3 +356,8 @@ body {
   top: 0.4rem;
   transform: rotate(-5deg);
 }
+
+.ear-outer-right {
+  transform: scaleX(-1) rotate(-45deg);
+  left: 22rem;
+}
