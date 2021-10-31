@@ -260,36 +260,28 @@ body {
   left: 1.1rem;
 }
 
-/* .ear {
+.ear-outer {
   position: absolute;
-  width: 9rem;
-  height: 8rem;
-  background-color: var(--black);
-  border-radius: 0 100% 100% 100%/0 100% 100% 100%;
-  left: -18rem;
-  top: 2rem;
+  width: 10rem;
+  height: 13rem;
+  border: 0.7rem solid;
+  border-color: transparent transparent transparent var(--black);
+  border-radius: 54% 0 0 100%/60% 0 0 50%;
+  left: -17.5rem;
+  top: -2rem;
+  transform: rotate(-42deg);
   z-index: -3;
-  transform: rotate(13deg);
 }
 
-.ear::before {
+.ear-outer::after {
   content: "";
   position: absolute;
-  width: 8rem;
-  height: 6.7rem;
-  background-color: var(--skin);
-  border-radius: 0 100% 100% 100%/0 100% 100% 100%;
-  top: 0.6rem;
-  left: 0.7rem;
+  width: 10rem;
+  height: 13rem;
+  border: 0.7rem solid;
+  border-color: transparent var(--black) transparent transparent;
+  border-radius: 0 54% 100% 0/0 60% 50% 0;
+  left: -5.9rem;
+  top: -0.3rem;
+  transform: rotate(-23deg);
 }
-
-.ear::after {
-  content: "";
-  position: absolute;
-  width: 4rem;
-  height: 3.5rem;
-  background-color: var(--ear-inner);
-  border-radius: 0 100% 100% 100%/0 100% 100% 100%;
-  top: 1.5rem;
-  left: 2rem;
-} */
