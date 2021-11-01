@@ -268,9 +268,9 @@ body {
   border: 0.7rem solid;
   border-color: transparent transparent transparent var(--black);
   border-radius: 54% 0 0 100%/60% 0 0 50%;
-  left: -17.5rem;
+  left: -17.2rem;
   top: -2rem;
-  transform: rotate(-42deg);
+  transform: rotate(-38deg);
   z-index: -3;
 }
 
