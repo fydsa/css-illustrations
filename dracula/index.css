@@ -528,6 +528,18 @@ body {
   background-color: var(--skin);
   border-radius: 0 50% 50% 0;
   transform: rotate(5deg);
-  left: 0.2rem;
+  left: 0.1rem;
   top: 2.7rem;
+}
+
+.hair-fill-right {
+  transform: scaleX(-1);
+  left: 25.6rem;
+  top: -14.7rem;
+}
+
+.hair-fill-part-two-right {
+  transform: scaleX(-1) skew(16deg) rotate(4deg);
+  left: 24.9rem;
+  top: 2rem;
 }
