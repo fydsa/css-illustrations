@@ -359,8 +359,9 @@ body {
 }
 
 .ear-outer-right {
-  transform: scaleX(-1) rotate(-45deg);
-  left: 22rem;
+  transform: scaleX(-1) rotate(-37deg);
+  left: 21.6rem;
+  top: -1.5rem;
 }
 
 .head-hide {
