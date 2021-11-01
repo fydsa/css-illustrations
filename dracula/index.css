@@ -543,3 +543,41 @@ body {
   left: 24.9rem;
   top: 2rem;
 }
+
+.hair-fill-part-three {
+  position: absolute;
+  width: 10rem;
+  height: 6rem;
+  background-color: var(--black);
+  top: -16rem;
+  left: -15.5rem;
+  transform: rotate(-71deg);
+}
+
+.hair-fill-part-three::before {
+  content: "";
+  position: absolute;
+  width: 15rem;
+  height: 6rem;
+  background-color: var(--black);
+  top: 4rem;
+  left: 4rem;
+  transform: rotate(36deg);
+}
+
+.hair-fill-part-three::after {
+  content: "";
+  position: absolute;
+  width: 15rem;
+  height: 6rem;
+  background-color: var(--black);
+  top: 10.2rem;
+  left: 6.1rem;
+  transform: rotate(64deg);
+}
+
+.hair-fill-part-three-right {
+  transform: scaleX(-1) rotate(-73deg);
+  left: 20.4rem;
+  top: -15.8rem;
+}
