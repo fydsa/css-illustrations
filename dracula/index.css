@@ -25,7 +25,8 @@ body {
 
 .dracula {
   position: relative;
-  height: 45vh;
+  top: 20vh;
+  /* height: 10vh; */
 }
 
 .eye {
@@ -534,7 +535,7 @@ body {
 
 .hair-fill-right {
   transform: scaleX(-1);
-  left: 25.6rem;
+  left: 25.55rem;
   top: -14.7rem;
 }
 
@@ -580,4 +581,48 @@ body {
   transform: scaleX(-1) rotate(-73deg);
   left: 20.4rem;
   top: -15.8rem;
+}
+
+.hair-fill-part-four {
+  position: absolute;
+  width: 31rem;
+  height: 8rem;
+  border-radius: 51% 50% 0 0/87% 80% 0 0;
+  background-color: var(--black);
+  top: -24rem;
+  left: -16.7rem;
+  transform: rotate(-13deg);
+}
+
+.hair-fill-part-four::after {
+  content: "";
+  position: absolute;
+  width: 7rem;
+  height: 25rem;
+  border-radius: 0 76% 76% 0/0 87% 80% 0;
+  background-color: var(--black);
+  top: -4rem;
+  left: 31.5rem;
+  transform: rotate(-49deg);
+}
+
+.hair-fill-part-four::before {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 2rem;
+  background-color: var(--black);
+  top: -1rem;
+  left: 25.9rem;
+  transform: rotate(-68deg);
+}
+
+.hair-fill-part-five {
+  position: absolute;
+  width: 9rem;
+  height: 5rem;
+  background-color: var(--black);
+  transform: rotate(15deg) skew(-62deg);
+  top: -18rem;
+  left: 3.5rem;
 }
