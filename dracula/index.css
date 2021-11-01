@@ -685,3 +685,72 @@ body {
   left: 24.8rem;
   top: -5.6rem;
 }
+
+.white-hair-top-one {
+  position: absolute;
+  width: 7rem;
+  height: 8.5rem;
+  background-color: var(--white);
+  border-radius: 50%;
+  top: -23.5rem;
+  left: 3rem;
+  transform: rotate(-8deg);
+}
+
+.white-hair-top-one::after {
+  content: "";
+  position: absolute;
+  width: 7.5rem;
+  height: 10.5rem;
+  background-color: var(--black);
+  border-radius: 50%;
+  top: -0.9rem;
+  left: 0.75rem;
+  transform: rotate(-6deg);
+}
+
+.white-hair-top-two {
+  position: absolute;
+  width: 7.5rem;
+  height: 9.7rem;
+  background-color: var(--white);
+  border-radius: 50%;
+  top: -24.5rem;
+  left: 5rem;
+  transform: rotate(6deg);
+}
+
+.white-hair-top-two::after {
+  content: "";
+  position: absolute;
+  width: 8rem;
+  height: 11.5rem;
+  background-color: var(--black);
+  border-radius: 50%;
+  top: -0.9rem;
+  left: 0.7rem;
+  transform: rotate(-7deg);
+}
+
+.white-hair-top-three {
+  position: absolute;
+  width: 8rem;
+  height: 8.5rem;
+  background-color: var(--white);
+  border-radius: 50%;
+  top: -23.1rem;
+  left: 7.3rem;
+  transform: rotate(29deg);
+}
+
+.white-hair-top-three::after {
+  content: "";
+  position: absolute;
+  width: 8rem;
+  height: 9.7rem;
+  background-color: var(--black);
+  border-radius: 50%;
+  top: -0.9rem;
+  left: 0.6rem;
+  transform: rotate(-6deg);
+}
