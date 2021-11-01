@@ -627,3 +627,61 @@ body {
   top: -18rem;
   left: 3.5rem;
 }
+
+.white-hair-side {
+  position: absolute;
+  width: 4.5rem;
+  height: 2.5rem;
+  background-color: var(--white);
+  border-radius: 50%;
+  left: -15.1rem;
+  top: -4rem;
+  transform: rotate(37deg);
+}
+
+.white-hair-side::after {
+  content: "";
+  position: absolute;
+  width: 6rem;
+  height: 2.5rem;
+  background-color: var(--black);
+  border-radius: 50%;
+  top: -0.5rem;
+  left: -1rem;
+  transform: rotate(3deg);
+}
+
+.white-hair-side-part-two {
+  position: absolute;
+  width: 5.5rem;
+  height: 3rem;
+  background-color: var(--white);
+  border-radius: 50%;
+  left: -15.1rem;
+  top: -6.5rem;
+  transform: rotate(43deg);
+}
+
+.white-hair-side-part-two::after {
+  content: "";
+  position: absolute;
+  width: 7.5rem;
+  height: 2.5rem;
+  background-color: var(--black);
+  border-radius: 50%;
+  top: -0.05rem;
+  left: -1rem;
+  transform: rotate(4deg);
+}
+
+.white-hair-side-right {
+  transform: scaleX(-1) rotate(32deg);
+  left: 25.4rem;
+  top: -3rem;
+}
+
+.white-hair-side-part-two-right {
+  transform: scaleX(-1) rotate(37deg);
+  left: 24.8rem;
+  top: -5.6rem;
+}
