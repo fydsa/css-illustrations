@@ -238,13 +238,13 @@ body {
   position: absolute;
   width: 6rem;
   height: 6rem;
-  border: 0.4rem solid var(--black);
+  border: 0.45rem solid var(--black);
   background-color: var(--white);
   z-index: -3;
 }
 
 .collar {
-  top: 15rem;
+  top: 14.5rem;
   left: 4.5rem;
   transform: rotate(45deg);
 }
