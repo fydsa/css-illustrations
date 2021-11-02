@@ -755,10 +755,25 @@ body {
   transform: rotate(-6deg);
 }
 
-/* .cape {
+.cape-left,
+.cape-right {
   position: absolute;
-  width: 7rem;
-  height: 12rem;
-  border: 0.7rem solid;
+  width: 13rem;
+  height: 17.5rem;
+  border: 1.5rem solid;
   border-color: transparent transparent transparent var(--black);
-} */
+  border-radius: 42% 0 0 48%/85% 0 0 100%;
+  z-index: -4;
+}
+
+.cape-left {
+  transform: rotate(31deg);
+  left: -21.6rem;
+  top: 5.7rem;
+}
+
+.cape-right {
+  transform: rotate(31deg) scaleX(-1);
+  left: 40rem;
+  top: 5.7rem;
+}
