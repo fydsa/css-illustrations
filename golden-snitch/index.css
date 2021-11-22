@@ -6,3 +6,82 @@
   --feather-two: #afbdbd;
   --shadow: #684a1e;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.snitch {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.ball {
+  position: absolute;
+  width: 9rem;
+  height: 9rem;
+  background-color: var(--ball);
+  border-radius: 50%;
+  box-shadow: inset 0rem -6.8rem 0 -1.5rem var(--ball),
+    inset 0rem -6.8rem 0 -0.7rem var(--ball-lines);
+}
+
+.line-one-right,
+.line-one-left {
+  position: absolute;
+  width: 5rem;
+  height: 7.6rem;
+  border: 0.8rem solid;
+}
+
+.line-one-left {
+  border-color: transparent var(--ball-lines) transparent transparent;
+  border-radius: 0 87% 69% 0/0 55% 50% 0;
+  left: -0.55rem;
+  top: -0.2rem;
+  transform: rotate(57deg);
+}
+
+.line-one-right {
+  border-color: transparent transparent transparent var(--ball-lines);
+  border-radius: 87% 0 0 69%/55% 0 0 50%;
+  left: 4.55rem;
+  top: -0.2rem;
+  transform: rotate(-57deg);
+}
+
+.line-one-left::before,
+.line-one-right::before {
+  position: absolute;
+  content: "";
+  width: 0.5rem;
+  height: 0.77rem;
+  background-color: var(--ball-lines);
+}
+
+.line-one-left::before {
+  top: 5.14rem;
+  left: 2.62rem;
+  transform: rotate(-45deg) skew(30deg);
+}
+
+.line-one-right::before {
+  top: 5.14rem;
+  left: 0.27rem;
+  transform: rotate(45deg) skew(-30deg);
+}
