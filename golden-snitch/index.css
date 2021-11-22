@@ -52,17 +52,17 @@ body {
 .line-one-left {
   border-color: transparent var(--ball-lines) transparent transparent;
   border-radius: 0 87% 69% 0/0 55% 50% 0;
-  left: -0.55rem;
-  top: -0.2rem;
-  transform: rotate(57deg);
+  left: -0.46rem;
+  top: -0.65rem;
+  transform: rotate(63deg);
 }
 
 .line-one-right {
   border-color: transparent transparent transparent var(--ball-lines);
   border-radius: 87% 0 0 69%/55% 0 0 50%;
-  left: 4.55rem;
-  top: -0.2rem;
-  transform: rotate(-57deg);
+  left: 4.46rem;
+  top: -0.65rem;
+  transform: rotate(-63deg);
 }
 
 .line-one-left::before,
@@ -84,4 +84,28 @@ body {
   top: 5.14rem;
   left: 0.27rem;
   transform: rotate(45deg) skew(-30deg);
+}
+
+.line-two-left,
+.line-two-right {
+  position: absolute;
+  width: 21.5rem;
+  height: 8.3rem;
+  border: 0.8rem solid;
+}
+
+.line-two-left {
+  border-color: transparent var(--ball-lines) transparent transparent;
+  left: -16.05rem;
+  top: 8.37rem;
+  border-radius: 0 55% 35%/0 95% 65% 0;
+  transform: rotate(-38deg);
+}
+
+.line-two-right {
+  border-color: transparent transparent transparent var(--ball-lines);
+  left: 3.55rem;
+  top: 8.37rem;
+  border-radius: 55% 0 0 35%/95% 0 0 65%;
+  transform: rotate(38deg);
 }
