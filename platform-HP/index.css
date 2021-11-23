@@ -1,0 +1,30 @@
+:root {
+  --floor: #aa954a;
+  --trolley: #4b5242;
+  --cage-one: #3d473e;
+  --cage-two: #a26308;
+}
+
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.platform {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.floor {
+  position: absolute;
+  background-color: var(--floor);
+  width: 100%;
+  height: 30%;
+}
