@@ -9,6 +9,7 @@
   --brick-side: #ab7d30;
   --brick-mark-one: #5e3a15;
   --train: #773115;
+  --train-yellow-lines: #cd9214;
 }
 
 * {
@@ -305,4 +306,21 @@ body {
   height: 15rem;
   background-color: var(--train);
   top: 22rem;
+}
+
+.train::before,
+.train::after {
+  content: "";
+  position: absolute;
+  width: 81rem;
+  height: 0.5rem;
+  background-color: var(--train-yellow-lines);
+}
+
+.train::before {
+  top: 8rem;
+}
+
+.train::after {
+  top: -0.5rem;
 }
