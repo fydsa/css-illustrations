@@ -5,7 +5,7 @@
   --cage-two: #a26308;
   --wall: #8a6b2f;
   --wall-side: #af903d;
-  --brick: #603c16;
+  --brick: #774f20;
   --brick-side: #ab7d30;
   --brick-mark-one: #5e3a15;
 }
@@ -66,6 +66,7 @@ body {
     var(--wall) 27%,
     var(--wall-side) 105%
   );
+  filter: blur(0.049rem);
 }
 
 .wall-left::before {
@@ -148,8 +149,8 @@ body {
   /* background-color: var(--brick); */
   background-image: linear-gradient(
     to right,
-    var(--brick),
-    var(--brick-side) 140%
+    var(--brick) 37%,
+    var(--brick-side)
   );
   top: 22.1rem;
   left: 10.2rem;
@@ -181,4 +182,56 @@ body {
   background-color: var(--brick-mark-one);
   box-shadow: 1.52rem 0rem, 0.7rem 0.5rem, 1rem 0.5rem, 0.5rem 0.5rem,
     1.5rem 1rem, 1rem 1.5rem, 1.7rem 1.5rem;
+  filter: blur(0.1rem);
+}
+
+.brick-five {
+  position: absolute;
+  width: 3.2rem;
+  height: 1.5rem;
+  /* background-color: var(--brick); */
+  background-image: linear-gradient(
+    to right,
+    var(--brick) 10%,
+    var(--brick-side) 142%
+  );
+  top: 16rem;
+  left: 9.3rem;
+  border-radius: 0.25rem 0 0 0.25rem;
+  z-index: 1;
+  box-shadow: -0.1rem 0.1rem 0.1rem 0.01rem rgba(0, 0, 0, 0.2);
+}
+
+.brick-five::after {
+  content: "";
+  position: absolute;
+  width: 0.9rem;
+  height: 1.55rem;
+  background-color: var(--brick-side);
+  border-radius: 0 0.25rem 0.25rem 0;
+  transform: skewY(-9deg);
+  box-shadow: inset 0.01rem 0rem 0.1rem 0.01rem rgba(0, 0, 0, 0.2),
+    0rem 0.01rem 0.01rem 0.01rem rgba(0, 0, 0, 0.2);
+  left: 3.1rem;
+  top: -0.05rem;
+}
+
+.brick-six,
+.brick-seven {
+  position: absolute;
+  width: 3.6rem;
+  height: 1.8rem;
+  background-color: var(--brick);
+  border-radius: 0.25rem;
+  box-shadow: -0.1rem 0.1rem 0.1rem 0.01rem rgba(0, 0, 0, 0.2);
+}
+
+.brick-six {
+  top: 13.5rem;
+  left: 6.8rem;
+}
+
+.brick-seven {
+  top: 11.3rem;
+  left: 7.8rem;
 }
