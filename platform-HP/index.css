@@ -10,6 +10,12 @@
   --brick-mark-one: #5e3a15;
   --train: #773115;
   --train-yellow-lines: #cd9214;
+  --train-top-line: #858661;
+  --train-top-line-shadow: #dfe3db;
+  --train-top-two: #636243;
+  --train-top-two-shadow: #949c7d;
+  --train-top-three: #524d31;
+  --train-top-three-shadow: #a39f70;
 }
 
 * {
@@ -22,16 +28,20 @@ body {
   width: 100vw;
   height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
 }
 
 .platform {
   position: relative;
-  width: 85rem;
-  height: 58rem;
+  /* width: 100rem;
+  height: 58rem; */
   /* display: flex; */
-  background-color: green;
+  /* background-color: green; */
+}
+
+.container {
+  position: absolute;
 }
 
 .floor {
@@ -302,7 +312,7 @@ body {
 
 .train {
   position: absolute;
-  width: 81rem;
+  width: 110rem;
   height: 15rem;
   background-color: var(--train);
   top: 22rem;
@@ -312,8 +322,8 @@ body {
 .train::after {
   content: "";
   position: absolute;
-  width: 81rem;
-  height: 0.5rem;
+  width: 100%;
+  height: 0.7rem;
   background-color: var(--train-yellow-lines);
 }
 
@@ -323,4 +333,118 @@ body {
 
 .train::after {
   top: -0.5rem;
+}
+
+.train-top {
+  position: absolute;
+  width: 110rem;
+}
+
+.train-top-line {
+  position: absolute;
+  width: 110rem;
+  height: 0.5rem;
+  background-image: linear-gradient(
+    to right,
+    var(--train-top-line-shadow) -100%,
+    var(--train-top-line) 31%,
+    var(--train-top-line-shadow) 37%,
+    var(--train-top-line) 42%,
+    var(--train-top-line) 56%,
+    var(--train-top-line-shadow) 64%,
+    var(--train-top-line) 72%
+  );
+  z-index: 1;
+  top: 21.1rem;
+}
+
+.train-top-line::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2.8rem;
+  background-image: linear-gradient(
+    to right,
+    var(--train-top-two) 30%,
+    var(--train-top-two-shadow),
+    var(--train-top-two) 30%,
+    var(--train-top-two-shadow) 58%,
+    var(--train-top-two) 76%
+  );
+  top: -2.8rem;
+}
+
+.train-top-line::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2.3rem;
+  background-image: linear-gradient(
+    to right,
+    var(--train-top-three) 36%,
+    var(--train-top-three-shadow) 61%,
+    var(--train-top-three) 100%,
+    var(--train-top-three-shadow)
+  );
+  top: -5rem;
+}
+
+.train-top-bolt {
+  position: absolute;
+  width: 0.8rem;
+  height: 0.9rem;
+  border-radius: 0.1rem;
+  background-color: var(--train-top-line);
+  z-index: 1;
+  box-shadow: 0.05rem 0.06rem 0.1rem 0.01rem rgba(0, 0, 0, 0.2);
+  top: 20.9rem;
+  left: 6rem;
+}
+
+.bolt-one {
+  left: 17rem;
+  /* left: 40%; */
+}
+
+.bolt-two {
+  left: 25rem;
+}
+
+.bolt-three {
+  left: 33rem;
+}
+
+.bolt-four {
+  left: 41rem;
+  box-shadow: inset 0rem 0rem 0.9rem 0.05rem var(--train-top-line-shadow);
+}
+
+.bolt-five {
+  left: 49rem;
+}
+
+.bolt-six {
+  left: 57rem;
+}
+
+.bolt-seven {
+  left: 65rem;
+  box-shadow: inset 0rem 0rem 0.9rem 0.05rem var(--train-top-line-shadow);
+}
+
+.bolt-eight {
+  left: 73rem;
+  box-shadow: inset 0rem 0rem 0.9rem 0.05rem var(--train-top-line-shadow);
+}
+
+.bolt-nine {
+  left: 81rem;
+}
+
+.bolt-ten {
+  left: 89rem;
+}
+
+.bolt-eleven {
+  left: 97rem;
 }
