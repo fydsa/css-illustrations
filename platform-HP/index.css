@@ -17,6 +17,7 @@
   --train-top-three: #524d31;
   --train-top-three-shadow: #a39f70;
   --train-top-shine: #cdc799;
+  --divider: #9c341b;
 }
 
 * {
@@ -314,7 +315,7 @@ body {
 .train {
   position: absolute;
   width: 110rem;
-  height: 15rem;
+  height: 18rem;
   background-color: var(--train);
   top: 22rem;
 }
@@ -328,11 +329,11 @@ body {
   background-color: var(--train-yellow-lines);
 }
 
-.train::before {
-  top: 8rem;
+.train::after {
+  top: 10.7rem;
 }
 
-.train::after {
+.train::before {
   top: -0.5rem;
 }
 
@@ -660,4 +661,39 @@ body {
   content: "";
   left: 39rem;
   top: -2rem;
+}
+
+.divider-one,
+.divider-two,
+.divider-three,
+.divider-four,
+.divider-five {
+  position: absolute;
+  width: 0.2rem;
+  height: 17.8rem;
+  background-color: var(--divider);
+  box-shadow: 0.01rem 0 0.01rem 0.01rem rgba(0, 0, 0, 0.2),
+    -0.005rem 0 0.02rem 0.01rem rgba(0, 0, 0, 0.05),
+    inset -0.05rem 0 0.2rem 0.01rem rgb(255 255 255 / 10%);
+  top: 0.2rem;
+}
+
+.divider-one {
+  left: 24.5rem;
+}
+
+.divider-two {
+  left: 42rem;
+}
+
+.divider-three {
+  left: 63rem;
+}
+
+.divider-four {
+  left: 79rem;
+}
+
+.divider-five {
+  left: 95rem;
 }
