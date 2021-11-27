@@ -18,6 +18,7 @@
   --train-top-three-shadow: #a39f70;
   --train-top-shine: #cdc799;
   --divider: #9c341b;
+  --train-shine: #e9dea6;
   --window-stroke: #3e3018;
   --window-one-bg: #7b6042;
   --window-one-bg-shadow: #917d62;
@@ -710,6 +711,30 @@ body {
 
 .divider-five {
   left: 95rem;
+}
+
+.train-shine-one,
+.train-shine-one::before {
+  position: absolute;
+  background-color: var(--train-shine);
+  box-shadow: 0 0 0.4rem 0.25rem var(--train-shine);
+  border-radius: 1.5rem;
+  z-index: 1;
+}
+
+.train-shine-one {
+  width: 0.35rem;
+  height: 0.35rem;
+  top: 10.6rem;
+  left: 32.5rem;
+}
+
+.train-shine-one::before {
+  content: "";
+  width: 0.2rem;
+  height: 0.2rem;
+  left: 0.3rem;
+  top: -0.2rem;
 }
 
 .window-one {
