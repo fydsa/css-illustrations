@@ -20,6 +20,7 @@
   --divider: #9c341b;
   --train-shine: #e9dea6;
   --window-stroke: #3e3018;
+  --window-three-stroke: #42371e;
   --window-one-bg: #7b6042;
   --window-one-bg-shadow: #917d62;
   --window-one-bar-shadow-one: #776142;
@@ -33,6 +34,13 @@
   --window-two-bar-shadow-two: #5b4520;
   --window-two-fade-bar-one: #725c3c;
   --window-two-fade-bar-two: #5c4b31;
+  --window-three-bg: #583e20;
+  --window-three-bg-stroke: #4d3f27;
+  --window-three-bg-shadow-one: #65502d;
+  --window-three-bg-shadow-two: #57595d;
+  --window-three-fade-bars: #46361b;
+  --window-three-thin-fade-bars: #51391d;
+  --window-three-fade-bars-shadow: #5e5955;
 }
 
 * {
@@ -1116,4 +1124,169 @@ body {
   top: -0.02rem;
   left: 2.27rem;
   filter: blur(0.02rem);
+}
+
+.window-three {
+  position: absolute;
+  width: 9.8rem;
+  height: 7.5rem;
+  background-color: var(--window-three-bg);
+  border: solid var(--window-three-stroke);
+  border-width: 0.35rem 0.45rem;
+  border-radius: 1.3rem;
+  left: 41.5rem;
+  top: 1.5rem;
+}
+
+.window-three-bar-one,
+.window-three-bar-two,
+.window-three-bar-three {
+  position: absolute;
+  width: 0.45rem;
+  height: 7.3rem;
+  background-color: var(--window-three-stroke);
+  top: -0.2rem;
+}
+
+.window-three-bar-one {
+  left: 1.8rem;
+}
+
+.window-three-bar-two {
+  height: 2.8rem;
+  left: 4.2rem;
+}
+
+.window-three-bar-three {
+  left: 6.8rem;
+}
+
+.window-three-bar-four {
+  position: absolute;
+  width: 9.2rem;
+  height: 0.45rem;
+  background-color: var(--window-three-stroke);
+  top: 2.5rem;
+  left: -0.15rem;
+}
+
+.window-three-bg-shadow {
+  position: absolute;
+  width: 7.75rem;
+  height: 6.3rem;
+  background-image: linear-gradient(
+    to bottom,
+    var(--window-three-bg-shadow-one) 30%,
+    var(--window-three-bg-shadow-two)
+  );
+  border-top: 0.3rem solid var(--window-three-bg-stroke);
+  border-left: 0.3rem solid var(--window-three-bg-stroke);
+  border-radius: 1.1rem 0.3rem 1.1rem 1.1rem;
+  box-shadow: -0.05rem 0 0.2rem 0.01rem var(--window-three-bg-shadow-one);
+  left: 1.2rem;
+  top: 0.55rem;
+}
+
+.window-three-fade-bar-one,
+.window-three-fade-bar-two,
+.window-three-fade-bar-three {
+  position: absolute;
+  width: 0.4rem;
+  height: 6.1rem;
+  background-color: var(--window-three-fade-bars);
+  top: 0.8rem;
+}
+
+.window-three-fade-bar-one {
+  left: 3.2rem;
+}
+
+.window-three-fade-bar-two {
+  left: 5.5rem;
+  height: 2.4rem;
+}
+
+.window-three-fade-bar-three {
+  left: 7.8rem;
+}
+
+.window-three-fade-bar-four {
+  position: absolute;
+  width: 7.55rem;
+  height: 0.4rem;
+  background-color: var(--window-three-fade-bars);
+  top: 3rem;
+  left: 1.45rem;
+}
+
+.window-three-fade-bar-one::before,
+.window-three-fade-bar-one::after {
+  content: "";
+  position: absolute;
+  width: 0.17rem;
+}
+
+.window-three-fade-bar-one::before {
+  background-color: var(--window-three-thin-fade-bars);
+  left: 2.65rem;
+  top: 2.2rem;
+  height: 3.9rem;
+  filter: drop-shadow(-0.4rem 0rem 0.2rem var(--window-three-fade-bars));
+}
+
+.window-three-fade-bar-one::after {
+  background-image: linear-gradient(
+    to bottom,
+    var(--window-three-bg-shadow-one),
+    var(--window-three-thin-fade-bars)
+  );
+  left: 5.235rem;
+  top: 0.7rem;
+  height: 5.2rem;
+}
+
+.window-three-fade-bar-four::before {
+  position: absolute;
+  content: "";
+  width: 7.77rem;
+  height: 0.2rem;
+  background-color: var(--window-three-thin-fade-bars);
+  top: 2.35rem;
+  left: -0.25rem;
+  filter: drop-shadow(0 -0.5rem 0.25rem var(--window-three-fade-bars));
+}
+
+.window-three-fade-bar-four::after {
+  position: absolute;
+  content: "";
+  width: 1.8rem;
+  height: 0.17rem;
+  box-shadow: 0 0.005rem 0.5rem 0.1rem var(--window-three-bg),
+    0 0.01rem 0.4rem 0.05rem var(--train-top-shine),
+    inset 0 0 0.5rem 0.15rem var(--window-three-bg);
+  left: 5.7rem;
+  top: 2.37rem;
+}
+
+.window-three-fade-bar-two::before,
+.window-three-fade-bar-two::after {
+  position: absolute;
+  content: "";
+  width: 0.005rem;
+  background-color: var(--window-three-bg);
+  filter: blur(0.02rem);
+}
+
+.window-three-fade-bar-two::before {
+  transform: rotate(-55deg);
+  height: 8.8rem;
+  left: -0.25rem;
+  top: -1.5rem;
+}
+
+.window-three-fade-bar-two::after {
+  transform: rotate(47deg);
+  height: 9.2rem;
+  left: -0.5rem;
+  top: -2.2rem;
 }
