@@ -18,6 +18,12 @@
   --train-top-three-shadow: #a39f70;
   --train-top-shine: #cdc799;
   --divider: #9c341b;
+  --window-stroke: #3e3018;
+  --window-one-bg: #7b6042;
+  --window-one-bg-shadow: #917d62;
+  --window-one-bar-shadow-one: #776142;
+  --window-one-bar-shadow-two: #513f26;
+  --widnow-one-fade-bars: #8d775b;
 }
 
 * {
@@ -696,4 +702,203 @@ body {
 
 .divider-five {
   left: 95rem;
+}
+
+.window-one {
+  position: absolute;
+  width: 9rem;
+  height: 7.5rem;
+  background-color: var(--window-one-bg);
+  border: solid var(--window-stroke);
+  border-width: 0.35rem 0.45rem;
+  border-radius: 1.3rem;
+  left: 12rem;
+  top: 1.5rem;
+  box-shadow: 0.15rem 0 0.2rem 0.001rem var(--window-one-bg-shadow);
+}
+
+.window-one::before {
+  content: "";
+  position: absolute;
+  width: 5.2rem;
+  height: 6.3rem;
+  border-radius: 1.1rem 1rem 1.1rem 1.1rem;
+  background-color: var(--window-one-bg-shadow);
+  left: 2.9rem;
+  top: 0.5rem;
+}
+
+.window-bg-shadow {
+  position: absolute;
+  width: 4.89rem;
+  height: 6.45rem;
+  border: 0.4rem solid;
+  border-color: var(--window-one-bar-shadow-one) transparent
+    var(--window-one-bar-shadow-two) var(--window-one-bar-shadow-two);
+  border-radius: 0 0 0 1.1rem;
+  left: 3rem;
+  top: 0.6rem;
+}
+
+.window-bg-shadow::after {
+  content: "";
+  position: absolute;
+  height: 0.28rem;
+  width: 0.5rem;
+  background-color: var(--window-stroke);
+  top: 5.8rem;
+  left: 4rem;
+  transform: rotate(-21deg);
+  border-radius: 0.3rem;
+}
+
+.window-bg-shadow::before {
+  content: "";
+  position: absolute;
+  height: 0.25rem;
+  width: 4.3rem;
+  background-color: var(--window-stroke);
+  top: 5.83rem;
+}
+
+.window-one-bar-one {
+  position: absolute;
+  width: 0.45rem;
+  height: 7.3rem;
+  background-color: var(--window-stroke);
+  left: 6rem;
+  top: -0.3rem;
+}
+
+.window-one-bar-one::before {
+  content: "";
+  position: absolute;
+  width: 0.45rem;
+  height: 6.35rem;
+  background-image: linear-gradient(
+    to bottom,
+    var(--window-one-bar-shadow-one),
+    var(--window-one-bar-shadow-two)
+  );
+  left: -1.2rem;
+  top: 0.8rem;
+}
+
+.window-one-bar-two,
+.window-one-bar-two::after {
+  position: absolute;
+  width: 7.5rem;
+  height: 0.45rem;
+  background-color: var(--window-stroke);
+  z-index: 1;
+}
+
+.window-one-bar-two {
+  top: 2.5rem;
+  left: 1rem;
+}
+
+.window-one-bar-two::after {
+  content: "";
+}
+
+.window-one-bar-two::before {
+  content: "";
+  position: absolute;
+  width: 5.02rem;
+  height: 0.45rem;
+  background-image: linear-gradient(
+    to left,
+    var(--window-one-bar-shadow-one),
+    var(--window-one-bar-shadow-two)
+  );
+  left: 2.1rem;
+  top: 0.5rem;
+}
+
+.window-one-bar-three {
+  position: absolute;
+  width: 0.45rem;
+  height: 3.1rem;
+  background-color: var(--window-stroke);
+  left: 3rem;
+  top: -0.3rem;
+}
+
+.window-one-bar-three::before {
+  content: "";
+  position: absolute;
+  width: 0.45rem;
+  height: 2.5rem;
+  background-image: linear-gradient(
+    to bottom,
+    var(--window-one-bar-shadow-one) 72%,
+    var(--window-one-bar-shadow-two)
+  );
+  left: 4.5rem;
+  top: 0.8rem;
+}
+
+.fade-bar-one,
+.fade-bar-two,
+.fade-bar-one::after {
+  position: absolute;
+  width: 0.1rem;
+  height: 6rem;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 43%,
+    var(--widnow-one-fade-bars)
+  );
+}
+
+.fade-bar-one {
+  left: 3.8rem;
+  top: 1rem;
+}
+
+.fade-bar-two {
+  left: 6.8rem;
+  top: 1rem;
+}
+
+.fade-bar-one::after {
+  content: "";
+  transform: rotate(90deg);
+  top: 1.7rem;
+  left: 2.2rem;
+}
+
+.fade-bar-three {
+  position: absolute;
+  width: 0.005rem;
+  height: 7rem;
+  background-color: var(--window-one-bar-shadow-two);
+  left: 4.5rem;
+  top: -1.25rem;
+  transform: rotate(50deg);
+  z-index: 1;
+  filter: blur(0.02rem);
+}
+
+.fade-bar-three::before {
+  content: "";
+  position: absolute;
+  width: 0.005rem;
+  height: 5.5rem;
+  background-color: var(--window-one-bar-shadow-one);
+  filter: blur(0.02rem);
+  transform: rotate(-100deg);
+  top: -0.1rem;
+  left: 1.3rem;
+}
+
+.window-one-hide {
+  position: absolute;
+  width: 0.45rem;
+  height: 0.7rem;
+  background-color: var(--window-stroke);
+  top: 2.9rem;
+  left: 6rem;
+  z-index: 2;
 }
