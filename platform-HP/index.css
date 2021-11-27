@@ -25,6 +25,13 @@
   --window-one-bar-shadow-two: #513f26;
   --widnow-one-fade-bars: #8d775b;
   --window-two-stroke-shadow: #554323;
+  --window-two-bg-shadow-one: #7d6540;
+  --window-two-bg-shadow-two: #5a5c60;
+  --window-two-bg-shadow-stroke: #624d2d;
+  --window-two-bar-shadow-one: #79603c;
+  --window-two-bar-shadow-two: #5b4520;
+  --window-two-fade-bar-one: #725c3c;
+  --window-two-fade-bar-two: #5c4b31;
 }
 
 * {
@@ -763,7 +770,9 @@ body {
 }
 
 .window-one-bar-one,
-.window-two-bar-one {
+.window-two-bar-one,
+.window-two-bar-two,
+.window-two-bar-three {
   position: absolute;
   width: 0.45rem;
   height: 7.3rem;
@@ -942,4 +951,144 @@ body {
 }
 
 .window-two-bar-one {
+  left: 2.5rem;
+}
+
+.window-two-bar-two {
+  left: 5rem;
+  height: 2.8rem;
+}
+
+.window-two-bar-three {
+  left: 7.5rem;
+}
+
+.window-two-bar-four {
+  position: absolute;
+  background-color: var(--window-stroke);
+  width: 10rem;
+  height: 0.45rem;
+  top: 2.8rem;
+  left: 0.2rem;
+}
+
+.window-two-bg-shadow {
+  position: absolute;
+  width: 6rem;
+  height: 6.3rem;
+  border-radius: 1.1rem 0.25rem 1.1rem 1.1rem;
+  background-image: linear-gradient(
+    to bottom,
+    var(--window-two-bg-shadow-one) 32%,
+    var(--window-two-bg-shadow-two)
+  );
+  border-left: 0.35rem solid var(--window-two-bg-shadow-stroke);
+  border-top: 0.35rem solid var(--window-two-bg-shadow-stroke);
+  box-shadow: -0.1rem 0 0.05rem 0.001rem var(--window-two-bg-shadow-one);
+  top: 0.95rem;
+  left: 3.9rem;
+}
+
+.window-two-bg-shadow::before {
+  content: "";
+  position: absolute;
+  width: 0.4rem;
+  height: 6rem;
+  background-color: var(--window-two-bg-shadow-stroke);
+  left: 1.05rem;
+  top: -0.05rem;
+}
+
+.window-two-bg-shadow::after {
+  content: "";
+  position: absolute;
+  height: 0.4rem;
+  width: 5.75rem;
+  background-color: var(--window-two-bg-shadow-stroke);
+  left: -0.1rem;
+  top: 1.99rem;
+}
+
+.window-two-fade-bar-one,
+.window-two-fade-bar-two {
+  position: absolute;
+  width: 0.2rem;
+  height: 3.55rem;
+  background-image: linear-gradient(
+    to bottom,
+    var(--window-two-fade-bar-one),
+    var(--window-two-fade-bar-two)
+  );
+}
+
+.window-two-fade-bar-one {
+  left: 4.75rem;
+  top: 3.7rem;
+}
+
+.window-two-fade-bar-two {
+  left: 7.1rem;
+  top: 3.7rem;
+}
+
+.window-two-fade-bar-three {
+  position: absolute;
+  width: 5.7rem;
+  height: 0.2rem;
+  background-image: linear-gradient(
+    to right,
+    var(--window-two-fade-bar-two),
+    var(--window-two-fade-bar-one)
+  );
+  top: 5.85rem;
+  left: 4.2rem;
+}
+
+.window-two-fade-bar-three::before {
+  content: "";
+  position: absolute;
+  width: 4.2rem;
+  height: 0.2rem;
+  box-shadow: 0 0.01rem 0.5rem 0.001rem var(--train-top-shine);
+  left: 1.5rem;
+}
+
+.window-two-fade-bar-one::after {
+  content: "";
+  position: absolute;
+  width: 0.005rem;
+  height: 10.75rem;
+  background-color: var(--window-one-bar-shadow-two);
+  transform: rotate(52deg);
+  top: -5.4rem;
+  left: 0.2rem;
+  filter: blur(0.02rem);
+}
+
+.window-two-fade-bar-one::before {
+  content: "";
+  position: absolute;
+  width: 0.005rem;
+  height: 6.9rem;
+  background-color: var(--window-two-fade-bar-two);
+  transform: rotate(-51deg);
+  top: -3.5rem;
+  left: 2.45rem;
+  filter: blur(0.02rem);
+}
+
+.window-two-fade-bar-two::before {
+  content: "";
+  position: absolute;
+  width: 0.5rem;
+  height: 3.4rem;
+  background-image: linear-gradient(
+    to bottom,
+    var(--window-two-fade-bar-one),
+    var(--window-two-fade-bar-two)
+  );
+  border-radius: 0 0 0.9rem 0/0 0 2rem 0;
+  top: -0.02rem;
+  left: 2.27rem;
+  filter: blur(0.02rem);
 }
