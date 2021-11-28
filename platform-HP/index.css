@@ -722,7 +722,8 @@ body {
 }
 
 .divider-three {
-  left: 63rem;
+  left: 67rem;
+  background-image: linear-gradient(to bottom, var(--divider), var(--train));
 }
 
 .divider-four {
