@@ -46,6 +46,13 @@
   --door-one-handler: #757652;
   --door-one-yellow: #ffbc00;
   --door-one-window-bg: #543016;
+  --door-two-frame: #53361a;
+  --door-two-bg-one: #482811;
+  --door-two-bg-two: #34240f;
+  --door-two-border-one: #40342a;
+  --door-two-border-two: #3a3228;
+  --door-two-window-bg: #63768f;
+  --door-two-handler: #413819;
 }
 
 * {
@@ -1456,4 +1463,130 @@ body {
   left: -1.1rem;
   background: #1f181826;
   filter: blur(0.25rem);
+}
+
+.door-one {
+  position: absolute;
+  z-index: 2;
+}
+
+.door-two-frame {
+  position: absolute;
+  width: 7rem;
+  height: 16.38rem;
+  background-color: var(--door-two-frame);
+  left: 56.1rem;
+  top: 0.8rem;
+  z-index: 1;
+}
+
+.door-two-frame::before {
+  content: "";
+  position: absolute;
+  width: 7rem;
+  height: 15.62rem;
+  background-image: linear-gradient(
+    to bottom,
+    var(--door-two-bg-one),
+    var(--door-two-bg-two)
+  );
+  top: 0.4rem;
+}
+
+.door-two-body {
+  position: absolute;
+  width: 6.15rem;
+  height: 14.85rem;
+  border: 0.1rem solid;
+  border-image: linear-gradient(
+      var(--door-two-border-one),
+      var(--door-two-border-two)
+    )
+    1;
+  top: 0.65rem;
+  left: 0.5rem;
+}
+
+.door-two-body::before {
+  position: absolute;
+  content: "";
+  width: 0.1rem;
+  height: 0.1rem;
+  color: var(--door-two-bg-one);
+  box-shadow: 0.5rem 0, 0.6rem 0, 3.2rem 0, 3.3rem 0, 5.5rem 0, 5.6rem 0,
+    5.95rem 0.8rem, 5.95rem 0.9rem, 5.95rem 2.7rem, 5.95rem 2.8rem,
+    5.95rem 4.7rem, 5.95rem 4.8rem, 5.95rem 7rem, 5.95rem 7.1rem, 5.95rem 9.3rem,
+    5.95rem 9.4rem, 5.95rem 11.5rem var(--door-two-bg-two),
+    5.95rem 11.6rem var(--door-two-bg-two),
+    5.95rem 13.7rem var(--door-two-bg-two),
+    5.95rem 13.8rem var(--door-two-bg-two),
+    5.6rem 14.75rem var(--door-two-bg-two),
+    5.5rem 14.75rem var(--door-two-bg-two),
+    3.3rem 14.75rem var(--door-two-bg-two),
+    3.2rem 14.75rem var(--door-two-bg-two),
+    0.6rem 14.75rem var(--door-two-bg-two),
+    0.5rem 14.75rem var(--door-two-bg-two);
+  top: -0.1rem;
+}
+
+.door-two-window {
+  position: absolute;
+  width: 3.7rem;
+  height: 6.3rem;
+  border: 0.2rem solid var(--window-stroke);
+  border-radius: 0.6rem;
+  background-color: var(--door-two-window-bg);
+  left: 1.2rem;
+  top: 0.7rem;
+  box-shadow: 0 0 0.03rem 0.001rem #696a4d;
+}
+
+.door-two-window-bar-one {
+  position: absolute;
+  width: 3.4rem;
+  height: 0.45rem;
+  background-color: var(--window-stroke);
+  top: 2.4rem;
+  left: -0.05rem;
+  filter: drop-shadow(0px -1.55rem 0.3rem rgba(0, 0, 0, 0.2));
+}
+
+.door-two-window-bar-two {
+  position: absolute;
+  width: 3.4rem;
+  height: 0.17rem;
+  background-color: var(--window-stroke);
+  top: 5.15rem;
+  left: -0.05rem;
+  filter: drop-shadow(0px -0.5rem 0.15rem rgba(0, 0, 0, 0.2));
+}
+
+.door-two-window-bar-three {
+  position: absolute;
+  height: 5.9rem;
+  width: 0.2rem;
+  background-color: var(--window-stroke);
+  left: 1.52rem;
+}
+
+.door-two-handler {
+  position: absolute;
+  width: 0.55rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background-color: var(--door-two-handler);
+  top: 7.6rem;
+  left: 0.45rem;
+}
+
+.door-two-handler::after {
+  position: absolute;
+  content: "";
+  height: 0.3rem;
+  width: 1.5rem;
+  background-color: var(--door-two-handler);
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0.01rem 0.01rem rgba(0, 0, 0, 0.2);
+  top: 0.15rem;
+  left: 0.2rem;
 }
