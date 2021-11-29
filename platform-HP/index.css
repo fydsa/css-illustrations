@@ -53,6 +53,9 @@
   --door-two-border-two: #3a3228;
   --door-two-window-bg: #63768f;
   --door-two-handler: #413819;
+  --window-four-bg-one: #684d23;
+  --window-four-bg-two: #4d3417;
+  --window-four-handler: #6b512b;
 }
 
 * {
@@ -1628,5 +1631,54 @@ body {
   left: 0.17rem;
   top: 0.17rem;
   box-shadow: 0 0 0.05rem 0.01rem rgba(0, 0, 0, 0.2),
-    inset 0 -0.1rem 0.1rem 0.01rem rgba(0, 0, 0, 0.2);
+    inset 0 -0.1rem 0.1rem 0.01rem rgba(0, 0, 0, 0.2),
+    0 0 1.2rem 0.6rem rgba(0, 0, 0, 0.2);
+}
+
+.train-shine-two {
+  position: absolute;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 0.1rem;
+  background-color: var(--train-shine);
+  box-shadow: 0 0 1.5rem 0.5rem var(--train-shine);
+  top: 13.5rem;
+  left: 69.5rem;
+  filter: blur(0.15rem);
+}
+
+.window-four {
+  position: absolute;
+  width: 9.8rem;
+  height: 7.5rem;
+  background-image: linear-gradient(
+    to bottom,
+    var(--window-four-bg-one),
+    var(--window-four-bg-two)
+  );
+  border: solid var(--window-three-stroke);
+  border-width: 0.35rem 0.25rem 0.35rem 0.45rem;
+  border-radius: 1.3rem;
+  left: 67.8rem;
+  top: 1.5rem;
+  box-shadow: -0.01rem 0 0.1rem 0.01rem rgb(255 255 255 / 10%),
+    0.1rem 0 0.2rem 0.01rem #514320;
+}
+
+.window-four-details {
+  position: absolute;
+  transform: scaleX(-1);
+  left: 8.85rem;
+}
+
+.window-four-handler {
+  position: absolute;
+  width: 0.25rem;
+  height: 1.32rem;
+  background-color: var(--window-four-handler);
+  border-radius: 0.2rem;
+  top: 3.7rem;
+  left: 6.55rem;
+  box-shadow: inset 0.1rem 0 0.1rem 0.01rem rgba(0, 0, 0, 0.2),
+    0.01rem 0 0.01rem 0.01rem rgba(0, 0, 0, 0.2);
 }
