@@ -5,6 +5,9 @@
   --cage-two: #a26308;
   --wall: #8a6b2f;
   --wall-side: #af903d;
+  --back-wall: #b08e38;
+  --sky-one: #8ea6b9;
+  --sky-two: #d2d1cc;
   --brick: #774f20;
   --brick-side: #ab7d30;
   --brick-mark-one: #5e3a15;
@@ -56,8 +59,8 @@
   --window-four-bg-one: #684d23;
   --window-four-bg-two: #4d3417;
   --window-four-handler: #6b512b;
-  --train-bottom-left: #3d3119;
-  --train-bottom-right: #594923;
+  --train-bottom-bg-left: #3d3119;
+  --train-bottom-bg-right: #594923;
 }
 
 * {
@@ -111,10 +114,60 @@ body {
   height: 0.9rem;
 }
 
-.wall-left {
+.back-wall {
+  position: absolute;
+  width: 110rem;
+  height: 18rem;
+  z-index: -1;
+  background-color: var(--back-wall);
+}
+
+.wall-window-one,
+.wall-window-two,
+.wall-window-three {
+  position: absolute;
+  width: 25rem;
+  height: 12rem;
+  border-radius: 50% 50% 0 0/100% 100% 0 0;
+  background-color: var(--sky-one);
+  background-image: linear-gradient(
+      var(--window-stroke) 0.15rem,
+      transparent 0.15rem
+    ),
+    linear-gradient(to right, var(--window-stroke) 0.15rem, transparent 0.15rem);
+  background-size: 2rem 2.2rem;
+  top: 7rem;
+}
+
+.wall-window-one {
+  left: 10.1rem;
+}
+
+.wall-window-two {
+  left: 46rem;
+}
+
+.wall-window-two::before {
+  position: absolute;
+  content: "";
+  width: 38%;
+  height: 40%;
+  background-color: var(--sky-two);
+  border-radius: 50%;
+  left: 9rem;
+  top: 1.5rem;
+  filter: blur(2.5rem);
+}
+
+.wall-window-three {
+  left: 83rem;
+}
+
+.wall,
+.wall-right {
   position: absolute;
   width: 12rem;
-  height: 48rem;
+  height: 51.5rem;
   background-image: linear-gradient(
     to right,
     var(--wall) 27%,
@@ -124,11 +177,16 @@ body {
   z-index: 2;
 }
 
-.wall-left::before {
+.wall-right {
+  transform: scaleX(-1);
+  left: 107rem;
+}
+
+.wall::before {
   content: "";
   position: absolute;
   /* width: 1.5rem; */
-  height: 47rem;
+  height: 50.5rem;
   /* background-color: var(--wall-side); */
   border-left: 2.5rem solid var(--wall-side);
   border-bottom: 1rem solid transparent;
@@ -136,11 +194,11 @@ body {
   box-shadow: inset -1rem 1rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 
-.wall-left::after {
+.wall::after {
   content: "";
   position: absolute;
   width: 12rem;
-  height: 48rem;
+  height: 51.5rem;
   background-color: transparent;
   box-shadow: inset -0.5rem 0rem 1.5rem 0.2rem rgba(0, 0, 0, 0.1),
     0.1rem 0 0.5rem 0.1rem rgba(0, 0, 0, 0.2);
@@ -352,7 +410,18 @@ body {
   top: 7rem;
 }
 
+.train-all {
+  position: absolute;
+  top: 1rem;
+  left: -0.7rem;
+}
+
 .train {
+  position: absolute;
+  width: 110rem;
+  height: 18rem;
+  background-color: var(--train);
+  top: 22rem;
   box-shadow: 0 0.1rem 0.15rem rgba(0, 0, 0, 0.5);
 }
 
@@ -630,7 +699,7 @@ body {
 .top-circle {
   position: absolute;
   z-index: 0;
-  width: 3rem;
+  width: 2.7rem;
   height: 2.5rem;
   background-image: conic-gradient(
     from 147deg at 64% -6%,
@@ -639,7 +708,7 @@ body {
     var(--train-top-line) 180deg
   );
   border-radius: 50%;
-  top: 15rem;
+  top: 15.15rem;
 }
 
 .circle-one {
@@ -1724,4 +1793,27 @@ body {
   transform: scaleX(-1) scaleX(0.63) scaleY(0.97);
   left: 5.75rem;
   top: 0.15rem;
+}
+
+.train-bottom-part-one {
+  position: absolute;
+  width: 110rem;
+  height: 1.8rem;
+  background-image: linear-gradient(
+    to right,
+    var(--train-bottom-bg-left) 36%,
+    var(--train-bottom-bg-right)
+  );
+  border-bottom: 0.05rem solid rgba(0, 0, 0);
+  box-shadow: 0 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+  top: 39.95rem;
+  z-index: -1;
+}
+
+.train-bottom-part-one::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.7rem;
+  box-shadow: 0 0.1rem 0.2rem 0.005rem rgba(0, 0, 0, 0.2);
 }
