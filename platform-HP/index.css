@@ -150,10 +150,11 @@ body {
 }
 
 .smoke-top::after {
-  width: 11rem;
+  width: 15rem;
   height: 4.5rem;
   left: 12rem;
   top: 2.5rem;
+  transform: rotate(12deg);
 }
 
 .wall-window-one,
