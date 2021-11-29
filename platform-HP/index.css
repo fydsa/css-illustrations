@@ -730,7 +730,7 @@ body {
 }
 
 .divider-four {
-  left: 79rem;
+  left: 79.7rem;
 }
 
 .divider-five {
@@ -1179,7 +1179,7 @@ body {
 
 .window-three-bar-four {
   position: absolute;
-  width: 9.2rem;
+  width: 9.25rem;
   height: 0.45rem;
   background-color: var(--window-three-stroke);
   top: 2.5rem;
@@ -1647,7 +1647,8 @@ body {
   filter: blur(0.15rem);
 }
 
-.window-four {
+.window-four,
+.window-five {
   position: absolute;
   width: 9.8rem;
   height: 7.5rem;
@@ -1659,8 +1660,11 @@ body {
   border: solid var(--window-three-stroke);
   border-width: 0.35rem 0.25rem 0.35rem 0.45rem;
   border-radius: 1.3rem;
-  left: 67.8rem;
   top: 1.5rem;
+}
+
+.window-four {
+  left: 67.8rem;
   box-shadow: -0.01rem 0 0.1rem 0.01rem rgb(255 255 255 / 10%),
     0.1rem 0 0.2rem 0.01rem #514320;
 }
@@ -1681,4 +1685,27 @@ body {
   left: 6.55rem;
   box-shadow: inset 0.1rem 0 0.1rem 0.01rem rgba(0, 0, 0, 0.2),
     0.01rem 0 0.01rem 0.01rem rgba(0, 0, 0, 0.2);
+}
+
+.window-five {
+  left: 82.5rem;
+  box-shadow: -0.01rem 0 0.1rem 0.01rem rgb(255 255 255 / 10%),
+    0.1rem 0 0.1rem 0.01rem #6b582d, 0.15rem 0 0.01rem 0.1rem rgba(0, 0, 0, 0.2);
+}
+
+.window-five::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #644921;
+  opacity: 0.3;
+  border-radius: 1.1rem;
+}
+
+.window-five-details {
+  position: absolute;
+  transform: scaleX(-1);
+  left: 9.9rem;
+  top: -0.4rem;
 }
