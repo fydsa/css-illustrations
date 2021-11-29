@@ -61,6 +61,7 @@
   --window-four-handler: #6b512b;
   --train-bottom-bg-left: #3d3119;
   --train-bottom-bg-right: #594923;
+  --smoke: #baa986;
 }
 
 * {
@@ -120,6 +121,39 @@ body {
   height: 18rem;
   z-index: -1;
   background-color: var(--back-wall);
+}
+
+.smoke-top {
+  position: absolute;
+  width: 10rem;
+  height: 8rem;
+  border-radius: 50%;
+  background-color: var(--smoke);
+  filter: blur(1.2rem);
+  left: 12rem;
+  top: 12rem;
+}
+
+.smoke-top::before,
+.smoke-top::after {
+  position: absolute;
+  content: "";
+  background-color: var(--smoke);
+  border-radius: 50%;
+}
+
+.smoke-top::before {
+  width: 9rem;
+  height: 5rem;
+  left: 7rem;
+  top: 1rem;
+}
+
+.smoke-top::after {
+  width: 11rem;
+  height: 4.5rem;
+  left: 12rem;
+  top: 2.5rem;
 }
 
 .wall-window-one,
