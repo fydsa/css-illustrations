@@ -1226,7 +1226,8 @@ body {
   left: 7.8rem;
 }
 
-.window-three-fade-bar-four {
+.window-three-fade-bar-four,
+.window-six-fade-bar-four {
   position: absolute;
   width: 7.55rem;
   height: 0.4rem;
@@ -1236,6 +1237,7 @@ body {
 }
 
 .window-three-fade-bar-one::before,
+.window-six-fade-bar-four::before,
 .window-three-fade-bar-one::after {
   content: "";
   position: absolute;
@@ -1648,7 +1650,8 @@ body {
 }
 
 .window-four,
-.window-five {
+.window-five,
+.window-six {
   position: absolute;
   width: 9.8rem;
   height: 7.5rem;
@@ -1705,7 +1708,22 @@ body {
 
 .window-five-details {
   position: absolute;
-  transform: scaleX(-1);
-  left: 9.9rem;
+  transform: scaleX(-1) scaleX(0.93);
+  left: 9.35rem;
   top: -0.4rem;
+}
+
+.window-six {
+  border-width: 0.35rem 0.35rem 0.35rem 0.25rem;
+  left: 97.8rem;
+  box-shadow: -0.01rem 0 0.1rem 0.01rem rgb(255 255 255 / 10%),
+    inset 0.1rem 0 0.1rem 0.05rem #5f4815,
+    0.15rem 0 0.01rem 0.1rem rgba(0, 0, 0, 0.2);
+}
+
+.window-six-details {
+  position: absolute;
+  transform: scaleX(-1) scaleX(0.63) scaleY(0.97);
+  left: 5.75rem;
+  top: 0.15rem;
 }
