@@ -56,6 +56,8 @@
   --window-four-bg-one: #684d23;
   --window-four-bg-two: #4d3417;
   --window-four-handler: #6b512b;
+  --train-bottom-left: #3d3119;
+  --train-bottom-right: #594923;
 }
 
 * {
@@ -351,11 +353,7 @@ body {
 }
 
 .train {
-  position: absolute;
-  width: 110rem;
-  height: 18rem;
-  background-color: var(--train);
-  top: 22rem;
+  box-shadow: 0 0.1rem 0.15rem rgba(0, 0, 0, 0.5);
 }
 
 .train::before,
