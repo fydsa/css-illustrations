@@ -62,6 +62,7 @@
   --train-bottom-bg-left: #3d3119;
   --train-bottom-bg-right: #594923;
   --smoke: #baa986;
+  --window-brick: #bb8d39;
 }
 
 * {
@@ -196,6 +197,57 @@ body {
 
 .wall-window-three {
   left: 83rem;
+}
+
+.window-brick-one,
+.window-brick-two,
+.window-brick-three,
+.window-brick-four,
+.window-brick-five {
+  position: absolute;
+  background-color: var(--window-brick);
+  width: 4.5rem;
+  height: 3.9rem;
+  border-radius: 0.2rem;
+  box-shadow: -0.1rem 0.01rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+}
+
+.window-brick-one {
+  left: -2.1rem;
+  top: 2.5rem;
+  transform: rotate(33deg);
+}
+
+.window-brick-two {
+  left: 0.15rem;
+  top: -0.2rem;
+  transform: rotate(47deg);
+}
+
+.window-brick-three {
+  left: 3.1rem;
+  top: -2.3rem;
+  transform: rotate(61deg);
+}
+
+.window-brick-four {
+  left: 6.4rem;
+  top: -3.6rem;
+  transform: rotate(74deg);
+}
+
+.window-brick-five {
+  left: 10.2rem;
+  top: -4.6rem;
+  transform: rotate(90deg);
+  z-index: 1;
+  height: 5rem;
+}
+
+.window-bricks-flip {
+  position: absolute;
+  transform: scaleX(-1);
+  left: 25rem;
 }
 
 .wall,
