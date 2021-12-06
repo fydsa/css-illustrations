@@ -63,6 +63,10 @@
   --train-bottom-bg-right: #594923;
   --smoke: #baa986;
   --window-brick: #bb8d39;
+  --window-brick-shadow-one: #ac883a;
+  --window-brick-shadow-two: #9c6a26;
+  --window-brick-shadow-bottom-two: #84561f;
+  --window-brick-shadow-bottom-one: #ae8335;
 }
 
 * {
@@ -173,6 +177,7 @@ body {
     linear-gradient(to right, var(--window-stroke) 0.15rem, transparent 0.15rem);
   background-size: 2rem 2.2rem;
   top: 7rem;
+  box-shadow: inset 0rem 0rem 0.3rem 0.5rem rgba(0, 0, 0, 0.7);
 }
 
 .wall-window-one {
@@ -209,7 +214,107 @@ body {
   width: 4.5rem;
   height: 3.9rem;
   border-radius: 0.2rem;
-  box-shadow: -0.1rem 0.01rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+  box-shadow: -0.1rem 0.01rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2),
+    inset 0.1rem 0 0.4rem 0.2rem rgba(0, 0, 0, 0.2),
+    0.3rem -0.01rem 0.01rem 0.05rem var(--window-brick-shadow-bottom-two),
+    0.55rem -0.01rem 0.1rem 0.1rem rgba(0, 0, 0, 0.6);
+}
+
+.window-brick-three::before,
+.window-brick-four::before,
+.window-brick-five::before {
+  position: absolute;
+  content: "";
+  background-color: var(--window-brick-shadow-one);
+  width: 3.9rem;
+  height: 3.4rem;
+  border-radius: 0.2rem;
+  top: 0.1rem;
+  left: 0.3rem;
+}
+
+.window-brick-one::after,
+.window-brick-two::after,
+.window-brick-three::after,
+.window-brick-four::after {
+  position: absolute;
+  content: "";
+  background-color: var(--window-brick-shadow-bottom-one);
+  width: 0.55rem;
+  height: 3.3rem;
+  border-radius: 0.1rem;
+  transform: skewY(44deg) rotate(-1deg);
+  top: 0.4rem;
+  left: 3.9rem;
+}
+
+.window-brick-five::before {
+  top: 0.5rem;
+  height: 4rem;
+}
+
+.window-brick-one::before {
+  position: absolute;
+  content: "";
+  background-color: var(--window-brick-shadow-two);
+  width: 3.9rem;
+  height: 3.4rem;
+  border-radius: 0.2rem;
+  top: 0.1rem;
+  left: 0.3rem;
+}
+
+.window-brick-one::after {
+  position: absolute;
+  content: "";
+  background-color: #956524;
+  width: 0.55rem;
+  height: 3.3rem;
+  border-radius: 0.1rem;
+  transform: skewY(44deg) rotate(-1deg);
+  top: 0.4rem;
+  left: 3.9rem;
+}
+
+.window-brick-two::before {
+  position: absolute;
+  content: "";
+  background-image: linear-gradient(
+    to top,
+    var(--window-brick-shadow-two),
+    var(--window-brick-shadow-one)
+  );
+  width: 3.9rem;
+  height: 3.4rem;
+  border-radius: 0.2rem;
+  top: 0.1rem;
+  left: 0.3rem;
+}
+
+.window-brick-two::after {
+  position: absolute;
+  content: "";
+  width: 0.55rem;
+  height: 3.3rem;
+  border-radius: 0.1rem;
+  transform: skewY(44deg) rotate(-1deg);
+  top: 0.4rem;
+  left: 3.9rem;
+  background-image: linear-gradient(
+    to top,
+    #956524,
+    var(--window-brick-shadow-bottom-one)
+  );
+}
+
+.window-bricks-flip > .window-brick-one::before,
+.window-bricks-flip > .window-brick-two::before {
+  background: var(--window-brick-shadow-one);
+}
+
+.window-bricks-flip > .window-brick-one::after,
+.window-bricks-flip > .window-brick-two::after {
+  background: var(--window-brick-shadow-bottom-one);
 }
 
 .window-brick-one {
